@@ -1,0 +1,34 @@
+---
+title: Usage and troubleshooting
+description: Select agents, control the taskbar icon and diagnose missing integrations.
+---
+
+## Open an agent
+
+Press **SUPER + A**, click the taskbar robot or choose an agent's application entry. The selector offers executable OpenCode/Codex installations and offers Claude Code for first-use installation when mise exists. **Esc** cancels without launching or downloading anything.
+
+The terminal inherits the caller's working directory; graphical launches usually start from the session's home directory. Start an agent from a project terminal when you need a particular working directory.
+
+## Taskbar visibility
+
+Open **Control Center > Appearance > Taskbar > Icons > Optional modules**, toggle **AI Agents**, then **Apply**. The robot belongs to `group/right-2`; if its drawer is collapsed, expand the utilities group. The preference is `/taskbar/icons/ai_agents_enabled`, defaults to true, and survives regeneration. It controls only the icon: shortcuts and desktop entries remain available. Runtime availability can still hide an enabled icon.
+
+## Diagnostic commands
+
+```sh
+argvus-ai list
+argvus-ai status
+argvus-ai status --check
+argvus-ai menu
+argvus-ai launch opencode
+argvus-ai launch codex
+argvus-ai launch claude
+```
+
+`list` reports installed agents only. `status` emits Waybar JSON, while `status --check` reports whether there is an installed or installable menu choice through its exit status. Only selecting/launching Claude can start its installation; `run-claude` is an internal terminal entry point.
+
+If the shortcut still uses the old combination, inspect its personal override in Control Center's keyboard shortcuts page; packaged defaults do not overwrite it. If the robot disappears after applying appearance settings, update `argvus-appearance` and regenerate/apply the taskbar settings. Avoid editing generated Waybar/Lua files directly.
+
+If Claude installation fails, check terminal errors, network access and the installed mise version, then select Claude again. mise queries run from home so a project-specific configuration does not select a different tool. The wrapper does not require mise shims in the graphical PATH. OpenCode/Codex discovery uses the graphical PATH, without shell aliases or interactive startup scripts.
+
+Return to [AI Agents](/docs/argvus-ai/).

@@ -7,3 +7,5 @@ The menu offers Claude when mise is present, even before installation. `argvus-a
 SUPER + A and the taskbar icon call argvus-ai menu; desktop entries call argvus-ai launch AGENT. Claude resolution queries mise from HOME, while the launched agent retains the caller working directory. make validate and make build produce build/dist artifacts. AI-assisted implementation requiring human review before upstream submission.
 
 The package owns the Lua binding module usr/share/argvus/ai/hyprland.lua. Update argvus-hyprland too: its optional loader and Pacman hook activate/remove SUPER + A using native config autoreload. User overrides for app.ai remain authoritative. The Control Center catalog and both cheatsheets use the same shortcut.
+
+Documentation: [English](docs/en/index.md) · [Português brasileiro](docs/pt-br/index.md).

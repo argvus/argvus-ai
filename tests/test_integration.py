@@ -83,6 +83,14 @@ class Integration(unittest.TestCase):
             pkgbuild = (ROOT / f"de/argvus-ai/packaging/archlinux/pkgbuilds/{kind}/PKGBUILD").read_text()
             self.assertNotIn("install=", pkgbuild)
 
+    def test_ai_visibility_default_and_schema_in_package_payload(self):
+        for relative in ["packaging/archlinux/src", "crates/argvus-config/src"]:
+            root = ROOT / "de/argvus" / relative / "usr/share/argvus/config"
+            defaults = json.loads((root / "taskbar.json").read_text())
+            schema = json.loads((root / "schema.json").read_text())
+            self.assertIs(defaults["icons"]["ai_agents_enabled"], True)
+            self.assertEqual(schema["properties"]["taskbar"]["properties"]["icons"]["properties"]["ai_agents_enabled"], {"type": "boolean"})
+
     def test_catalogs(self):
         root = PAYLOAD / "usr/share/argvus/i18n"
         en = json.loads((root / "en-US/ai.json").read_text())
