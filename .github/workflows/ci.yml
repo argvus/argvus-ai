@@ -23,7 +23,7 @@ jobs:
           pacman -Syu --noconfirm --needed base-devel git namcap pacman-contrib shellcheck sudo python jq desktop-file-utils lua stylua
 
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Validate repository
         shell: bash
@@ -49,6 +49,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run cspell
-        uses: streetsidesoftware/cspell-action@v6
+        uses: streetsidesoftware/cspell-action@v9
         with:
           config: cspell.json
