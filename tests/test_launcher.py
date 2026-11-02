@@ -47,7 +47,7 @@ class Launcher(unittest.TestCase):
             self.stub(command)
             self.env["SELECTION"] = label
             self.assertEqual(self.run_helper("menu").returncode, 0)
-            expected = ["terminal", "--class", "argvus-ai", "--", str(HELPER), "run-claude"] if command == "claude" else ["terminal", "--class", "argvus-ai", "--", str(self.root / command)]
+            expected = ["tui-terminal", "--class", "argvus-ai", "--term", "kitty", "--profile", "ai-agents", "--title", "ARGVUS AI Agent", "--", "argvus", "tui-terminal", "--frame", "AI Agent", "footer.close"] + ([str(HELPER), "run-claude"] if command == "claude" else [str(self.root / command)])
             self.assertEqual((self.root / "log").read_text().splitlines(), expected)
 
     def test_empty_menu(self):

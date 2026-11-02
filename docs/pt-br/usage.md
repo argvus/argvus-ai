@@ -32,3 +32,7 @@ Se o atalho continuar usando a combinação antiga, confira o override pessoal n
 Se a instalação do Claude falhar, confira os erros no terminal, o acesso à rede e a versão do mise; depois selecione Claude novamente. As consultas mise são feitas a partir do diretório pessoal para evitar a seleção de outra ferramenta pela configuração de um projeto. O wrapper não exige shims mise no PATH gráfico. OpenCode/Codex são descobertos pelo PATH gráfico, sem aliases ou scripts de inicialização interativos.
 
 Voltar para [Agentes de IA](/pt/docs/argvus-ai/).
+
+Os agentes abrem em uma janela Kitty flutuante e centralizada com título `ARGVUS AI Agent`, cabeçalho ARGVUS e rodapé. Pressione **Ctrl + E** para fechar a janela do agente. A moldura reserva esse atalho; Esc e Ctrl+C continuam disponíveis para o agente.
+
+O perfil Kitty dedicado `ai-agents` oculta as abas e remove os atalhos herdados de abas, divisões e tela cheia. Os atalhos de clipboard Ctrl+Shift+C e Ctrl+Shift+V continuam disponíveis. A configuração gerada fica em `kitty-tui/kitty-ai-agents.conf` no cache ARGVUS. O módulo Hyprland do pacote abre a classe `argvus-ai` em janela flutuante centralizada de 1399 × 920.

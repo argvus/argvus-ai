@@ -9,3 +9,7 @@ SUPER + A and the taskbar icon call argvus-ai menu; desktop entries call argvus-
 The package owns the Lua binding module usr/share/argvus/ai/hyprland.lua. Update argvus-hyprland too: its optional loader and Pacman hook activate/remove SUPER + A using native config autoreload. User overrides for app.ai remain authoritative. The Control Center catalog and both cheatsheets use the same shortcut.
 
 Documentation: [English](docs/en/index.md) · [Português brasileiro](docs/pt-br/index.md).
+
+Agents run in a centered floating Kitty window titled `ARGVUS AI Agent`, with an ARGVUS frame and a localized **Ctrl + E** close hint. Closing the frame terminates its child agent.
+
+The dedicated `ai-agents` Kitty profile hides tabs and disables inherited tab, split and fullscreen shortcuts. It keeps clipboard shortcuts and writes its own runtime configuration under the ARGVUS cache.

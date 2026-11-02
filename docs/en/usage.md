@@ -32,3 +32,7 @@ If the shortcut still uses the old combination, inspect its personal override in
 If Claude installation fails, check terminal errors, network access and the installed mise version, then select Claude again. mise queries run from home so a project-specific configuration does not select a different tool. The wrapper does not require mise shims in the graphical PATH. OpenCode/Codex discovery uses the graphical PATH, without shell aliases or interactive startup scripts.
 
 Return to [AI Agents](/docs/argvus-ai/).
+
+Agents open in a centered floating Kitty window titled `ARGVUS AI Agent`, with an ARGVUS header and footer. Press **Ctrl + E** to close the agent window. This shortcut is reserved by the frame; Esc and Ctrl+C remain available to the agent.
+
+The dedicated Kitty profile `ai-agents` hides tabs and clears inherited shortcuts for tabs, splits and fullscreen. Clipboard shortcuts Ctrl+Shift+C and Ctrl+Shift+V remain available. Its generated configuration is `kitty-tui/kitty-ai-agents.conf` under the ARGVUS cache directory. The package Hyprland module floats and centers windows with class `argvus-ai` at 1399 × 920.

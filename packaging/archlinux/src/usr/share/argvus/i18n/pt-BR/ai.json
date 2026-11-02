@@ -8,5 +8,6 @@
   "unavailable": "Agente indisponível: {agent}. O Claude Code é instalado pelo mise ao ser selecionado; em caso de falha, verifique o acesso à rede e os erros do mise.",
   "root_install": "Execute a instalação como usuário, sem sudo.",
   "mise_missing": "Instale ou atualize o pacote mise pelo Pacman.",
-  "install_error": "Falha na instalação ou resolução do Claude Code. Verifique os erros do mise e atualize o mise."
+  "install_error": "Falha na instalação ou resolução do Claude Code. Verifique os erros do mise e atualize o mise.",
+  "footer.close": "Ctrl + e - Fechar"
 }

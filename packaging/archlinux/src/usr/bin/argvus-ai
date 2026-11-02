@@ -61,7 +61,7 @@ launch() {
   case "$1" in opencode|codex|claude) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
   if [ "$agent" = claude ]; then
     self=$(command -v "$0")
-    if argvus terminal --class argvus-ai -- "$self" run-claude; then return 0; fi
+    if argvus tui-terminal --class argvus-ai --term kitty --profile ai-agents --title "ARGVUS AI Agent" -- argvus tui-terminal --frame "AI Agent" "$(translate footer.close)" "$self" run-claude; then return 0; fi
     message "$(translate terminal_error)"
     return 1
   fi
@@ -69,7 +69,7 @@ launch() {
     message "$(translate unavailable agent="$agent")"
     return 1
   fi
-  if argvus terminal --class argvus-ai -- "$executable"; then return 0; fi
+  if argvus tui-terminal --class argvus-ai --term kitty --profile ai-agents --title "ARGVUS AI Agent" -- argvus tui-terminal --frame "AI Agent" "$(translate footer.close)" "$executable"; then return 0; fi
   message "$(translate terminal_error)"
   return 1
 }
