@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=OpenAI Codex
+Comment=Open OpenAI Codex in the ARGVUS terminal
+Comment[pt_BR]=Abrir OpenAI Codex no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch codex
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;

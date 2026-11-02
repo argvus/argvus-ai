@@ -1,0 +1,14 @@
+.DS_Store
+/tmp
+/build
+TODO.txt
+*.pkg.tar.*
+*.src.tar.*
+*.tar.gz
+*.sig
+.release/
+packages-repo/
+packaging/archlinux/pkgbuilds/remote/pkg/
+packaging/archlinux/pkgbuilds/local/pkg/
+packaging/archlinux/pkgbuilds/local/PKGBUILD.local
+packaging/archlinux/*/.PKGBUILD.local.*

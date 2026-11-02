@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=OpenCode
+Comment=Open OpenCode in the ARGVUS terminal
+Comment[pt_BR]=Abrir OpenCode no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch opencode
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;

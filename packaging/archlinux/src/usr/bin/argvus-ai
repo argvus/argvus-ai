@@ -1,0 +1,105 @@
+#!/bin/sh
+# Single entry point for the optional ARGVUS AI desktop integration.
+set -eu
+system=${ARGVUS_SYSTEM_CONFIG:-/usr/share/argvus}
+config=$system/launcher/config/config.rasi
+if [ -r "$system/session/sh/bootstrap.sh" ]; then
+  # shellcheck disable=SC1090,SC1091
+  . "$system/session/sh/bootstrap.sh"
+  config=$(paths_config launcher/config/config.rasi)
+fi
+translate() {
+  argvus i18n get ai "$@"
+}
+message() {
+  printf '%s\n' "$1" >&2
+  rofi -config "$config" -e "$1" || :
+}
+# Queries never install or update tools. Claude installs only after selection.
+resolve() {
+  case "$1" in
+    claude)
+      mise_path=$(command -v mise) || return 1
+      version=$(cd "${HOME:?}" && "$mise_path" ls --installed --json claude 2>/dev/null | jq -er 'last(.[] | select(.installed == true)) | .version // empty') || return 1
+      executable=$(cd "${HOME:?}" && "$mise_path" which --tool "claude@$version" claude 2>/dev/null) || return 1
+      ;;
+    opencode|codex) executable=$(command -v "$1") || return 1 ;;
+    *) return 1 ;;
+  esac
+  case "$executable" in /*) ;; *) return 1 ;; esac
+  [ -f "$executable" ] && [ -x "$executable" ] || return 1
+  printf '%s\n' "$executable"
+}
+available() {
+  resolve "$1" >/dev/null
+}
+list() {
+  for agent in opencode codex claude; do
+    if available "$agent"; then printf '%s\n' "$agent"; fi
+  done
+}
+menu_agents() {
+  for agent in opencode codex; do
+    if available "$agent"; then printf '%s\n' "$agent"; fi
+  done
+  if command -v mise >/dev/null 2>&1; then printf 'claude\n'; fi
+}
+run_claude() {
+  [ "$(id -u)" -ne 0 ] || { message "$(translate root_install)"; return 1; }
+  if ! executable=$(resolve claude); then
+    command -v mise >/dev/null 2>&1 || { message "$(translate mise_missing)"; return 1; }
+    result=0
+    (cd "${HOME:?}" && mise install claude) || result=$?
+    if [ "$result" -ne 0 ]; then message "$(translate install_error)"; return "$result"; fi
+    executable=$(resolve claude) || { message "$(translate install_error)"; return 1; }
+  fi
+  PATH="${executable%/*}:$PATH"
+  export PATH
+  exec "$executable"
+}
+launch() {
+  case "$1" in opencode|codex|claude) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
+  if [ "$agent" = claude ]; then
+    self=$(command -v "$0")
+    if argvus terminal --class argvus-ai -- "$self" run-claude; then return 0; fi
+    message "$(translate terminal_error)"
+    return 1
+  fi
+  if ! executable=$(resolve "$agent"); then
+    message "$(translate unavailable agent="$agent")"
+    return 1
+  fi
+  if argvus terminal --class argvus-ai -- "$executable"; then return 0; fi
+  message "$(translate terminal_error)"
+  return 1
+}
+case "${1:-menu}" in
+  run-claude) [ "$#" -eq 1 ] || exit 2; run_claude ;;
+  status)
+    [ "$#" -eq 1 ] || { [ "$#" -eq 2 ] && [ "$2" = --check ]; } || exit 2
+    agents=$(menu_agents)
+    if [ "${2:-}" = --check ]; then [ -n "$agents" ]; exit; fi
+    if [ -z "$agents" ]; then printf '{"text":""}\n'; exit 0; fi
+    jq -cn --arg tooltip "$(translate title)" '{text:"󰚩",tooltip:$tooltip}'
+    ;;
+  list) [ "$#" -eq 1 ] || exit 2; list ;;
+  launch) [ "$#" -eq 2 ] || exit 2; launch "$2" ;;
+  menu)
+    [ "$#" -le 1 ] || exit 2
+    agents=$(menu_agents | while IFS= read -r agent; do
+      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; esac
+    done)
+    if [ -z "$agents" ]; then message "$(translate empty)"; exit 1; fi
+    status=0
+    selected=$(printf '%s\n' "$agents" | rofi -config "$config" -dmenu -i -no-custom -p "$(translate title)") || status=$?
+    case "$status" in 0) ;; 1) exit 0 ;; *) message "$(translate menu_error)"; exit 1 ;; esac
+    [ -n "$selected" ] || exit 0
+    case "$selected" in
+      OpenCode) launch opencode ;;
+      "OpenAI Codex") launch codex ;;
+      "Claude Code") launch claude ;;
+      *) message "$(translate invalid)"; exit 2 ;;
+    esac
+    ;;
+  *) message "$(translate usage)"; exit 2 ;;
+esac

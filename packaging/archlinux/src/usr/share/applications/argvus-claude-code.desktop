@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Claude Code
+Comment=Open Claude Code in the ARGVUS terminal
+Comment[pt_BR]=Abrir Claude Code no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch claude
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;
