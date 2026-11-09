@@ -1,0 +1,13 @@
+{
+  "title": "Agents IA",
+  "invalid": "Agent IA invalide",
+  "terminal_error": "Impossible d'ouvrir le terminal ARGVUS",
+  "empty": "Aucun agent IA disponible dans la session graphique PATH",
+  "menu_error": "Impossible d'ouvrir le menu des agents IA",
+  "usage": "Utilisation : argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "unavailable": "Agent indisponible : {agent}. Claude Code s'installe via mise lorsqu'il est sélectionné ; vérifiez l'accès au réseau et les erreurs de mise en place si l'installation échoue.",
+  "root_install": "Exécutez l'installation en tant qu'utilisateur, sans sudo.",
+  "mise_missing": "Installez ou mettez à jour le package mise avec Pacman.",
+  "install_error": "L'installation ou la résolution de Claude Code a échoué. Vérifiez les erreurs de mise et mettez à jour la mise.",
+  "footer.close": "Ctrl + e - Fermer"
+}

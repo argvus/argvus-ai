@@ -1,0 +1,13 @@
+{
+  "title": "KI-Agenten",
+  "invalid": "Ungültiger KI-Agent",
+  "terminal_error": "Das ARGVUS-Terminal konnte nicht geöffnet werden",
+  "empty": "Im grafischen Sitzungspfad sind keine KI-Agenten verfügbar",
+  "menu_error": "Das AI-Agentenmenü konnte nicht geöffnet werden",
+  "usage": "Verwendung: argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "unavailable": "Agent nicht verfügbar: {agent}. Claude Code wird bei Auswahl über Mise installiert. Überprüfen Sie den Netzwerkzugriff und geben Sie Fehler aus, wenn die Installation fehlschlägt.",
+  "root_install": "Führen Sie die Installation als Benutzer ohne Sudo aus.",
+  "mise_missing": "Installieren oder aktualisieren Sie das Mise-Paket mit Pacman.",
+  "install_error": "Die Installation oder Auflösung von Claude Code ist fehlgeschlagen. Überprüfen Sie Mise-Fehler und aktualisieren Sie Mise.",
+  "footer.close": "Ctrl + e – Schließen"
+}

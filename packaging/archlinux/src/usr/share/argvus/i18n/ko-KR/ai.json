@@ -1,0 +1,13 @@
+{
+  "title": "AI 에이전트",
+  "invalid": "잘못된 AI 에이전트",
+  "terminal_error": "ARGVUS 터미널을 열 수 없습니다.",
+  "empty": "그래픽 세션 PATH에서 사용할 수 있는 AI 에이전트가 없습니다.",
+  "menu_error": "AI 에이전트 메뉴를 열 수 없습니다.",
+  "usage": "용법: argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "unavailable": "상담원 이용 불가: {agent}. Claude Code는 선택 시 mise를 통해 설치됩니다. 설치가 실패하면 네트워크 액세스 및 잘못된 오류를 확인하십시오.",
+  "root_install": "sudo 없이 사용자로 설치를 실행합니다.",
+  "mise_missing": "Pacman을 사용하여 mise 패키지를 설치하거나 업데이트합니다.",
+  "install_error": "클로드 코드 설치 또는 해결에 실패했습니다. 미스 오류를 확인하고 미스 업데이트를 해보세요.",
+  "footer.close": "Ctrl + e - 닫기"
+}

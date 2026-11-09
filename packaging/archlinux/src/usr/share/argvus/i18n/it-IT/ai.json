@@ -1,0 +1,13 @@
+{
+  "title": "Agenti dell'intelligenza artificiale",
+  "invalid": "Agente AI non valido",
+  "terminal_error": "Impossibile aprire il terminale ARGVUS",
+  "empty": "Nessun agente AI disponibile nel PATH della sessione grafica",
+  "menu_error": "Impossibile aprire il menu degli agenti AI",
+  "usage": "Utilizzo: argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "unavailable": "Agente non disponibile: {agent}. Claude Code si installa tramite mise quando selezionato; controllare l'accesso alla rete e gli errori di mis se l'installazione fallisce.",
+  "root_install": "Esegui l'installazione come utente, senza sudo.",
+  "mise_missing": "Installa o aggiorna il pacchetto mise con Pacman.",
+  "install_error": "L'installazione o la risoluzione del codice Claude non è riuscita. Controlla gli errori della mise e aggiorna la mise.",
+  "footer.close": "Ctrl + e - Chiudi"
+}

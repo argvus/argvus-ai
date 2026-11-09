@@ -1,0 +1,13 @@
+{
+  "title": "人工智能代理",
+  "invalid": "AI 代理无效",
+  "terminal_error": "无法打开 ARGVUS 终端",
+  "empty": "图形会话路径中没有可用的 AI 代理",
+  "menu_error": "无法打开 AI 代理菜单",
+  "usage": "用法：argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "unavailable": "代理不可用：{agent}。 Claude Code 在选择时通过 mise 安装；如果安装失败，请检查网络访问和错误。",
+  "root_install": "以用户身份运行安装，无需 sudo。",
+  "mise_missing": "使用 Pacman 安装或更新 mise 软件包。",
+  "install_error": "克劳德代码安装或解析失败。检查错误并更新错误。",
+  "footer.close": "Ctrl + e - 关闭"
+}

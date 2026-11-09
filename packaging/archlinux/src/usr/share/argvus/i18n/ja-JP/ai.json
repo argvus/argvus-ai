@@ -1,0 +1,13 @@
+{
+  "title": "AIエージェント",
+  "invalid": "無効な AI エージェント",
+  "terminal_error": "ARGVUS ターミナルを開けませんでした",
+  "empty": "グラフィカル セッション PATH で利用可能な AI エージェントがありません",
+  "menu_error": "AI エージェント メニューを開けませんでした",
+  "usage": "使用法: argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "unavailable": "エージェントが不在です: {agent}。 Claude Code は、選択すると mise を通じてインストールされます。ネットワーク アクセスを確認し、インストールが失敗した場合はエラーを発生させます。",
+  "root_install": "sudo を使用せずに、ユーザーとしてインストールを実行します。",
+  "mise_missing": "Pacman を使用して mise パッケージをインストールまたは更新します。",
+  "install_error": "クロード コードのインストールまたは解決に失敗しました。ミスエラーを確認し、ミスを更新します。",
+  "footer.close": "Ctrl + e - 閉じる"
+}
