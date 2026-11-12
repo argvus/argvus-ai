@@ -35,6 +35,6 @@ Agents 会在一个居中的浮动 Kitty 窗口中打开，标题为 `ARGVUS AI 
 
 专用的 Kitty 配置文件 `ai-agents` 会隐藏标签页并清除继承的标签页、拆分和全屏快捷键。剪贴板快捷键 Ctrl+Shift+C 和 Ctrl+Shift+V 仍然可用。其生成的配置位于 ARGVUS 缓存目录下的 `kitty-tui/kitty-ai-agents.conf`。Hyprland 模块包会使类 `argvus-ai` 的窗口浮动并居中，尺寸为 1399 × 920。
 
-## Uninstalling agents
+## 卸载智能体
 
-`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.
+`argvus-ai list` 会列出已安装的智能体。运行 `argvus-ai uninstall`，选择由 ARGVUS 管理的 Hermes、Cursor CLI 或 Kimi 安装，然后确认卸载。也可直接运行 `argvus-ai uninstall hermes`、`argvus-ai uninstall cursor` 或 `argvus-ai uninstall kimi`。不会改动 ARGVUS 之外的安装；但显式指定 Cursor 的命令会识别旧版 Cursor CLI，前提是 `~/.local/bin/agent` 指向 `~/.local/share/cursor-agent/versions/` 内的可执行文件。Hermes 使用其官方卸载程序。Cursor 和 Kimi 的可执行文件会被移除，用户设置、会话和凭据会保留。

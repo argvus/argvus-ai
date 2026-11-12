@@ -39,6 +39,6 @@ argvus-ai launch claude
 
                                                                     ﮟﯿﭨﻮﻟ ﺲﭘﺍﻭ[                                                        ﺲﭩﻨﺠﯾﺍ ﮯﮐ ﺖﻧﺎﮨﺫ ﯽﻋﻮﻨﺼﻣ](/docs/argvus-ai/).
 
-## Uninstalling agents
+## ایجنٹس اَن انسٹال کرنا
 
-`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.
+`argvus-ai list` انسٹال شدہ ایجنٹس دکھاتا ہے۔ `argvus-ai uninstall` چلائیں، ARGVUS کے زیرِ انتظام Hermes، Cursor CLI یا Kimi انسٹالیشن منتخب کریں اور ہٹانے کی تصدیق کریں۔ آپ براہِ راست `argvus-ai uninstall hermes`، `argvus-ai uninstall cursor` یا `argvus-ai uninstall kimi` بھی چلا سکتے ہیں۔ ARGVUS سے باہر کی انسٹالیشنز میں تبدیلی نہیں کی جاتی؛ البتہ مخصوص Cursor کمانڈ پرانی انسٹالیشن کو تب پہچانتی ہے جب `~/.local/bin/agent`، `~/.local/share/cursor-agent/versions/` کے اندر موجود فائل کی طرف اشارہ کرے۔ Hermes کا سرکاری اَن انسٹالر استعمال ہوتا ہے۔ Cursor اور Kimi کے بائنری ہٹائے جاتے ہیں جبکہ صارف کی ترتیبات، سیشنز اور اسناد محفوظ رہتی ہیں۔

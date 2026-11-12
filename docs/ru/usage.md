@@ -35,6 +35,6 @@ argvus-ai launch claude
 
 Специальный профиль Kitty `ai-agents` скрывает вкладки и очищает унаследованные сочетания клавиш для вкладок, разбиений и полноэкранного режима. Сочетания клавиш буфера обмена Ctrl+Shift+C и Ctrl+Shift+V остаются доступными. Его сгенерированная конфигурация находится как `kitty-tui/kitty-ai-agents.conf` в каталоге кэша ARGVUS. Модуль пакета Hyprland плавает и центрирует окна с классом `argvus-ai` размером 1399 × 920.
 
-## Uninstalling agents
+## Удаление агентов
 
-`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.
+Команда `argvus-ai list` показывает установленные агенты. Запустите `argvus-ai uninstall`, выберите управляемую ARGVUS установку Hermes, Cursor CLI или Kimi и подтвердите удаление. Также можно указать агента напрямую: `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` или `argvus-ai uninstall kimi`. Внешние установки не затрагиваются, кроме старой установки Cursor CLI, которую явная команда распознаёт, если `~/.local/bin/agent` указывает внутрь `~/.local/share/cursor-agent/versions/`. Hermes использует официальный деинсталлятор. Исполняемые файлы Cursor и Kimi удаляются, пользовательские настройки, сессии и учётные данные сохраняются.

@@ -35,6 +35,6 @@ argvus-ai launch claude
 
 সমর্পিত কিটি প্রোফাইল `ai-agents` ট্যাব লুকায় এবং ট্যাব, স্প্লিট এবং ফুলস্ক্রিনের জন্য উত্তরাধিকারসূত্রে প্রাপ্য শর্টকাটগুলি মুছে দেয়। ক্লিপবোর্ড শর্টকাটগুলি Ctrl+Shift+C এবং Ctrl+Shift+V ব্যবহারযোগ্য থাকে। এর উত্পন্ন কনফিগারেশন হলো `kitty-tui/kitty-ai-agents.conf` ARGVUS ক্যাশে ডিরেক্টরির অধীনে। প্যাকেজ Hyprland মডিউল ক্লাস `argvus-ai` সহ উইন্ডোগুলো ফ্লোট এবং কেন্দ্রীভূত করে 1399 × 920 আকারে।
 
-## Uninstalling agents
+## এজেন্ট আনইনস্টল
 
-`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.
+`argvus-ai list` ইনস্টল করা এজেন্ট দেখায়। ARGVUS-পরিচালিত Hermes, Cursor CLI বা Kimi ইনস্টলেশন বেছে নিতে `argvus-ai uninstall` চালান, তারপর অপসারণ নিশ্চিত করুন। সরাসরি `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` বা `argvus-ai uninstall kimi` চালানো যায়। ARGVUS-এর বাইরের ইনস্টলেশন অপরিবর্তিত থাকে; তবে নির্দিষ্ট Cursor কমান্ডটি পুরোনো ইনস্টলেশন চিনবে যদি `~/.local/bin/agent` `~/.local/share/cursor-agent/versions/`-এর ভেতরের ফাইলে নির্দেশ করে। Hermes-এর অফিসিয়াল আনইনস্টলার ব্যবহৃত হয়। Cursor ও Kimi-এর বাইনারি সরানো হয়, কিন্তু ব্যবহারকারীর সেটিংস, সেশন ও পরিচয়পত্র রাখা হয়।
