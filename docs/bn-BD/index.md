@@ -15,10 +15,10 @@ description: ARGVUS ডেস্কটপ থেকে প্রোগ্রা�
 
 `ai` ক্যাটালগটি দশটি ARGVUS ভাষায় প্রদান করা হয়েছে এবং শেয়ার করা `argvus i18n` নির্বাচন এবং ইংরেজি ফলব্যাক ব্যবহার করে। অনুবাদগুলি ব্যবহারকারীর কনফিগারেশন না লিখে ডেটা হিসাবে ইনস্টল করা হয়।
 
-## Agent coverage
+## এজেন্ট কভারেজ
 
-ইন্টিগ্রেশন প্যাকেজ-প্রদত্ত OpenCode, Codex এবং Qwen কোড সমর্থন করে; Mise মাধ্যমে ক্লদ কোড; আলাদাভাবে ইনস্টল করার সময় অ্যান্টিগ্র্যাভিটি; এবং হার্মিস, কার্সার সিএলআই এবং কিমি তাদের অফিসিয়াল ইনস্টলারের মাধ্যমে প্রথম লঞ্চে। ARGVUS-পরিচালিত বহিরাগত এজেন্ট তালিকা এবং আনইনস্টল করার জন্য [ব্যবহারের নির্দেশিকা](usage/) ব্যবহার করুন।
+এই ইন্টিগ্রেশনে প্যাকেজের সঙ্গে OpenCode, Codex ও Qwen Code থাকে; Claude Code ব্যবহার করা হয় mise-এর মাধ্যমে; Antigravity আলাদাভাবে ইনস্টল করতে হয়; আর Hermes, Cursor CLI ও Kimi প্রথমবার চালুর সময় তাদের অফিসিয়াল ইনস্টলার দিয়ে ইনস্টল হয়। ARGVUS-পরিচালিত বাহ্যিক এজেন্টের তালিকা দেখা ও সেগুলো আনইনস্টল করার পদ্ধতির জন্য [ব্যবহার নির্দেশিকা](usage/) দেখুন।
 
-## Supported agents
+## সমর্থিত এজেন্ট
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+এই ইন্টিগ্রেশনে প্যাকেজের সঙ্গে OpenCode, Codex ও Qwen Code থাকে; Claude Code ব্যবহার করা হয় mise-এর মাধ্যমে; Antigravity আলাদাভাবে ইনস্টল করতে হয়; আর Hermes, Cursor CLI ও Kimi প্রথমবার চালুর সময় তাদের অফিসিয়াল ইনস্টলার দিয়ে ইনস্টল হয়। ARGVUS-পরিচালিত বাহ্যিক এজেন্টের তালিকা দেখা ও সেগুলো আনইনস্টল করার পদ্ধতির জন্য [ব্যবহার নির্দেশিকা](usage/) দেখুন।

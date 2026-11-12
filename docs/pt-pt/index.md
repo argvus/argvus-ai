@@ -17,4 +17,4 @@ O catálogo `ai` está disponível nos dez idiomas do ARGVUS e usa a seleção c
 
 ## Agentes disponíveis
 
-A integração disponibiliza OpenCode, Codex e Qwen Code através do pacote; Claude Code através do mise; Antigravity quando instalado separadamente; e Hermes, Cursor CLI e Kimi através dos instaladores oficiais na primeira utilização. Consulte o [guia de utilização](usage/) para listar e desinstalar agentes externos geridos pelo ARGVUS.
+A integração suporta o OpenCode, o Codex e o Qwen Code incluídos no pacote, o Claude Code através do mise, o Antigravity quando instalado separadamente e o Hermes, o Cursor CLI e o Kimi, instalados pelos respetivos instaladores oficiais na primeira utilização. Consulte o [guia de utilização](usage/) para saber como listar e desinstalar agentes externos geridos pelo ARGVUS.

@@ -9,10 +9,10 @@ Seçiciyi **SUPER + A** ile açın veya görev çubuğunda mikrofon ve ses kontr
 
 Kurulum [Installation](/docs/argvus-ai/installation/) ve [Kullanım ve sorun giderme](/docs/argvus-ai/usage/) belgelerini okuyun.
 
-## Languages
+## Diller
 
 `ai` kataloğu tüm on ARGVUS dilinde sunulmakta olup ortak `argvus i18n` seçimini ve İngilizce yedeğini kullanır. Çeviriler, kullanıcı yapılandırması yazmadan veri olarak yüklenir.
 
-## Supported agents
+## Desteklenen aracılar
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+Bu entegrasyon; paketle sunulan OpenCode, Codex ve Qwen Code’u, mise aracılığıyla Claude Code’u, ayrıca kurulduğunda Antigravity’yi ve ilk çalıştırmada resmî kurulum programlarıyla yüklenen Hermes, Cursor CLI ve Kimi’yi destekler. ARGVUS’un yönettiği harici ajanları listeleme ve kaldırma hakkında bilgi için [kullanım kılavuzuna](usage/) bakın.

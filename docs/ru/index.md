@@ -8,12 +8,12 @@ description: Открывайте программные агенты с раб�
 
 OpenCode и Codex устанавливаются как зависимости пакета. Claude Code устанавливается через mise от имени вашего пользователя только при первом его выборе. Установка пакета, открытие/отмена селектора или проверка статуса никогда не загружает Claude. Пакет не настраивает аккаунты, ключи API или подписки; следуйте инструкциям аутентификации выбранного агента.
 
-Прочитайте [Установку](/docs/argvus-ai/installation/)] и [Использование и устранение неполадок](/docs/argvus-ai/usage/)].
+Прочитайте [Установку](/docs/argvus-ai/installation/) и [Использование и устранение неполадок](/docs/argvus-ai/usage/).
 
 ## Языки
 
 Каталог `ai` предоставляется на всех десяти языках ARGVUS и использует общий выбор `argvus i18n` с английским вариантом по умолчанию. Переводы устанавливаются как данные без записи пользовательской конфигурации.
 
-## Supported agents
+## Поддерживаемые агенты
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+Интеграция поддерживает OpenCode, Codex и Qwen Code из пакета, Claude Code через mise, Antigravity при отдельной установке, а также Hermes, Cursor CLI и Kimi, которые устанавливаются при первом запуске через официальные установщики. В [руководстве по использованию](usage/) описано, как просматривать список внешних агентов, управляемых ARGVUS, и удалять их.

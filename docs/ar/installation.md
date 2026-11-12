@@ -11,22 +11,22 @@ description:                               .ﻞﻴﻛﻭ ﻞﻛ ﺪﻳﻭﺰﺗ 
 sudo pacman -S argvus-ai
 ```
 
-The package requires  argvus  sudo pacman -U /path/to/package.pkg.tar.zst  build/dist/  .pkg.tar.zst  argvus-ai  make build  `make validate`  `make build`  `argvus-ai`  `.pkg.tar.zst`  `build/dist/`  `sudo pacman -U /path/to/package.pkg.tar.zst`  `argvus` `argvus`, `rofi`, `jq`, `mise`, `opencode` and `openai-codex`; Arch provides `/bin/sh` through `bash`. OpenCode runs as `opencode`, and the `openai-codex` package provides `codex` mise install claude  argvus-appearance  argvus-ai  argvus-taskbar  `argvus-hyprland` `argvus-taskbar`  `argvus-ai`  `argvus-appearance`  `mise install claude`  .
+تتطلب الحزمة argvus sudo pacman -U /path/to/package.pkg.tar.zst build/dist/ .pkg.tar.zst argvus-ai make build `make validate` `make build` `argvus-ai` `.pkg.tar.zst` `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst` `argvus` `argvus`، `rofi`، `jq`، `mise`، `opencode` و`openai-codex`؛ يوفر Arch `/bin/sh` من خلال `bash`. OpenCode يعمل كـ `opencode`، وتوفر الحزمة `openai-codex` `codex` mise تثبيت claude argvus-المظهر argvus-ai argvus-شريط المهام `argvus-hyprland` `argvus-taskbar` `argvus-ai` `argvus-appearance` `mise install claude` .
 
 ##                                                               ﺐﺘﻜﻤﻟﺍ ﺢﻄﺳ ﻞﻣﺎﻜﺗ
 
 
 
-Claude ﺩﻮﻛ .ءﻼ﻿ﻛﻮﻟﺍ ﺖﺒﺜﻳ ﻻ﻿
+Claude ﺩﻮﻛ . ءﻼ﻿ﻛﻮﻟﺍ ﺖﺒﺜﻳ ﻻ﻿
 
 ## ﻝﻭﻷ﻿ﺍ ﻡﺍﺪﺨﺘﺳﻻ﻿ﺍ ﺪﻨﻋ
 
 
 
-## Remove
+## إزالة
 
 ```sh
 sudo pacman -R argvus-ai
 ```
 
-The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
+لا تقوم حزمة ARGVUS AI بتثبيت عوامل خارجية في وقت تثبيت الحزمة. تثبيت Hermes وCursor CLI وKimi عند الإطلاق الأول؛ تظل بيانات المستخدم الخاصة بهم خارج الحزمة. راجع دليل الاستخدام للحصول على تعليمات الإزالة.

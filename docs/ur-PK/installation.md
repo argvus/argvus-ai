@@ -11,7 +11,7 @@ description: argvus-ai ۔ﮯﮨ ﺎﺗﺎﺟ ﺎﯿﮐ ﻢﮨﺍﺮﻓ ﺡﺮﻃ
 sudo pacman -S argvus-ai
 ```
 
-For an unpublished local build, run make validate and make build in the argvus-ai source repository, then install the resulting .pkg.tar.zst from build/dist/ with sudo pacman -U /path/to/package.pkg.tar.zst. Pacman must be able to resolve its dependencies, including the master argvus package.
+غیر مطبوعہ مقامی تعمیر کے لیے، argvus-ai سورس ریپوزٹری میں میک validate اور میک بلڈ کو چلائیں، پھر اس کے نتیجے میں .pkg.tar.zst کو build/dist/ سے sudo pacman -U /path/to/package.pkg.tar.zst. Pacman@@/path/to/package.pkg.tar.zst.@@Q0004 پر انحصار کرنے کے قابل ہونا ضروری ہے۔ argvus پیکیج۔
 
 ## ﻦﺸﯾﺮﮕﯿﭩﻧﺍ ﭖﺎﭨ ﮏﺴﯾﮈ
 
@@ -23,10 +23,10 @@ Claude Code ۔ﮯﺗﻮﮨ ﮟﯿﮩﻧ
 
 Select Claude Code from the Rofi selector or application launcher. The ARGVUS terminal opens and runs  `make validate` `make build`   `argvus-ai`  `.pkg.tar.zst`  `build/dist/`  `sudo pacman -U /path/to/package.pkg.tar.zst`  openai-codex  opencode  bash  /bin/sh  openai-codex  opencode  mise  jq  rofi  `argvus`  `argvus`  `rofi`  `jq`  `mise` `opencode`  `openai-codex`  `/bin/sh`  `bash`  `opencode`  `openai-codex`  `codex`  `argvus-hyprland`  `argvus-taskbar`   `argvus-ai`  `argvus-appearance`  make validate `mise install claude` as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
 
-## Remove
+## ہٹا دیں۔
 
 ```sh
 sudo pacman -R argvus-ai
 ```
 
-The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
+ARGVUS AI پیکیج پیکیج انسٹال کرنے کے وقت بیرونی ایجنٹوں کو انسٹال نہیں کرتا ہے۔ Hermes، Cursor CLI اور Kimi پہلی لانچ پر انسٹال کریں؛ ان کا صارف ڈیٹا پیکیج سے باہر رہتا ہے۔ ہٹانے کی ہدایات کے لیے استعمال گائیڈ دیکھیں۔

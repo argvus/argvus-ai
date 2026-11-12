@@ -30,4 +30,4 @@ sudo pacman -R argvus-ai
 ```
 Модуль Lua, принадлежащий пакету, и записи рабочего стола удаляются, а модуль панели задач скрывается, когда его помощник отсутствует. Стандартная конфигурация Hyprland автоматически перезагружается для удаления привязки. Пользовательские инструменты mise, настройки агента и учетные данные сохраняются. Pacman не удаляет автоматически зависимости агента с помощью этой команды.
 
-The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
+Пакет AI ARGVUS не устанавливает внешние агенты во время установки пакета. Hermes, Cursor CLI и Kimi устанавливаются при первом запуске; их пользовательские данные остаются вне пакета. Инструкции по удалению см. в руководстве по использованию.

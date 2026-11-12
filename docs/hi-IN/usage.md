@@ -11,9 +11,9 @@ description: एजेंट्स का चयन करें, टास्�
 
 ## टास्कबार दृश्यता
 
-Open **Control Center > Appearance > Taskbar > Icons > Optional modules**, toggle **AI Agents**, then **Apply**. The robot belongs to 
+**कंट्रोल सेंटर > उपस्थिति > टास्कबार > आइकन > वैकल्पिक मॉड्यूल** खोलें, **एआई एजेंट** टॉगल करें, फिर **लागू करें**। रोबोट का है
 
-; if its drawer is collapsed, expand the utilities group. The preference is `group/right-2`, defaults to true, and survives regeneration. It controls only the icon: shortcuts and desktop entries remain available. Runtime availability can still hide an enabled icon.
+; यदि इसका दराज ढह गया है, तो उपयोगिता समूह का विस्तार करें। प्राथमिकता `group/right-2` है, डिफ़ॉल्ट सत्य है, और पुनर्जनन से बच जाता है। यह केवल आइकन को नियंत्रित करता है: शॉर्टकट और डेस्कटॉप प्रविष्टियाँ उपलब्ध रहती हैं। रनटाइम उपलब्धता अभी भी एक सक्षम आइकन छिपा सकती है।
 
 ## निदानात्मक कमांड
 
@@ -35,15 +35,15 @@ argvus-ai launch claude
 
 Return to AI Agents.
 
-Agents open in a centered floating Kitty window titled 
+Agents open in a centered floating Kitty window titled
 
-, with an ARGVUS header and footer. Press **Ctrl + E** to close the agent window. This shortcut is reserved by the frame; Esc and Ctrl+C remain available to the agent.
+, ARGVUS शीर्षलेख और पादलेख के साथ। एजेंट विंडो बंद करने के लिए **Ctrl + E** दबाएँ। यह शॉर्टकट फ़्रेम द्वारा आरक्षित है; Esc और Ctrl+C एजेंट के लिए उपलब्ध रहते हैं।
 
-The dedicated Kitty profile 
+The dedicated Kitty profile
 
- hides tabs and clears inherited shortcuts for tabs, splits and fullscreen. Clipboard shortcuts Ctrl+Shift+C and Ctrl+Shift+V remain available. Its generated configuration is `ARGVUS AI Agent` under the ARGVUS cache directory. The package Hyprland module floats and centers windows with class `ai-agents` argvus-ai  `kitty-tui/kitty-ai-agents.conf` `argvus-ai`   at 1399 × 920.
+ टैब छुपाता है और टैब, स्प्लिट्स और फ़ुलस्क्रीन के लिए विरासत में मिले शॉर्टकट साफ़ करता है। क्लिपबोर्ड शॉर्टकट Ctrl+Shift+C और Ctrl+Shift+V उपलब्ध रहते हैं। इसका उत्पन्न कॉन्फ़िगरेशन ARGVUS कैश निर्देशिका के अंतर्गत `ARGVUS AI Agent` है। पैकेज Hyprland मॉड्यूल फ़्लोट करता है और क्लास `ai-agents` argvus-ai `kitty-tui/kitty-ai-agents.conf` `argvus-ai` के साथ 1399 × 920 पर विंडो को केंद्र में रखता है।
 
- for the installed and user paths. for the installed and user paths.(/docs/argvus-ai/).
+ स्थापित और उपयोगकर्ता पथों के लिए। स्थापित और उपयोगकर्ता पथ के लिए। (/docs/argvus-ai/)।
 
 वापस जाएँ[एआई एजेंट्स](/docs/argvus-ai/).
 

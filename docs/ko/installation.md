@@ -30,4 +30,4 @@ sudo pacman -R argvus-ai
 ```
 패키지 소유 Lua 모듈과 데스크톱 항목이 제거되며, 도우미가 없으면 작업 표시줄 모듈이 숨겨집니다. 표준 Hyprland 구성은 바인드를 제거하기 위해 자동으로 다시 로드됩니다. 사용자 소유의 mise 도구, 에이전트 설정 및 자격 증명은 유지됩니다. Pacman은 이 명령으로 에이전트 종속성을 자동으로 제거하지 않습니다.
 
-The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
+ARGVUS AI 패키지는 패키지 설치 시 외부 에이전트를 설치하지 않습니다. Hermes, Cursor CLI 및 Kimi는 처음 실행 시 설치됩니다. 사용자 데이터는 패키지 외부에 남아 있습니다. 제거 지침은 사용 설명서를 참조하세요.

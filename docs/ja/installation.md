@@ -30,4 +30,4 @@ sudo pacman -R argvus-ai
 ```
 パッケージ所有のLuaモジュールとデスクトップエントリは削除され、ヘルパーがない場合、タスクバーモジュールは非表示になります。標準のHyprland設定は、バインドを削除するために自動的にリロードされます。ユーザー所有のmiseツール、エージェント設定、および資格情報は保持されます。Pacmanは、このコマンドではエージェントの依存関係を自動的に削除しません。
 
-The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
+ARGVUS AI パッケージは、パッケージのインストール時に外部エージェントをインストールしません。 Hermes、Cursor CLI、および Kimi は初回起動時にインストールされます。ユーザーデータはパッケージの外に残ります。削除手順については、使用ガイドを参照してください。

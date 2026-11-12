@@ -15,10 +15,10 @@ description: افتح وكلاء البرمجة من سطح مكتب ARGVUS.
 
 يتم توفير كتالوج `ai` بجميع لغات ARGVUS العشر ويستخدم تحديد `argvus i18n` المشترك والرجوع باللغة الإنجليزية. يتم تثبيت الترجمات كبيانات دون كتابة تكوين المستخدم.
 
-## Agent coverage
+## تغطية الوكيل
 
-يدعم التكامل OpenCode وCodex وQwen Code المتوفرة في الحزمة؛ كلود كود من خلال ميز؛ مقاومة الجاذبية عند تركيبها بشكل منفصل؛ وHermes وCursor CLI وKimi من خلال أدوات التثبيت الرسمية الخاصة بهم عند الإطلاق الأول. استخدم [دليل الاستخدام](usage/) لإدراج الوكلاء الخارجيين الذين يديرهم ARGVUS وإلغاء تثبيتهم.
+يدعم هذا التكامل OpenCode وCodex وQwen Code المرفقة بالحزمة، وClaude Code عبر mise، وAntigravity عند تثبيته بصورة مستقلة، إضافةً إلى Hermes وCursor CLI وKimi، التي تُثبَّت عبر أدواتها الرسمية عند التشغيل الأول. راجع [دليل الاستخدام](usage/) لمعرفة كيفية عرض الوكلاء الخارجيين الذين يديرهم ARGVUS وإلغاء تثبيتهم.
 
-## Supported agents
+## الوكلاء المعتمدون
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+يدعم هذا التكامل OpenCode وCodex وQwen Code المرفقة بالحزمة، وClaude Code عبر mise، وAntigravity عند تثبيته بصورة مستقلة، إضافةً إلى Hermes وCursor CLI وKimi، التي تُثبَّت عبر أدواتها الرسمية عند التشغيل الأول. راجع [دليل الاستخدام](usage/) لمعرفة كيفية عرض الوكلاء الخارجيين الذين يديرهم ARGVUS وإلغاء تثبيتهم.

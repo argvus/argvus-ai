@@ -17,4 +17,4 @@ Danh mục `ai` được cung cấp bằng tất cả mười ngôn ngữ ARGVUS
 
 ## Đại lý được hỗ trợ
 
-Việc tích hợp hỗ trợ OpenCode, Codex và Qwen Code do gói cung cấp; Mã Claude thông qua sự khốn khổ; Phản lực hấp dẫn khi lắp đặt riêng biệt; và Hermes, Cursor CLI và Kimi thông qua trình cài đặt chính thức của họ trong lần ra mắt đầu tiên. Sử dụng [hướng dẫn sử dụng](usage/) để liệt kê và gỡ cài đặt các tác nhân bên ngoài do ARGVUS quản lý.
+Tích hợp này hỗ trợ OpenCode, Codex và Qwen Code có trong gói; Claude Code thông qua mise; Antigravity nếu được cài riêng; cùng Hermes, Cursor CLI và Kimi được cài bằng trình cài đặt chính thức khi chạy lần đầu. Xem [hướng dẫn sử dụng](usage/) để biết cách liệt kê và gỡ cài đặt các tác nhân bên ngoài do ARGVUS quản lý.

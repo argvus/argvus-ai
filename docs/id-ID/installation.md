@@ -21,9 +21,9 @@ Gunakan paket `argvus-hyprland` dan `argvus-taskbar` yang diperbarui. Hyprland m
 
 ## Claude Code pada penggunaan pertama
 
-Select Claude Code from the Rofi selector or application launcher. The ARGVUS terminal opens and runs 
+Pilih Claude Code dari pemilih Rofi atau peluncur aplikasi. Terminal ARGVUS terbuka dan berjalan
 
- as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
+ sebagai pengguna reguler Anda jika tidak ada versi terinstal yang ditemukan. Akses jaringan diperlukan untuk instalasi pertama ini. Pembungkusnya menyelesaikan executable yang diinstal dan menambahkan direktorinya ke proses yang diluncurkan PATH; itu tidak mengedit file startup shell atau menginstal sebagai root. Peluncuran kemudian menggunakan kembali instalasi.
 
 ## Hapus
 
@@ -33,4 +33,4 @@ sudo pacman -R argvus-ai
 
 Modul Lua yang dimiliki paket dan entri desktop dihapus, dan modul taskbar menyembunyikan ketika pembantunya tidak ada. Konfigurasi standar Hyprland memuat ulang secara otomatis untuk menghapus bind. Alat mise yang dimiliki pengguna, pengaturan agen, dan kredensial dipertahankan. Pacman tidak secara otomatis menghapus dependensi agen dengan perintah ini.
 
-The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
+Paket AI ARGVUS tidak menginstal agen eksternal pada waktu instalasi paket. Hermes, Cursor CLI dan Kimi diinstal pada peluncuran pertama; data pengguna mereka tetap berada di luar paket. Lihat panduan penggunaan untuk instruksi penghapusan.

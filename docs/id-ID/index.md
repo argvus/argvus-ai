@@ -17,4 +17,4 @@ Katalog `ai` disediakan dalam sepuluh bahasa ARGVUS dan menggunakan pilihan `arg
 
 ## Agen yang didukung
 
-Integrasi ini mendukung OpenCode, Codex dan Qwen Code yang disediakan paket; Claude Code hingga mise; Antigravity bila dipasang secara terpisah; dan Hermes, Cursor CLI dan Kimi melalui penginstal resminya pada peluncuran pertama. Gunakan [panduan penggunaan](usage/) untuk membuat daftar dan menghapus instalasi agen eksternal yang dikelola ARGVUS.
+Integrasi ini mendukung OpenCode, Codex, dan Qwen Code yang disertakan dalam paket; Claude Code melalui mise; Antigravity jika dipasang secara terpisah; serta Hermes, Cursor CLI, dan Kimi yang dipasang lewat installer resminya saat pertama kali dijalankan. Lihat [panduan penggunaan](usage/) untuk melihat daftar dan menghapus agen eksternal yang dikelola ARGVUS.
