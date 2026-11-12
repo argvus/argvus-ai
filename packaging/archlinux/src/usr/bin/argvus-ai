@@ -26,7 +26,11 @@ resolve() {
     agy)
       executable=$(command -v agy) || executable=${HOME:?}/.local/bin/agy
       ;;
-    hermes|kimi|cursor)
+    kimi)
+      executable=$(command -v kimi) || executable=${HOME:?}/.kimi-code/bin/kimi
+      if [ ! -x "$executable" ]; then executable=$HOME/.local/bin/kimi; fi
+      ;;
+    hermes|cursor)
       command_name=$1
       [ "$1" != cursor ] || command_name=agent
       if [ "$1" = cursor ] && [ -x "${HOME:?}/.local/bin/agent" ]; then
@@ -80,13 +84,13 @@ run_external() {
       kimi) url=https://code.kimi.com/kimi-code/install.sh ;;
       *) return 2 ;;
     esac
-    installer=$(mktemp "${TMPDIR:-/tmp}/argvus-ai-install.XXXXXXXX") || { message "$(translate install_error)"; return 1; }
-    if ! curl -fsSL "$url" -o "$installer"; then rm -f "$installer"; message "$(translate install_error)"; return 1; fi
+    installer=$(mktemp "${TMPDIR:-/tmp}/argvus-ai-install.XXXXXXXX") || { message "$(translate external_install_error agent="$external_agent")"; return 1; }
+    if ! curl -fsSL "$url" -o "$installer"; then rm -f "$installer"; message "$(translate external_install_error agent="$external_agent")"; return 1; fi
     result=0
     bash "$installer" || result=$?
     rm -f "$installer"
-    if [ "$result" -ne 0 ]; then message "$(translate install_error)"; return "$result"; fi
-    executable=$(resolve "$external_agent") || { message "$(translate install_error)"; return 1; }
+    if [ "$result" -ne 0 ]; then message "$(translate external_install_error agent="$external_agent")"; return "$result"; fi
+    executable=$(resolve "$external_agent") || { message "$(translate external_install_error agent="$external_agent")"; return 1; }
   fi
   PATH="${executable%/*}:$PATH"
   export PATH

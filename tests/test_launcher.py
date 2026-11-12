@@ -76,6 +76,15 @@ class Launcher(unittest.TestCase):
                 self.assertNotEqual(self.run_helper("run-external", name).returncode, 0)
                 self.env["FAKE_UID"] = "1000"
 
+    def test_kimi_native_install_is_reused(self):
+        path = self.root / ".kimi-code/bin/kimi"
+        path.parent.mkdir(parents=True)
+        path.write_text("#!/bin/sh\nexit 0\n")
+        path.chmod(0o755)
+        self.stub("curl", 'exit 99')
+        self.assertIn("kimi", self.run_helper("list").stdout)
+        self.assertEqual(self.run_helper("run-external", "kimi").returncode, 0)
+
     def test_empty_menu(self):
         (self.root / "mise").unlink()
         self.assertNotEqual(self.run_helper("menu").returncode, 0)

@@ -9,5 +9,6 @@
   "root_install": "以用户身份运行安装，无需 sudo。",
   "mise_missing": "使用 Pacman 安装或更新 mise 软件包。",
   "install_error": "克劳德代码安装或解析失败。检查错误并更新错误。",
-  "footer.close": "Ctrl + e - 关闭"
+  "footer.close": "Ctrl + e - 关闭",
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
 }

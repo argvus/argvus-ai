@@ -42,3 +42,5 @@ Google Antigravity CLI (`agy`) must be installed separately using the [official 
 Qwen Code is provided by the `qwen-code` Arch package. Select it from the menu or run `argvus-ai launch qwen`.
 
 Hermes, Cursor CLI and Kimi Code install using their official installers on first launch as the current user. Select them in the menu or run `argvus-ai launch hermes`, `argvus-ai launch cursor` or `argvus-ai launch kimi`. Authentication and updates are managed by each agent.
+
+Kimi installations in `~/.kimi-code/bin/kimi` are detected without changing the graphical PATH. If installation fails, check the terminal output.

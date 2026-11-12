@@ -9,5 +9,6 @@
   "root_install": "Exécutez l'installation en tant qu'utilisateur, sans sudo.",
   "mise_missing": "Installez ou mettez à jour le package mise avec Pacman.",
   "install_error": "L'installation ou la résolution de Claude Code a échoué. Vérifiez les erreurs de mise et mettez à jour la mise.",
-  "footer.close": "Ctrl + e - Fermer"
+  "footer.close": "Ctrl + e - Fermer",
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
 }

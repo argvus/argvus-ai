@@ -9,5 +9,6 @@
   "root_install": "Ejecute la instalación como usuario, sin sudo.",
   "mise_missing": "Instale o actualice el paquete mise con Pacman.",
   "install_error": "La instalación o resolución de Claude Code falló. Verifique los errores de mise y actualice mise.",
-  "footer.close": "Ctrl + e - Cerrar"
+  "footer.close": "Ctrl + e - Cerrar",
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
 }

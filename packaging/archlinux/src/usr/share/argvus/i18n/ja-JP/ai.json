@@ -9,5 +9,6 @@
   "root_install": "sudo を使用せずに、ユーザーとしてインストールを実行します。",
   "mise_missing": "Pacman を使用して mise パッケージをインストールまたは更新します。",
   "install_error": "クロード コードのインストールまたは解決に失敗しました。ミスエラーを確認し、ミスを更新します。",
-  "footer.close": "Ctrl + e - 閉じる"
+  "footer.close": "Ctrl + e - 閉じる",
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
 }

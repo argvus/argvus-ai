@@ -9,5 +9,6 @@
   "root_install": "Запустите установку от имени пользователя, без sudo.",
   "mise_missing": "Установите или обновите пакет Mise с помощью Pacman.",
   "install_error": "Установка или разрешение Claude Code не удалось. Проверьте ошибки MISE и обновите MISE.",
-  "footer.close": "Ctrl + e - Закрыть"
+  "footer.close": "Ctrl + e - Закрыть",
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
 }

@@ -9,5 +9,6 @@
   "root_install": "sudo 없이 사용자로 설치를 실행합니다.",
   "mise_missing": "Pacman을 사용하여 mise 패키지를 설치하거나 업데이트합니다.",
   "install_error": "클로드 코드 설치 또는 해결에 실패했습니다. 미스 오류를 확인하고 미스 업데이트를 해보세요.",
-  "footer.close": "Ctrl + e - 닫기"
+  "footer.close": "Ctrl + e - 닫기",
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
 }
