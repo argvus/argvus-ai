@@ -32,9 +32,9 @@ class Launcher(unittest.TestCase):
         return subprocess.run([str(HELPER), *args], env=self.env, capture_output=True, text=True)
 
     def test_availability(self):
-        for commands in [(), ("opencode",), ("codex",), ("claude",), ("opencode", "codex", "claude")]:
+        for commands in [(), ("opencode",), ("codex",), ("claude",), ("opencode", "codex", "claude"), ("agy",)]:
             with self.subTest(commands=commands):
-                for name in ("opencode", "codex", "claude"):
+                for name in ("opencode", "codex", "claude", "agy"):
                     (self.root / name).unlink(missing_ok=True)
                 for name in commands:
                     self.stub(name)
@@ -43,12 +43,23 @@ class Launcher(unittest.TestCase):
                 self.assertEqual(result.stdout.splitlines(), list(commands))
 
     def test_menu_launches_each_agent(self):
-        for label, command in [("OpenCode", "opencode"), ("OpenAI Codex", "codex"), ("Claude Code", "claude")]:
+        for label, command in [("OpenCode", "opencode"), ("OpenAI Codex", "codex"), ("Claude Code", "claude"), ("Google Antigravity", "agy")]:
             self.stub(command)
             self.env["SELECTION"] = label
             self.assertEqual(self.run_helper("menu").returncode, 0)
             expected = ["tui-terminal", "--class", "argvus-ai", "--term", "kitty", "--profile", "ai-agents", "--title", "ARGVUS AI Agent", "--", "argvus", "tui-terminal", "--frame", "AI Agent", "footer.close"] + ([str(HELPER), "run-claude"] if command == "claude" else [str(self.root / command)])
             self.assertEqual((self.root / "log").read_text().splitlines(), expected)
+
+    def test_agy_default_install_and_unavailable(self):
+        self.assertNotEqual(self.run_helper("launch", "agy").returncode, 0)
+        path = self.root / ".local/bin/agy"
+        path.parent.mkdir(parents=True)
+        path.write_text("#!/bin/sh\nexit 0\n")
+        self.assertNotIn("agy", self.run_helper("list").stdout)
+        path.chmod(0o755)
+        self.assertIn("agy", self.run_helper("list").stdout)
+        self.assertEqual(self.run_helper("launch", "agy").returncode, 0)
+        self.assertEqual((self.root / "log").read_text().splitlines()[-1], str(path))
 
     def test_empty_menu(self):
         (self.root / "mise").unlink()

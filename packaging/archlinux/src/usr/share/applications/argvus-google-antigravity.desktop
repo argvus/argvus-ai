@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Google Antigravity
+Comment=Open Google Antigravity in the ARGVUS terminal
+Comment[pt_BR]=Abrir Google Antigravity no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch agy
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;

@@ -36,3 +36,5 @@ Return to [AI Agents](/docs/argvus-ai/).
 Agents open in a centered floating Kitty window titled `ARGVUS AI Agent`, with an ARGVUS header and footer. Press **Ctrl + E** to close the agent window. This shortcut is reserved by the frame; Esc and Ctrl+C remain available to the agent.
 
 The dedicated Kitty profile `ai-agents` hides tabs and clears inherited shortcuts for tabs, splits and fullscreen. Clipboard shortcuts Ctrl+Shift+C and Ctrl+Shift+V remain available. Its generated configuration is `kitty-tui/kitty-ai-agents.conf` under the ARGVUS cache directory. The package Hyprland module floats and centers windows with class `argvus-ai` at 1399 × 920.
+
+Google Antigravity CLI (`agy`) must be installed separately using the [official instructions](https://antigravity.google/docs/getting-started?tab=cli). It is detected in the graphical PATH or `~/.local/bin/agy`. Launch it with `argvus-ai launch agy`.

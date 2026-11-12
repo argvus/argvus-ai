@@ -69,7 +69,7 @@ class Integration(unittest.TestCase):
                 self.assertEqual(result.returncode, 0, (result.stdout + result.stderr)[-2000:])
 
     def test_desktop_entries(self):
-        for name, agent in [("opencode", "opencode"), ("openai-codex", "codex"), ("claude-code", "claude")]:
+        for name, agent in [("opencode", "opencode"), ("openai-codex", "codex"), ("claude-code", "claude"), ("google-antigravity", "agy")]:
             entry = (PAYLOAD / f"usr/share/applications/argvus-{name}.desktop").read_text()
             self.assertIn(f"Exec=argvus-ai launch {agent}\n", entry)
             self.assertIn("Terminal=false\n", entry)

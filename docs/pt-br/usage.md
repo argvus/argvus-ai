@@ -36,3 +36,5 @@ Voltar para [Agentes de IA](/pt/docs/argvus-ai/).
 Os agentes abrem em uma janela Kitty flutuante e centralizada com título `ARGVUS AI Agent`, cabeçalho ARGVUS e rodapé. Pressione **Ctrl + E** para fechar a janela do agente. A moldura reserva esse atalho; Esc e Ctrl+C continuam disponíveis para o agente.
 
 O perfil Kitty dedicado `ai-agents` oculta as abas e remove os atalhos herdados de abas, divisões e tela cheia. Os atalhos de clipboard Ctrl+Shift+C e Ctrl+Shift+V continuam disponíveis. A configuração gerada fica em `kitty-tui/kitty-ai-agents.conf` no cache ARGVUS. O módulo Hyprland do pacote abre a classe `argvus-ai` em janela flutuante centralizada de 1399 × 920.
+
+Instale o Google Antigravity CLI (`agy`) separadamente conforme as [instruções oficiais](https://antigravity.google/docs/getting-started?tab=cli). Ele é detectado no PATH da sessão gráfica ou em `~/.local/bin/agy`. Execute `argvus-ai launch agy` para abri-lo.

@@ -13,3 +13,5 @@ Documentation: [English](docs/en/index.md) · [Português brasileiro](docs/pt-br
 Agents run in a centered floating Kitty window titled `ARGVUS AI Agent`, with an ARGVUS frame and a localized **Ctrl + E** close hint. Closing the frame terminates its child agent.
 
 The dedicated `ai-agents` Kitty profile hides tabs and disables inherited tab, split and fullscreen shortcuts. It keeps clipboard shortcuts and writes its own runtime configuration under the ARGVUS cache.
+
+Google Antigravity CLI (`agy`) is installed separately using the [official instructions](https://antigravity.google/docs/getting-started?tab=cli). The selector detects it in PATH or `~/.local/bin/agy`.
