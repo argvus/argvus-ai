@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Instalasi
 description: Pasang argvus-ai dan pahami bagaimana setiap agen disediakan.
 ---
 
@@ -25,7 +25,7 @@ Select Claude Code from the Rofi selector or application launcher. The ARGVUS te
 
  as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
 
-## Remove
+## Hapus
 
 ```sh
 sudo pacman -R argvus-ai

@@ -1,5 +1,5 @@
 ---
-title: AI Agents
+title: Đại lý AI
 description: Mở tác nhân lập trình từ máy tính để bàn ARGVUS.
 ---
 
@@ -15,6 +15,6 @@ OpenCode và Codex được cài đặt dưới dạng gói phụ thuộc. Mã C
 
 Danh mục `ai` được cung cấp bằng tất cả mười ngôn ngữ ARGVUS và sử dụng lựa chọn `argvus i18n` được chia sẻ và dự phòng bằng tiếng Anh. Bản dịch được cài đặt dưới dạng dữ liệu mà không cần ghi cấu hình người dùng.
 
-## Supported agents
+## Đại lý được hỗ trợ
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+Việc tích hợp hỗ trợ OpenCode, Codex và Qwen Code do gói cung cấp; Mã Claude thông qua sự khốn khổ; Phản lực hấp dẫn khi lắp đặt riêng biệt; và Hermes, Cursor CLI và Kimi thông qua trình cài đặt chính thức của họ trong lần ra mắt đầu tiên. Sử dụng [hướng dẫn sử dụng](usage/) để liệt kê và gỡ cài đặt các tác nhân bên ngoài do ARGVUS quản lý.

@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: التثبيت
 description:                               .ﻞﻴﻛﻭ ﻞﻛ ﺪﻳﻭﺰﺗ ﻢﺘﻳ ﻒﻴﻛ ﻢﻬﻓﺍﻭ argvus-ai ﺖﻴﺒﺜﺘﺑ ﻢﻗ
 ---
 

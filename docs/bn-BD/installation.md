@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: ইনস্টলেশন
 description: argvus-ai ইনস্টল করুন এবং বুঝুন প্রতিটি এজেন্ট কীভাবে প্রদান করা হয়।
 ---
 

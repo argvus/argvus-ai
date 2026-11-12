@@ -25,7 +25,7 @@ Güncellenmiş `argvus-appearance` projektör, görev çubuğu modülünü korur
 
 Rofi seçicisinden veya uygulama başlatıcısından Claude Code'u seçin. ARGVUS terminali açılır ve yüklü bir sürüm bulunamazsa `mise install claude`'yu normal kullanıcı olarak çalıştırır. Bu ilk kurulum için ağ erişimi gereklidir. Sarıcı, yüklü yürütülebilir dosyayı çözer ve başlatılan sürecin PATH'ine dizinini ekler; kabuk başlangıç dosyalarını düzenlemez veya root olarak kurulum yapmaz. Daha sonraki başlatmalar kurulumu yeniden kullanır.
 
-## Remove
+## Kaldır
 
 ```sh
 sudo pacman -R argvus-ai

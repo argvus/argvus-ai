@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Installation
 description: Installez argvus-ai et comprenez comment chaque agent est fourni.
 ---
 ## Installer le paquet

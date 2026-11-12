@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Cài đặt
 description: Cài đặt argvus-ai và tìm hiểu cách mỗi tác nhân được cung cấp.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: تنصیب
 description: argvus-ai ۔ﮯﮨ ﺎﺗﺎﺟ ﺎﯿﮐ ﻢﮨﺍﺮﻓ ﺡﺮﻃ ﺲﮐ ﻮﮐ ﭧﻨﺠﯾﺍ ﺮﮨ ﮧﮐ ﮟﯿﮭﺠﻤﺳ ﺭﻭﺍ ﮟﯾﺮﮐ ﻝﺎﭩﺴﻧﺍ
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Usage and troubleshooting
+title: Penggunaan dan pemecahan masalah
 description: Pilih agen, kontrol ikon taskbar dan diagnosa integrasi yang hilang.
 ---
 

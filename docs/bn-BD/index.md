@@ -17,7 +17,7 @@ description: ARGVUS ডেস্কটপ থেকে প্রোগ্রা�
 
 ## Agent coverage
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+ইন্টিগ্রেশন প্যাকেজ-প্রদত্ত OpenCode, Codex এবং Qwen কোড সমর্থন করে; Mise মাধ্যমে ক্লদ কোড; আলাদাভাবে ইনস্টল করার সময় অ্যান্টিগ্র্যাভিটি; এবং হার্মিস, কার্সার সিএলআই এবং কিমি তাদের অফিসিয়াল ইনস্টলারের মাধ্যমে প্রথম লঞ্চে। ARGVUS-পরিচালিত বহিরাগত এজেন্ট তালিকা এবং আনইনস্টল করার জন্য [ব্যবহারের নির্দেশিকা](usage/) ব্যবহার করুন।
 
 ## Supported agents
 

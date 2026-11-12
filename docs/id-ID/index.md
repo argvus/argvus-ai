@@ -1,5 +1,5 @@
 ---
-title: AI Agents
+title: Agen AI
 description: Buka agen pemrograman dari desktop ARGVUS.
 ---
 
@@ -15,6 +15,6 @@ Baca [Instalasi](/docs/argvus-ai/installation/) dan [Penggunaan dan pemecahan ma
 
 Katalog `ai` disediakan dalam sepuluh bahasa ARGVUS dan menggunakan pilihan `argvus i18n` bersama dan fallback bahasa Inggris. Terjemahan diinstal sebagai data tanpa menulis konfigurasi pengguna.
 
-## Supported agents
+## Agen yang didukung
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+Integrasi ini mendukung OpenCode, Codex dan Qwen Code yang disediakan paket; Claude Code hingga mise; Antigravity bila dipasang secara terpisah; dan Hermes, Cursor CLI dan Kimi melalui penginstal resminya pada peluncuran pertama. Gunakan [panduan penggunaan](usage/) untuk membuat daftar dan menghapus instalasi agen eksternal yang dikelola ARGVUS.

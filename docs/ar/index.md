@@ -17,7 +17,7 @@ description: افتح وكلاء البرمجة من سطح مكتب ARGVUS.
 
 ## Agent coverage
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+يدعم التكامل OpenCode وCodex وQwen Code المتوفرة في الحزمة؛ كلود كود من خلال ميز؛ مقاومة الجاذبية عند تركيبها بشكل منفصل؛ وHermes وCursor CLI وKimi من خلال أدوات التثبيت الرسمية الخاصة بهم عند الإطلاق الأول. استخدم [دليل الاستخدام](usage/) لإدراج الوكلاء الخارجيين الذين يديرهم ARGVUS وإلغاء تثبيتهم.
 
 ## Supported agents
 

@@ -15,6 +15,6 @@ description: ARGVUS ڈیسک ٹاپ سے پروگرامنگ ایجنٹس کھو�
 
 `ai` کیٹلاگ تمام دس ARGVUS زبانوں میں فراہم کیا گیا ہے اور مشترکہ `argvus i18n` انتخاب اور انگریزی فال بیک کا استعمال کرتا ہے۔ ترجمہ صارف کنفیگریشن لکھے بغیر ڈیٹا کے طور پر انسٹال کیا جاتا ہے۔
 
-## Supported agents
+## معاون ایجنٹ
 
-The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+انضمام پیکج فراہم کردہ اوپن کوڈ، کوڈیکس اور کیوین کوڈ کو سپورٹ کرتا ہے۔ غلط کے ذریعے کلاڈ کوڈ؛ الگ سے انسٹال ہونے پر کشش ثقل؛ اور ہرمیس، کرسر CLI اور Kimi پہلی لانچ پر اپنے آفیشل انسٹالرز کے ذریعے۔ ARGVUS کے زیر انتظام بیرونی ایجنٹوں کی فہرست بنانے اور ان انسٹال کرنے کے لیے [استعمال گائیڈ](usage/) استعمال کریں۔
