@@ -4,11 +4,17 @@
   "terminal_error": "Não foi possível abrir o terminal ARGVUS",
   "empty": "Nenhum agente de IA disponível no PATH da sessão gráfica",
   "menu_error": "Não foi possível abrir o menu de agentes",
-  "usage": "Uso: argvus-ai menu | list | status [--check] | launch opencode|codex|claude",
+  "usage": "Uso: argvus-ai menu | list | status [--check] | launch AGENTE | uninstall [hermes|cursor|kimi]",
   "unavailable": "Agente indisponível: {agent}. O Claude Code é instalado pelo mise ao ser selecionado; em caso de falha, verifique o acesso à rede e os erros do mise.",
   "root_install": "Execute a instalação como usuário, sem sudo.",
   "mise_missing": "Instale ou atualize o pacote mise pelo Pacman.",
   "install_error": "Falha na instalação ou resolução do Claude Code. Verifique os erros do mise e atualize o mise.",
   "footer.close": "Ctrl + e - Fechar",
-  "external_install_error": "Falha na instalação ou localização do agente {agent}. Verifique os erros no terminal."
+  "external_install_error": "Falha na instalação ou localização do agente {agent}. Verifique os erros no terminal.",
+  "managed_record_error": "Não foi possível verificar o registro de instalação gerenciada pelo ARGVUS.",
+  "unmanaged_agent": "{agent} não foi instalado pelo ARGVUS e não foi alterado.",
+  "no_managed_agents": "Não há agentes externos gerenciados pelo ARGVUS para desinstalar.",
+  "uninstall_title": "Desinstalar agente gerenciado pelo ARGVUS",
+  "confirm_uninstall": "Confirmar desinstalação",
+  "cancel": "Cancelar"
 }

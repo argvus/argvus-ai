@@ -32,3 +32,5 @@ sudo pacman -R argvus-ai
 ```
 
 Modul Lua yang dimiliki paket dan entri desktop dihapus, dan modul taskbar menyembunyikan ketika pembantunya tidak ada. Konfigurasi standar Hyprland memuat ulang secara otomatis untuk menghapus bind. Alat mise yang dimiliki pengguna, pengaturan agen, dan kredensial dipertahankan. Pacman tidak secara otomatis menghapus dependensi agen dengan perintah ini.
+
+The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.

@@ -30,3 +30,5 @@ sudo pacman -R argvus-ai
 ```
 
 Module Lua thuộc sở hữu gói và các mục nhập trên máy tính để bàn đã bị xóa, và module thanh tác vụ sẽ ẩn khi trợ lý của nó vắng mặt. Cấu hình Hyprland tiêu chuẩn tự động tải lại để xóa liên kết. Các công cụ mise, cài đặt đại lý và chứng thực do người dùng sở hữu được giữ lại. Pacman không tự động xóa các phụ thuộc của đại lý với lệnh này.
+
+The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.

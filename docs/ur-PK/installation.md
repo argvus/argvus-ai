@@ -28,3 +28,5 @@ Select Claude Code from the Rofi selector or application launcher. The ARGVUS te
 ```sh
 sudo pacman -R argvus-ai
 ```
+
+The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.

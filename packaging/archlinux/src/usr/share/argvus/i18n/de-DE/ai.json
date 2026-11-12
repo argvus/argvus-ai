@@ -10,5 +10,11 @@
   "mise_missing": "Installieren oder aktualisieren Sie das Mise-Paket mit Pacman.",
   "install_error": "Die Installation oder Auflösung von Claude Code ist fehlgeschlagen. Überprüfen Sie Mise-Fehler und aktualisieren Sie Mise.",
   "footer.close": "Ctrl + e – Schließen",
-  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors.",
+  "managed_record_error": "Could not verify the ARGVUS-managed installation record.",
+  "unmanaged_agent": "{agent} was not installed by ARGVUS and was left untouched.",
+  "no_managed_agents": "No ARGVUS-managed external agents are available to uninstall.",
+  "uninstall_title": "Uninstall an ARGVUS-managed agent",
+  "confirm_uninstall": "Confirm uninstall",
+  "cancel": "Cancel"
 }

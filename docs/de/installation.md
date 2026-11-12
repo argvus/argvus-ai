@@ -29,3 +29,5 @@ Wählen Sie Claude Code im Rofi-Auswahlmenü oder Anwendungsstarter aus. Das ARG
 sudo pacman -R argvus-ai
 ```
 Das paket-eigene Lua-Modul und die Desktop-Einträge werden entfernt, und das Taskleistenmodul versteckt sich, wenn sein Helfer fehlt. Die Standard-Hyprland-Konfiguration lädt automatisch neu, um die Bindung zu entfernen. Benutzer-eigene mise-Tools, Agenteneinstellungen und Anmeldedaten werden beibehalten. Pacman entfernt bei diesem Befehl nicht automatisch die Agentenabhängigkeiten.
+
+Das ARGVUS-AI-Paket installiert keine externen Agenten bei der Paketinstallation. Hermes, Cursor CLI und Kimi werden beim ersten Start installiert; Benutzerdaten bleiben außerhalb des Pakets. Anweisungen zum Entfernen stehen im Nutzungshandbuch.

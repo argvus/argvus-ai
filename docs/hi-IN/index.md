@@ -14,3 +14,7 @@ description: ARGVUS डेस्कटॉप से प्रोग्राम�
 ## भाषाएँ
 
 `ai` कैटलॉग सभी दस ARGVUS भाषाओं में प्रदान किया गया है और साझा `argvus i18n` चयन और अंग्रेजी फ़ॉलबैक का उपयोग करता है। उपयोगकर्ता कॉन्फ़िगरेशन लिखे बिना अनुवाद डेटा के रूप में स्थापित किए जाते हैं।
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

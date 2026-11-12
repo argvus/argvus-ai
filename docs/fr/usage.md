@@ -34,3 +34,7 @@ Revenir à [AI Agents](/docs/argvus-ai/).
 Les agents s'ouvrent dans une fenêtre flottante centrée de Kitty intitulée `ARGVUS AI Agent`, avec un en-tête et un pied de page ARGVUS. Appuyez sur **Ctrl + E** pour fermer la fenêtre de l'agent. Ce raccourci est réservé par le cadre ; Esc et Ctrl+C restent disponibles pour l'agent.
 
 Le profil dédié Kitty `ai-agents` masque les onglets et supprime les raccourcis hérités pour les onglets, les divisions et le plein écran. Les raccourcis du presse-papiers Ctrl+Shift+C et Ctrl+Shift+V restent disponibles. Sa configuration générée est `kitty-tui/kitty-ai-agents.conf` sous le répertoire de cache ARGVUS. Le module du package Hyprland fait flotter et centre les fenêtres avec la classe `argvus-ai` à 1399 × 920.
+
+## Désinstaller les agents
+
+`argvus-ai list` affiche les agents installés. Exécutez `argvus-ai uninstall` pour sélectionner une installation Hermes, Cursor CLI ou Kimi gérée par ARGVUS, puis confirmez la suppression. Vous pouvez aussi exécuter `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` ou `argvus-ai uninstall kimi`. Les installations externes restent intactes, sauf une ancienne installation Cursor CLI reconnue par la commande explicite si `~/.local/bin/agent` pointe dans `~/.local/share/cursor-agent/versions/`. Hermes utilise son désinstalleur officiel. Les binaires Cursor et Kimi sont supprimés, tandis que les paramètres, sessions et identifiants utilisateur sont conservés.

@@ -30,3 +30,5 @@ sudo pacman -R argvus-ai
 ```
 
 প্যাকেজ-স্বত্বাধীন Lua মডিউল এবং ডেস্কটপ এন্ট্রিগুলি সরানো হয়েছে, এবং টাস্কবার মডিউলটি লুকিয়ে যায় যখন তার হেল্পার অনুপস্থিত থাকে। স্ট্যান্ডার্ড Hyprland কনফিগারেশনটি বাইন্ড সরানোর জন্য স্বয়ংক্রিয়ভাবে পুনরায় লোড হয়। ব্যবহারকারীর স্বত্বাধীন mise টুলস, এজেন্ট সেটিংস এবং ক্রেডেনশিয়ালগুলি সংরক্ষণ করা হয়। Pacman এই কমান্ড দিয়ে স্বয়ংক্রিয়ভাবে এজেন্ট নির্ভরতা সরায় না।
+
+The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.

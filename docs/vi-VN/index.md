@@ -14,3 +14,7 @@ OpenCode và Codex được cài đặt dưới dạng gói phụ thuộc. Mã C
 ## Ngôn ngữ
 
 Danh mục `ai` được cung cấp bằng tất cả mười ngôn ngữ ARGVUS và sử dụng lựa chọn `argvus i18n` được chia sẻ và dự phòng bằng tiếng Anh. Bản dịch được cài đặt dưới dạng dữ liệu mà không cần ghi cấu hình người dùng.
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

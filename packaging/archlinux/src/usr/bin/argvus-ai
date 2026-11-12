@@ -2,6 +2,8 @@
 # Single entry point for the optional ARGVUS AI desktop integration.
 set -eu
 system=${ARGVUS_SYSTEM_CONFIG:-/usr/share/argvus}
+state_home=${XDG_STATE_HOME:-${HOME:?}/.local/state}
+managed_dir=$state_home/argvus/ai-managed
 config=$system/launcher/config/config.rasi
 if [ -r "$system/session/sh/bootstrap.sh" ]; then
   # shellcheck disable=SC1090,SC1091
@@ -91,10 +93,51 @@ run_external() {
     rm -f "$installer"
     if [ "$result" -ne 0 ]; then message "$(translate external_install_error agent="$external_agent")"; return "$result"; fi
     executable=$(resolve "$external_agent") || { message "$(translate external_install_error agent="$external_agent")"; return 1; }
+    mkdir -p "$managed_dir" || { message "$(translate managed_record_error)"; return 1; }
+    printf '%s\n' "$executable" > "$managed_dir/$external_agent" || { message "$(translate managed_record_error)"; return 1; }
   fi
   PATH="${executable%/*}:$PATH"
   export PATH
   exec "$executable"
+}
+uninstall_agent() {
+  uninstall_agent=$1
+  case "$uninstall_agent" in hermes|cursor|kimi) ;; *) message "$(translate invalid)"; return 2 ;; esac
+  record=$managed_dir/$uninstall_agent
+  if [ -f "$record" ]; then
+    executable=$(cat "$record") || return 1
+  else
+    # An explicit uninstall request may adopt legacy installs only when the
+    # executable and its resolved target match the vendor's dedicated layout.
+    case "$uninstall_agent" in
+      cursor)
+        executable=$HOME/.local/bin/agent
+        target=$(readlink -f "$executable") || { message "$(translate unmanaged_agent agent=cursor)"; return 1; }
+        case "$target" in "$HOME"/.local/share/cursor-agent/versions/*/cursor-agent) ;;
+          *) message "$(translate unmanaged_agent agent=cursor)"; return 1 ;;
+        esac
+        ;;
+      *) message "$(translate unmanaged_agent agent="$uninstall_agent")"; return 1 ;;
+    esac
+  fi
+  case "$executable" in "$HOME"/*) ;; *) message "$(translate managed_record_error)"; return 1 ;; esac
+  [ -n "$executable" ] || { message "$(translate managed_record_error)"; return 1; }
+  case "$uninstall_agent" in
+    hermes)
+      command -v hermes >/dev/null 2>&1 || { message "$(translate unavailable agent=hermes)"; return 1; }
+      hermes uninstall || return $?
+      ;;
+    cursor)
+      [ "$executable" = "$HOME/.local/bin/agent" ] || { message "$(translate managed_record_error)"; return 1; }
+      rm -f "$executable"
+      rm -rf "$HOME/.local/share/cursor-agent"
+      ;;
+    kimi)
+      case "$executable" in "$HOME/.kimi-code/"*|"$HOME/.local/bin/kimi") ;; *) message "$(translate managed_record_error)"; return 1 ;; esac
+      rm -f "$executable" "$HOME/.local/bin/kimi"
+      ;;
+  esac
+  rm -f "$record"
 }
 launch() {
   case "$1" in opencode|codex|claude|agy|qwen|hermes|cursor|kimi) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
@@ -126,6 +169,18 @@ case "${1:-menu}" in
     jq -cn --arg tooltip "$(translate title)" '{text:"󰚩",tooltip:$tooltip}'
     ;;
   list) [ "$#" -eq 1 ] || exit 2; list ;;
+  uninstall)
+    [ "$#" -le 2 ] || exit 2
+    if [ "$#" -eq 2 ]; then uninstall_agent "$2"; exit $?; fi
+    [ -d "$managed_dir" ] || { message "$(translate no_managed_agents)"; exit 1; }
+    agents=$(for agent in hermes cursor kimi; do [ ! -f "$managed_dir/$agent" ] || printf '%s\n' "$agent"; done)
+    [ -n "$agents" ] || { message "$(translate no_managed_agents)"; exit 1; }
+    selected=$(printf '%s\n' "$agents" | rofi -config "$config" -dmenu -i -no-custom -p "$(translate uninstall_title)") || exit 0
+    [ -n "$selected" ] || exit 0
+    confirmation=$(printf '%s\n' "$(translate confirm_uninstall)" "$(translate cancel)" | rofi -config "$config" -dmenu -i -no-custom -p "$(translate uninstall_title)") || exit 0
+    [ "$confirmation" = "$(translate confirm_uninstall)" ] || exit 0
+    uninstall_agent "$selected"
+    ;;
   launch) [ "$#" -eq 2 ] || exit 2; launch "$2" ;;
   menu)
     [ "$#" -le 1 ] || exit 2

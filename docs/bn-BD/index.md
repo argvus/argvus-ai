@@ -14,3 +14,11 @@ description: ARGVUS ডেস্কটপ থেকে প্রোগ্রা�
 ## ভাষা
 
 `ai` ক্যাটালগটি দশটি ARGVUS ভাষায় প্রদান করা হয়েছে এবং শেয়ার করা `argvus i18n` নির্বাচন এবং ইংরেজি ফলব্যাক ব্যবহার করে। অনুবাদগুলি ব্যবহারকারীর কনফিগারেশন না লিখে ডেটা হিসাবে ইনস্টল করা হয়।
+
+## Agent coverage
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

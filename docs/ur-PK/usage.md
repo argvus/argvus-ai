@@ -38,3 +38,7 @@ argvus-ai launch claude
 کٹی پروفائل `ai-agents` ٹیبز کو چھپاتا ہے اور ٹیبز، اسپلٹس اور پوری اسکرین کے لیے وراثت میں ملنے والے شارٹ کٹس کو صاف کرتا ہے۔ کلپ بورڈ شارٹ کٹس Ctrl+Shift+C اور Ctrl+Shift+V دستیاب ہیں۔ اس کی تیار کردہ ترتیب ARGVUS کیش ڈائرکٹری کے تحت `kitty-tui/kitty-ai-agents.conf` ہے۔ پیکیج ہائپرلینڈ ماڈیول 1399 × 920 پر `argvus-ai` کلاس کے ساتھ ونڈوز کو تیرتا اور سنٹر کرتا ہے۔
 
                                                                     ﮟﯿﭨﻮﻟ ﺲﭘﺍﻭ[                                                        ﺲﭩﻨﺠﯾﺍ ﮯﮐ ﺖﻧﺎﮨﺫ ﯽﻋﻮﻨﺼﻣ](/docs/argvus-ai/).
+
+## Uninstalling agents
+
+`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.

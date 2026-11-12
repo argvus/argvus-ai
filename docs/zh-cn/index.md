@@ -13,3 +13,7 @@ OpenCode 和 Codex 已作为软件包依赖安装。Claude Code 仅在你首次�
 ## 语言
 
 `ai` 目录提供所有十种 ARGVUS 语言，并使用共享的 `argvus i18n` 选择和英语回退。翻译作为数据安装，而不会写入用户配置。
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

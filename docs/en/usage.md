@@ -23,9 +23,12 @@ argvus-ai menu
 argvus-ai launch opencode
 argvus-ai launch codex
 argvus-ai launch claude
+argvus-ai uninstall
 ```
 
 `list` reports installed agents only. `status` emits Waybar JSON, while `status --check` reports whether there is an installed or installable menu choice through its exit status. Only selecting/launching Claude can start its installation; `run-claude` is an internal terminal entry point.
+
+`argvus-ai uninstall` offers only Hermes, Cursor CLI and Kimi installations recorded when installed by ARGVUS. Confirm the removal in the selector. An explicit `argvus-ai uninstall cursor` also recognizes a legacy Cursor CLI install only when `~/.local/bin/agent` resolves inside Cursor's `~/.local/share/cursor-agent/versions/` directory. Other unregistered installations are left untouched. Hermes uses its official uninstaller; Cursor CLI and Kimi binaries are removed while their user configuration and sessions are preserved.
 
 If the shortcut still uses the old combination, inspect its personal override in Control Center's keyboard shortcuts page; packaged defaults do not overwrite it. If the robot disappears after applying appearance settings, update `argvus-appearance` and regenerate/apply the taskbar settings. Avoid editing generated Waybar/Lua files directly.
 
@@ -44,3 +47,7 @@ Qwen Code is provided by the `qwen-code` Arch package. Select it from the menu o
 Hermes, Cursor CLI and Kimi Code install using their official installers on first launch as the current user. Select them in the menu or run `argvus-ai launch hermes`, `argvus-ai launch cursor` or `argvus-ai launch kimi`. Authentication and updates are managed by each agent.
 
 Kimi installations in `~/.kimi-code/bin/kimi` are detected without changing the graphical PATH. If installation fails, check the terminal output.
+
+## Uninstalling agents
+
+`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.

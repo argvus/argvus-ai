@@ -30,3 +30,7 @@ Kısayol hâlâ eski kombinasyonu kullanıyorsa Denetim Merkezi'nin klavye kısa
 Ajanlar, `ARGVUS AI Agent` başlıklı ortalanmış bir yüzen Kitty penceresinde, ARGVUS başlığı ve altbilgisi ile açılır. Ajan penceresini kapatmak için **Ctrl + E** tuşuna basın. Bu kısayol çerçeve tarafından ayrılmıştır; Esc ve Ctrl+C ajan tarafından kullanılabilir durumda kalır.
 
 Özel Kitty profili `ai-agents` sekmeleri gizler ve sekmeler, bölmeler ve tam ekran için devralınan kısayolları temizler. Pano kısayolları Ctrl+Shift+C ve Ctrl+Shift+V kullanılabilir durumda kalır. Oluşturulan yapılandırması ARGVUS önbellek dizini altındaki `kitty-tui/kitty-ai-agents.conf`'dur. Hyprland modülü paketi, 1399 × 920'de `argvus-ai` sınıfına sahip pencereleri yüzdürür ve ortalar.
+
+## Uninstalling agents
+
+`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.

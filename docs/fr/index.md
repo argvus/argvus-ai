@@ -13,3 +13,7 @@ Lisez [Installation](/docs/argvus-ai/installation/) et [Utilisation et dépannag
 ## Langues
 
 Le catalogue `ai` est fourni dans les dix langues ARGVUS et utilise la sélection partagée `argvus i18n` ainsi que la langue anglaise par défaut. Les traductions sont installées en tant que données sans modifier la configuration de l'utilisateur.
+
+## Agents disponibles
+
+L’intégration fournit OpenCode, Codex et Qwen Code via le paquet, Claude Code via mise, Antigravity s’il est installé séparément, et Hermes, Cursor CLI et Kimi via leurs installateurs officiels au premier lancement. Consultez le [guide d’utilisation](usage/) pour répertorier et désinstaller les agents externes gérés par ARGVUS.

@@ -34,3 +34,7 @@ Jika instalasi Claude gagal, periksa kesalahan terminal, akses jaringan, dan ver
 Kembali ke [AI Agents](/docs/argvus-ai/).
 
 Agen terbuka di jendela Kitty mengambang di tengah berjudul `ARGVUS AI Agent`, dengan header dan footer ARGVUS. Tekan **Ctrl + E** untuk menutup jendela agen. Pintasan ini dicadangkan oleh frame; Esc dan Ctrl+C tetap tersedia untuk agen.Profil Kitty khusus `ai-agents` menyembunyikan tab dan menghapus shortcut yang diwarisi untuk tab, split, dan layar penuh. Shortcut clipboard Ctrl+Shift+C dan Ctrl+Shift+V tetap tersedia. Konfigurasi yang dihasilkan adalah `kitty-tui/kitty-ai-agents.conf` di bawah direktori cache ARGVUS. Modul paket Hyprland memfloat dan memusatkan jendela dengan kelas `argvus-ai` pada 1399 × 920.
+
+## Uninstalling agents
+
+`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.

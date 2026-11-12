@@ -85,6 +85,27 @@ class Launcher(unittest.TestCase):
         self.assertIn("kimi", self.run_helper("list").stdout)
         self.assertEqual(self.run_helper("run-external", "kimi").returncode, 0)
 
+    def test_uninstall_adopts_only_legacy_cursor_vendor_layout(self):
+        target = self.root / ".local/share/cursor-agent/versions/test/cursor-agent"
+        target.parent.mkdir(parents=True)
+        target.write_text("#!/bin/sh\nexit 0\n")
+        target.chmod(0o755)
+        launcher = self.root / ".local/bin/agent"
+        launcher.parent.mkdir(parents=True)
+        launcher.symlink_to(target)
+        self.stub("readlink", 'if [ "$1" = "-f" ]; then /usr/bin/readlink -f "$2"; else exit 1; fi')
+        self.stub("rm", 'exec /usr/bin/rm "$@"')
+        result = self.run_helper("uninstall", "cursor")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertFalse(launcher.exists())
+        self.assertFalse((self.root / ".local/share/cursor-agent").exists())
+
+    def test_uninstall_refuses_unrecognized_cursor_binary(self):
+        self.stub("agent")
+        result = self.run_helper("uninstall", "cursor")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertTrue((self.root / "agent").exists())
+
     def test_empty_menu(self):
         (self.root / "mise").unlink()
         self.assertNotEqual(self.run_helper("menu").returncode, 0)

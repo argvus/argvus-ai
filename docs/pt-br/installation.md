@@ -36,3 +36,5 @@ O módulo Lua e as entradas de aplicativos pertencentes ao pacote são removidos
 A dependência `qwen-code` fornece o executável `qwen`.
 
 Hermes, Cursor CLI e Kimi Code são instalados pelos instaladores oficiais na primeira abertura, como usuário comum. Selecione-os no menu ou use `argvus-ai launch hermes`, `argvus-ai launch cursor` ou `argvus-ai launch kimi`. Cada agente gerencia sua autenticação e atualizações.
+
+O pacote ARGVUS AI não instala agentes externos durante a instalação do pacote. Hermes, Cursor CLI e Kimi são instalados na primeira abertura; os dados do usuário ficam fora do pacote. Consulte o guia de uso para instruções de remoção.

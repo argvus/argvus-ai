@@ -32,3 +32,7 @@ Quay lại [AI Agents](/docs/argvus-ai/). Các tác nhân
 mở trong một cửa sổ Kitty nổi được căn giữa có tiêu đề `ARGVUS AI Agent`, với đầu và chân trang ARGVUS. Nhấn **Ctrl + E** để đóng cửa sổ tác nhân. Phím tắt này được khung giữ; Esc và Ctrl+C vẫn có sẵn cho tác nhân.
 
 Hồ sơ Kitty chuyên dụng `ai-agents` ẩn các tab và xóa các phím tắt thừa kế cho tab, chia cửa sổ và toàn màn hình. Các phím tắt Clipboard Ctrl+Shift+C và Ctrl+Shift+V vẫn có sẵn. Cấu hình được tạo ra của nó là `kitty-tui/kitty-ai-agents.conf` dưới thư mục cache ARGVUS. Gói module Hyprland nổi và căn giữa cửa sổ với lớp `argvus-ai` ở 1399 × 920.
+
+## Uninstalling agents
+
+`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.

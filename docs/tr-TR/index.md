@@ -12,3 +12,7 @@ Kurulum [Installation](/docs/argvus-ai/installation/) ve [Kullanım ve sorun gid
 ## Languages
 
 `ai` kataloğu tüm on ARGVUS dilinde sunulmakta olup ortak `argvus i18n` seçimini ve İngilizce yedeğini kullanır. Çeviriler, kullanıcı yapılandırması yazmadan veri olarak yüklenir.
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

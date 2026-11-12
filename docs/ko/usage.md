@@ -34,3 +34,7 @@ argvus-ai launch claude
 에이전트는 ARGVUS 헤더와 풋터가 있는 `ARGVUS AI Agent`라는 제목의 중앙에 떠 있는 Kitty 창에서 열립니다. 에이전트 창을 닫으려면 **Ctrl + E**를 누르십시오. 이 단축키는 프레임에 예약되어 있으며 Esc와 Ctrl+C는 에이전트에서 계속 사용할 수 있습니다.
 
 전용 Kitty 프로필 `ai-agents`는 탭을 숨기고 탭, 분할 및 전체 화면에 대한 상속된 바로가기를 제거합니다. 클립보드 바로가기 Ctrl+Shift+C 및 Ctrl+Shift+V는 계속 사용할 수 있습니다. 생성된 구성은 ARGVUS 캐시 디렉터리 아래의 `kitty-tui/kitty-ai-agents.conf`입니다. 패키지 Hyprland 모듈은 클래스 `argvus-ai`의 창을 1399 × 920 크기로 띄우고 중앙에 배치합니다.
+
+## Uninstalling agents
+
+`argvus-ai list` shows installed agents. Run `argvus-ai uninstall` to select an ARGVUS-managed Hermes, Cursor CLI, or Kimi installation, then confirm removal. You can also run `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, or `argvus-ai uninstall kimi`. Installations made outside ARGVUS are left untouched, except a legacy Cursor CLI install is recognized by the explicit Cursor command when `~/.local/bin/agent` resolves inside `~/.local/share/cursor-agent/versions/`. Hermes uses its official uninstaller. Cursor and Kimi binaries are removed while user settings, sessions, and credentials are preserved.

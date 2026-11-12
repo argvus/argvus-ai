@@ -10,5 +10,11 @@
   "mise_missing": "Installez ou mettez à jour le package mise avec Pacman.",
   "install_error": "L'installation ou la résolution de Claude Code a échoué. Vérifiez les erreurs de mise et mettez à jour la mise.",
   "footer.close": "Ctrl + e - Fermer",
-  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors."
+  "external_install_error": "Failed to install or locate agent {agent}. Check the terminal for errors.",
+  "managed_record_error": "Could not verify the ARGVUS-managed installation record.",
+  "unmanaged_agent": "{agent} was not installed by ARGVUS and was left untouched.",
+  "no_managed_agents": "No ARGVUS-managed external agents are available to uninstall.",
+  "uninstall_title": "Uninstall an ARGVUS-managed agent",
+  "confirm_uninstall": "Confirm uninstall",
+  "cancel": "Cancel"
 }

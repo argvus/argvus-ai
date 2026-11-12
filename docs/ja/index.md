@@ -13,3 +13,7 @@ OpenCode および Codex はパッケージ依存関係としてインストー�
 ## 言語
 
 `ai` カタログは、10 の ARGVUS 言語すべてで提供されており、共有の `argvus i18n` 選択肢と英語フォールバックを使用します。翻訳は、ユーザー設定を書き込むことなくデータとしてインストールされます。
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

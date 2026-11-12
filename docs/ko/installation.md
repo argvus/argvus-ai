@@ -29,3 +29,5 @@ Rofi 선택기나 애플리케이션 실행기에서 Claude Code를 선택하십
 sudo pacman -R argvus-ai
 ```
 패키지 소유 Lua 모듈과 데스크톱 항목이 제거되며, 도우미가 없으면 작업 표시줄 모듈이 숨겨집니다. 표준 Hyprland 구성은 바인드를 제거하기 위해 자동으로 다시 로드됩니다. 사용자 소유의 mise 도구, 에이전트 설정 및 자격 증명은 유지됩니다. Pacman은 이 명령으로 에이전트 종속성을 자동으로 제거하지 않습니다.
+
+The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.

@@ -14,3 +14,11 @@ description: افتح وكلاء البرمجة من سطح مكتب ARGVUS.
 ## اللغات
 
 يتم توفير كتالوج `ai` بجميع لغات ARGVUS العشر ويستخدم تحديد `argvus i18n` المشترك والرجوع باللغة الإنجليزية. يتم تثبيت الترجمات كبيانات دون كتابة تكوين المستخدم.
+
+## Agent coverage
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.
+
+## Supported agents
+
+The integration supports package-provided OpenCode, Codex and Qwen Code; Claude Code through mise; Antigravity when installed separately; and Hermes, Cursor CLI and Kimi through their official installers on first launch. Use the [usage guide](usage/) for listing and uninstalling ARGVUS-managed external agents.

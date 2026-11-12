@@ -29,3 +29,5 @@ sudo pacman -S argvus-ai
 sudo pacman -R argvus-ai
 ```
 包管理的 Lua 模块和桌面条目已被移除，当其辅助程序不存在时任务栏模块会隐藏。标准的 Hyprland 配置会自动重载以移除绑定。用户拥有的 mise 工具、代理设置和凭证会被保留。Pacman 不会使用此命令自动移除代理依赖项。
+
+The ARGVUS AI package does not install external agents at package-install time. Hermes, Cursor CLI and Kimi install on first launch; their user data remains outside the package. See the usage guide for removal instructions.
