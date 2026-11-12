@@ -32,9 +32,9 @@ class Launcher(unittest.TestCase):
         return subprocess.run([str(HELPER), *args], env=self.env, capture_output=True, text=True)
 
     def test_availability(self):
-        for commands in [(), ("opencode",), ("codex",), ("claude",), ("opencode", "codex", "claude"), ("agy",)]:
+        for commands in [(), ("opencode",), ("codex",), ("claude",), ("opencode", "codex", "claude"), ("agy",), ("qwen",)]:
             with self.subTest(commands=commands):
-                for name in ("opencode", "codex", "claude", "agy"):
+                for name in ("opencode", "codex", "claude", "agy", "qwen"):
                     (self.root / name).unlink(missing_ok=True)
                 for name in commands:
                     self.stub(name)
@@ -43,7 +43,7 @@ class Launcher(unittest.TestCase):
                 self.assertEqual(result.stdout.splitlines(), list(commands))
 
     def test_menu_launches_each_agent(self):
-        for label, command in [("OpenCode", "opencode"), ("OpenAI Codex", "codex"), ("Claude Code", "claude"), ("Google Antigravity", "agy")]:
+        for label, command in [("OpenCode", "opencode"), ("OpenAI Codex", "codex"), ("Claude Code", "claude"), ("Google Antigravity", "agy"), ("Qwen Code", "qwen")]:
             self.stub(command)
             self.env["SELECTION"] = label
             self.assertEqual(self.run_helper("menu").returncode, 0)

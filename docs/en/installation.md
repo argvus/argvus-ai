@@ -32,3 +32,5 @@ sudo pacman -R argvus-ai
 ```
 
 The package-owned Lua module and desktop entries are removed, and the taskbar module hides when its helper is absent. The standard Hyprland configuration autoreloads to remove the bind. User-owned mise tools, agent settings and credentials are retained. Pacman does not automatically remove the agent dependencies with this command.
+
+The `qwen-code` dependency provides the `qwen` executable.

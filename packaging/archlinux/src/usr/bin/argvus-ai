@@ -26,7 +26,7 @@ resolve() {
     agy)
       executable=$(command -v agy) || executable=${HOME:?}/.local/bin/agy
       ;;
-    opencode|codex) executable=$(command -v "$1") || return 1 ;;
+    opencode|codex|qwen) executable=$(command -v "$1") || return 1 ;;
     *) return 1 ;;
   esac
   case "$executable" in /*) ;; *) return 1 ;; esac
@@ -37,12 +37,12 @@ available() {
   resolve "$1" >/dev/null
 }
 list() {
-  for agent in opencode codex claude agy; do
+  for agent in opencode codex claude agy qwen; do
     if available "$agent"; then printf '%s\n' "$agent"; fi
   done
 }
 menu_agents() {
-  for agent in opencode codex agy; do
+  for agent in opencode codex agy qwen; do
     if available "$agent"; then printf '%s\n' "$agent"; fi
   done
   if command -v mise >/dev/null 2>&1; then printf 'claude\n'; fi
@@ -61,7 +61,7 @@ run_claude() {
   exec "$executable"
 }
 launch() {
-  case "$1" in opencode|codex|claude|agy) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
+  case "$1" in opencode|codex|claude|agy|qwen) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
   if [ "$agent" = claude ]; then
     self=$(command -v "$0")
     if argvus tui-terminal --class argvus-ai --term kitty --profile ai-agents --title "ARGVUS AI Agent" -- argvus tui-terminal --frame "AI Agent" "$(translate footer.close)" "$self" run-claude; then return 0; fi
@@ -90,7 +90,7 @@ case "${1:-menu}" in
   menu)
     [ "$#" -le 1 ] || exit 2
     agents=$(menu_agents | while IFS= read -r agent; do
-      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; esac
+      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; qwen) printf 'Qwen Code\n' ;; esac
     done)
     if [ -z "$agents" ]; then message "$(translate empty)"; exit 1; fi
     status=0
@@ -102,6 +102,7 @@ case "${1:-menu}" in
       "OpenAI Codex") launch codex ;;
       "Claude Code") launch claude ;;
       "Google Antigravity") launch agy ;;
+      "Qwen Code") launch qwen ;;
       *) message "$(translate invalid)"; exit 2 ;;
     esac
     ;;

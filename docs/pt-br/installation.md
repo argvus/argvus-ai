@@ -32,3 +32,5 @@ sudo pacman -R argvus-ai
 ```
 
 O módulo Lua e as entradas de aplicativos pertencentes ao pacote são removidos, e o módulo da taskbar fica oculto quando o helper está ausente. A configuração padrão do Hyprland recarrega para remover o bind. Ferramentas mise, configurações e credenciais do usuário são preservadas. Esse comando não remove automaticamente as dependências dos agentes.
+
+A dependência `qwen-code` fornece o executável `qwen`.

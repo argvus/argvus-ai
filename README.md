@@ -1,6 +1,6 @@
 # ARGVUS AI
 
-OpenCode and Codex are Pacman dependencies. Claude Code installs on first launch: select Claude Code in the Rofi agents menu or its application launcher entry. The ARGVUS terminal opens, runs `mise install claude` as the current user if necessary, resolves the installed executable, adds its directory to that process PATH and starts Claude. Later launches reuse the installed version. No agent installation runs during package installation, as root or at login. No manual command is required.
+OpenCode, Codex and Qwen Code are Pacman dependencies. Claude Code installs on first launch: select Claude Code in the Rofi agents menu or its application launcher entry. The ARGVUS terminal opens, runs `mise install claude` as the current user if necessary, resolves the installed executable, adds its directory to that process PATH and starts Claude. Later launches reuse the installed version. No agent installation runs during package installation, as root or at login. No manual command is required.
 
 The menu offers Claude when mise is present, even before installation. `argvus-ai list` reports installed agents only; `status` reports whether the menu has an installed or installable agent. Queries/cancelled menus never download. Installation errors are displayed and may be retried by opening Claude again. No shell startup files or personal PATH configuration are modified; the augmented PATH belongs to the running Claude process and its children. Existing credentials and mise tools are preserved.
 

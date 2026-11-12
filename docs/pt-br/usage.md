@@ -38,3 +38,5 @@ Os agentes abrem em uma janela Kitty flutuante e centralizada com título `ARGVU
 O perfil Kitty dedicado `ai-agents` oculta as abas e remove os atalhos herdados de abas, divisões e tela cheia. Os atalhos de clipboard Ctrl+Shift+C e Ctrl+Shift+V continuam disponíveis. A configuração gerada fica em `kitty-tui/kitty-ai-agents.conf` no cache ARGVUS. O módulo Hyprland do pacote abre a classe `argvus-ai` em janela flutuante centralizada de 1399 × 920.
 
 Instale o Google Antigravity CLI (`agy`) separadamente conforme as [instruções oficiais](https://antigravity.google/docs/getting-started?tab=cli). Ele é detectado no PATH da sessão gráfica ou em `~/.local/bin/agy`. Execute `argvus-ai launch agy` para abri-lo.
+
+O Qwen Code é fornecido pelo pacote Arch `qwen-code`. Selecione-o no menu ou execute `argvus-ai launch qwen`.

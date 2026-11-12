@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Qwen Code
+Comment=Open Qwen Code in the ARGVUS terminal
+Comment[pt_BR]=Abrir Qwen Code no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch qwen
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;
