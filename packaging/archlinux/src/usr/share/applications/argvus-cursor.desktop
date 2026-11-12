@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Cursor CLI
+Comment=Open Cursor CLI in the ARGVUS terminal
+Comment[pt_BR]=Abrir Cursor CLI no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch cursor
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;

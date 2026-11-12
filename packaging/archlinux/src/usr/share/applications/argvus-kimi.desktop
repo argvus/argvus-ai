@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Kimi Code
+Comment=Open Kimi Code in the ARGVUS terminal
+Comment[pt_BR]=Abrir Kimi Code no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch kimi
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;

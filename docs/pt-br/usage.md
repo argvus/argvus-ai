@@ -40,3 +40,5 @@ O perfil Kitty dedicado `ai-agents` oculta as abas e remove os atalhos herdados 
 Instale o Google Antigravity CLI (`agy`) separadamente conforme as [instruções oficiais](https://antigravity.google/docs/getting-started?tab=cli). Ele é detectado no PATH da sessão gráfica ou em `~/.local/bin/agy`. Execute `argvus-ai launch agy` para abri-lo.
 
 O Qwen Code é fornecido pelo pacote Arch `qwen-code`. Selecione-o no menu ou execute `argvus-ai launch qwen`.
+
+Hermes, Cursor CLI e Kimi Code são instalados pelos instaladores oficiais na primeira abertura, como usuário comum. Selecione-os no menu ou use `argvus-ai launch hermes`, `argvus-ai launch cursor` ou `argvus-ai launch kimi`. Cada agente gerencia sua autenticação e atualizações.

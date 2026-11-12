@@ -26,6 +26,15 @@ resolve() {
     agy)
       executable=$(command -v agy) || executable=${HOME:?}/.local/bin/agy
       ;;
+    hermes|kimi|cursor)
+      command_name=$1
+      [ "$1" != cursor ] || command_name=agent
+      if [ "$1" = cursor ] && [ -x "${HOME:?}/.local/bin/agent" ]; then
+        executable=$HOME/.local/bin/agent
+      else
+        executable=$(command -v "$command_name") || executable=${HOME:?}/.local/bin/$command_name
+      fi
+      ;;
     opencode|codex|qwen) executable=$(command -v "$1") || return 1 ;;
     *) return 1 ;;
   esac
@@ -37,7 +46,7 @@ available() {
   resolve "$1" >/dev/null
 }
 list() {
-  for agent in opencode codex claude agy qwen; do
+  for agent in opencode codex claude agy qwen hermes cursor kimi; do
     if available "$agent"; then printf '%s\n' "$agent"; fi
   done
 }
@@ -46,6 +55,7 @@ menu_agents() {
     if available "$agent"; then printf '%s\n' "$agent"; fi
   done
   if command -v mise >/dev/null 2>&1; then printf 'claude\n'; fi
+  if command -v curl >/dev/null 2>&1 && command -v bash >/dev/null 2>&1; then printf 'hermes\ncursor\nkimi\n'; else for agent in hermes cursor kimi; do if available "$agent"; then printf '%s\n' "$agent"; fi; done; fi
 }
 run_claude() {
   [ "$(id -u)" -ne 0 ] || { message "$(translate root_install)"; return 1; }
@@ -60,11 +70,36 @@ run_claude() {
   export PATH
   exec "$executable"
 }
+run_external() {
+  external_agent=$1
+  [ "$(id -u)" -ne 0 ] || { message "$(translate root_install)"; return 1; }
+  if ! executable=$(resolve "$external_agent"); then
+    case "$external_agent" in
+      hermes) url=https://hermes-agent.nousresearch.com/install.sh ;;
+      cursor) url=https://cursor.com/install ;;
+      kimi) url=https://code.kimi.com/kimi-code/install.sh ;;
+      *) return 2 ;;
+    esac
+    installer=$(mktemp "${TMPDIR:-/tmp}/argvus-ai-install.XXXXXXXX") || { message "$(translate install_error)"; return 1; }
+    if ! curl -fsSL "$url" -o "$installer"; then rm -f "$installer"; message "$(translate install_error)"; return 1; fi
+    result=0
+    bash "$installer" || result=$?
+    rm -f "$installer"
+    if [ "$result" -ne 0 ]; then message "$(translate install_error)"; return "$result"; fi
+    executable=$(resolve "$external_agent") || { message "$(translate install_error)"; return 1; }
+  fi
+  PATH="${executable%/*}:$PATH"
+  export PATH
+  exec "$executable"
+}
 launch() {
-  case "$1" in opencode|codex|claude|agy|qwen) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
-  if [ "$agent" = claude ]; then
+  case "$1" in opencode|codex|claude|agy|qwen|hermes|cursor|kimi) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
+  if [ "$agent" = claude ] || [ "$agent" = hermes ] || [ "$agent" = cursor ] || [ "$agent" = kimi ]; then
     self=$(command -v "$0")
-    if argvus tui-terminal --class argvus-ai --term kitty --profile ai-agents --title "ARGVUS AI Agent" -- argvus tui-terminal --frame "AI Agent" "$(translate footer.close)" "$self" run-claude; then return 0; fi
+    run_action=run-external
+    [ "$agent" != claude ] || run_action=run-claude
+    if [ "$agent" = claude ]; then set -- "$self" "$run_action"; else set -- "$self" "$run_action" "$agent"; fi
+    if argvus tui-terminal --class argvus-ai --term kitty --profile ai-agents --title "ARGVUS AI Agent" -- argvus tui-terminal --frame "AI Agent" "$(translate footer.close)" "$@"; then return 0; fi
     message "$(translate terminal_error)"
     return 1
   fi
@@ -77,6 +112,7 @@ launch() {
   return 1
 }
 case "${1:-menu}" in
+  run-external) [ "$#" -eq 2 ] || exit 2; case "$2" in hermes|cursor|kimi) run_external "$2" ;; *) exit 2 ;; esac ;;
   run-claude) [ "$#" -eq 1 ] || exit 2; run_claude ;;
   status)
     [ "$#" -eq 1 ] || { [ "$#" -eq 2 ] && [ "$2" = --check ]; } || exit 2
@@ -90,7 +126,7 @@ case "${1:-menu}" in
   menu)
     [ "$#" -le 1 ] || exit 2
     agents=$(menu_agents | while IFS= read -r agent; do
-      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; qwen) printf 'Qwen Code\n' ;; esac
+      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; qwen) printf 'Qwen Code\n' ;; hermes) printf 'Hermes\n' ;; cursor) printf 'Cursor CLI\n' ;; kimi) printf 'Kimi Code\n' ;; esac
     done)
     if [ -z "$agents" ]; then message "$(translate empty)"; exit 1; fi
     status=0
@@ -103,6 +139,9 @@ case "${1:-menu}" in
       "Claude Code") launch claude ;;
       "Google Antigravity") launch agy ;;
       "Qwen Code") launch qwen ;;
+      Hermes) launch hermes ;;
+      "Cursor CLI") launch cursor ;;
+      "Kimi Code") launch kimi ;;
       *) message "$(translate invalid)"; exit 2 ;;
     esac
     ;;

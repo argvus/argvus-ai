@@ -61,6 +61,21 @@ class Launcher(unittest.TestCase):
         self.assertEqual(self.run_helper("launch", "agy").returncode, 0)
         self.assertEqual((self.root / "log").read_text().splitlines()[-1], str(path))
 
+    def test_new_agents_first_launch_and_failure(self):
+        for name, command in [("hermes", "hermes"), ("cursor", "agent"), ("kimi", "kimi")]:
+            with self.subTest(agent=name):
+                self.stub(command)
+                result = self.run_helper("run-external", name)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                (self.root / command).unlink()
+                self.stub("mktemp", 'printf "%s" "$HOME/installer"')
+                self.stub("curl", 'exit 8')
+                self.stub("rm", 'exit 0')
+                self.assertNotEqual(self.run_helper("run-external", name).returncode, 0)
+                self.env["FAKE_UID"] = "0"
+                self.assertNotEqual(self.run_helper("run-external", name).returncode, 0)
+                self.env["FAKE_UID"] = "1000"
+
     def test_empty_menu(self):
         (self.root / "mise").unlink()
         self.assertNotEqual(self.run_helper("menu").returncode, 0)

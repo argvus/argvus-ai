@@ -15,3 +15,5 @@ Agents run in a centered floating Kitty window titled `ARGVUS AI Agent`, with an
 The dedicated `ai-agents` Kitty profile hides tabs and disables inherited tab, split and fullscreen shortcuts. It keeps clipboard shortcuts and writes its own runtime configuration under the ARGVUS cache.
 
 Google Antigravity CLI (`agy`) is installed separately using the [official instructions](https://antigravity.google/docs/getting-started?tab=cli). The selector detects it in PATH or `~/.local/bin/agy`.
+
+Hermes, Cursor CLI and Kimi Code install using their official installers on first launch as the current user. Select them in the menu or run `argvus-ai launch hermes`, `argvus-ai launch cursor` or `argvus-ai launch kimi`. Authentication and updates are managed by each agent.

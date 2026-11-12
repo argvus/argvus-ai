@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Hermes
+Comment=Open Hermes in the ARGVUS terminal
+Comment[pt_BR]=Abrir Hermes no terminal ARGVUS
+Icon=utilities-terminal
+Exec=argvus-ai launch hermes
+TryExec=argvus-ai
+Terminal=false
+Categories=Development;ConsoleOnly;
