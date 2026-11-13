@@ -32,3 +32,5 @@ sudo pacman -R argvus-ai
 Module Lua thuộc sở hữu gói và các mục nhập trên máy tính để bàn đã bị xóa, và module thanh tác vụ sẽ ẩn khi trợ lý của nó vắng mặt. Cấu hình Hyprland tiêu chuẩn tự động tải lại để xóa liên kết. Các công cụ mise, cài đặt đại lý và chứng thực do người dùng sở hữu được giữ lại. Pacman không tự động xóa các phụ thuộc của đại lý với lệnh này.
 
 Gói AI ARGVUS không cài đặt các tác nhân bên ngoài tại thời điểm cài đặt gói. Hermes, Cursor CLI và Kimi cài đặt trong lần khởi chạy đầu tiên; dữ liệu người dùng của họ vẫn nằm ngoài gói. Xem hướng dẫn sử dụng để biết hướng dẫn gỡ bỏ.
+
+Gói `gemini-cli` từ Arch Extra được cài làm phụ thuộc `argvus-ai`; không cần cài riêng bằng npm.

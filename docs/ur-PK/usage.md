@@ -42,3 +42,5 @@ argvus-ai launch claude
 ## ایجنٹس اَن انسٹال کرنا
 
 `argvus-ai list` انسٹال شدہ ایجنٹس دکھاتا ہے۔ `argvus-ai uninstall` چلائیں، ARGVUS کے زیرِ انتظام Hermes، Cursor CLI یا Kimi انسٹالیشن منتخب کریں اور ہٹانے کی تصدیق کریں۔ آپ براہِ راست `argvus-ai uninstall hermes`، `argvus-ai uninstall cursor` یا `argvus-ai uninstall kimi` بھی چلا سکتے ہیں۔ ARGVUS سے باہر کی انسٹالیشنز میں تبدیلی نہیں کی جاتی؛ البتہ مخصوص Cursor کمانڈ پرانی انسٹالیشن کو تب پہچانتی ہے جب `~/.local/bin/agent`، `~/.local/share/cursor-agent/versions/` کے اندر موجود فائل کی طرف اشارہ کرے۔ Hermes کا سرکاری اَن انسٹالر استعمال ہوتا ہے۔ Cursor اور Kimi کے بائنری ہٹائے جاتے ہیں جبکہ صارف کی ترتیبات، سیشنز اور اسناد محفوظ رہتی ہیں۔
+
+`argvus-ai list` سے جانچیں؛ `argvus-ai launch gemini` چلائیں یا مینو سے منتخب کریں۔ Google کی توثیق Gemini CLI میں کریں۔

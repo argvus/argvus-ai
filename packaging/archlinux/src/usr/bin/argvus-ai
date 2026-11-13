@@ -41,7 +41,7 @@ resolve() {
         executable=$(command -v "$command_name") || executable=${HOME:?}/.local/bin/$command_name
       fi
       ;;
-    opencode|codex|qwen) executable=$(command -v "$1") || return 1 ;;
+    opencode|codex|qwen|gemini) executable=$(command -v "$1") || return 1 ;;
     *) return 1 ;;
   esac
   case "$executable" in /*) ;; *) return 1 ;; esac
@@ -52,12 +52,12 @@ available() {
   resolve "$1" >/dev/null
 }
 list() {
-  for agent in opencode codex claude agy qwen hermes cursor kimi; do
+  for agent in opencode codex claude agy qwen gemini hermes cursor kimi; do
     if available "$agent"; then printf '%s\n' "$agent"; fi
   done
 }
 menu_agents() {
-  for agent in opencode codex agy qwen; do
+  for agent in opencode codex agy qwen gemini; do
     if available "$agent"; then printf '%s\n' "$agent"; fi
   done
   if command -v mise >/dev/null 2>&1; then printf 'claude\n'; fi
@@ -140,7 +140,7 @@ uninstall_agent() {
   rm -f "$record"
 }
 launch() {
-  case "$1" in opencode|codex|claude|agy|qwen|hermes|cursor|kimi) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
+  case "$1" in opencode|codex|claude|agy|qwen|gemini|hermes|cursor|kimi) agent=$1 ;; *) message "$(translate invalid)"; return 2 ;; esac
   if [ "$agent" = claude ] || [ "$agent" = hermes ] || [ "$agent" = cursor ] || [ "$agent" = kimi ]; then
     self=$(command -v "$0")
     run_action=run-external
@@ -185,7 +185,7 @@ case "${1:-menu}" in
   menu)
     [ "$#" -le 1 ] || exit 2
     agents=$(menu_agents | while IFS= read -r agent; do
-      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; qwen) printf 'Qwen Code\n' ;; hermes) printf 'Hermes\n' ;; cursor) printf 'Cursor CLI\n' ;; kimi) printf 'Kimi Code\n' ;; esac
+      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; qwen) printf 'Qwen Code\n' ;; gemini) printf '%s\n' "$(translate gemini_cli_label)" ;; hermes) printf 'Hermes\n' ;; cursor) printf 'Cursor CLI\n' ;; kimi) printf 'Kimi Code\n' ;; esac
     done)
     if [ -z "$agents" ]; then message "$(translate empty)"; exit 1; fi
     status=0
@@ -198,6 +198,7 @@ case "${1:-menu}" in
       "Claude Code") launch claude ;;
       "Google Antigravity") launch agy ;;
       "Qwen Code") launch qwen ;;
+      "$(translate gemini_cli_label)") launch gemini ;;
       Hermes) launch hermes ;;
       "Cursor CLI") launch cursor ;;
       "Kimi Code") launch kimi ;;

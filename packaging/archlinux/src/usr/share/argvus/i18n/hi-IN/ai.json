@@ -16,5 +16,6 @@
   "no_managed_agents": "नहीं ARGVUS-प्रबंधित बाहरी एजेंट स्थापना रद्द करने के लिए उपलब्ध हैं।.",
   "uninstall_title": "एक ARGVUS-प्रबंधित एजेंट की स्थापना रद्द करें",
   "confirm_uninstall": "स्थापना रद्द करें",
-  "cancel": "रद्द करना"
+  "cancel": "रद्द करना",
+  "gemini_cli_label": "Gemini CLI"
 }

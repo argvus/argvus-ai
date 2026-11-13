@@ -34,3 +34,5 @@ sudo pacman -R argvus-ai
 Paket tarafından sahip olunan Lua modülü ve masaüstü girdileri kaldırılır ve yardımcı programı olmadığında görev çubuğu modülü gizlenir. Standart Hyprland yapılandırması bağı kaldırmak için otomatik olarak yeniden yüklenir. Kullanıcıya ait mise araçları, ajan ayarları ve kimlik bilgileri korunur. Pacman bu komutla ajan bağımlılıklarını otomatik olarak kaldırmaz.
 
 ARGVUS AI paketi, paket kurulumu sırasında harici aracıları yüklemez. Hermes, Cursor CLI ve Kimi ilk başlatmada yüklenir; kullanıcı verileri paketin dışında kalır. Kaldırma talimatları için kullanım kılavuzuna bakın.
+
+Arch Extra deposundaki `gemini-cli`, `argvus-ai` bağımlılığı olarak kurulur; ayrıca npm kurulumu gerekmez.

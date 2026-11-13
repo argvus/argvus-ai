@@ -38,3 +38,5 @@ Agents 会在一个居中的浮动 Kitty 窗口中打开，标题为 `ARGVUS AI 
 ## 卸载智能体
 
 `argvus-ai list` 会列出已安装的智能体。运行 `argvus-ai uninstall`，选择由 ARGVUS 管理的 Hermes、Cursor CLI 或 Kimi 安装，然后确认卸载。也可直接运行 `argvus-ai uninstall hermes`、`argvus-ai uninstall cursor` 或 `argvus-ai uninstall kimi`。不会改动 ARGVUS 之外的安装；但显式指定 Cursor 的命令会识别旧版 Cursor CLI，前提是 `~/.local/bin/agent` 指向 `~/.local/share/cursor-agent/versions/` 内的可执行文件。Hermes 使用其官方卸载程序。Cursor 和 Kimi 的可执行文件会被移除，用户设置、会话和凭据会保留。
+
+运行 `argvus-ai list` 检查；使用 `argvus-ai launch gemini` 或从菜单启动。在 Gemini CLI 中完成 Google 身份验证。

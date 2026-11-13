@@ -16,5 +16,6 @@
   "no_managed_agents": "Tidak ada ARGVUS -dikelola agen eksternal yang tersedia untuk uninstall.",
   "uninstall_title": "Uninstall sebuah {PH000 }-dikelola agen",
   "confirm_uninstall": "Konfirmasi uninstall",
-  "cancel": "Batal"
+  "cancel": "Batal",
+  "gemini_cli_label": "Gemini CLI"
 }

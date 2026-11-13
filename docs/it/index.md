@@ -17,3 +17,5 @@ The `ai` catalogo è fornito in tutti i 18 ARGVUS lingue di interfaccia e utiliz
 ## Agenti supportati
 
 L’integrazione supporta OpenCode, Codex e Qwen Code inclusi nel pacchetto, Claude Code tramite mise, Antigravity se installato separatamente e Hermes, Cursor CLI e Kimi, installati al primo avvio tramite i rispettivi installer ufficiali. Consulta la [guida all’uso](usage/) per sapere come elencare e disinstallare gli agenti esterni gestiti da ARGVUS.
+
+Gemini CLI è incluso come dipendenza Arch `gemini-cli` e appare nel selettore quando `gemini` è disponibile.

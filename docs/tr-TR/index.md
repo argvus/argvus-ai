@@ -16,3 +16,5 @@ The The The The The The The The `ai` katalog tüm 18'de sağlanmaktadır. ARGVUS
 ## Desteklenen aracılar
 
 Bu entegrasyon; paketle sunulan OpenCode, Codex ve Qwen Code’u, mise aracılığıyla Claude Code’u, ayrıca kurulduğunda Antigravity’yi ve ilk çalıştırmada resmî kurulum programlarıyla yüklenen Hermes, Cursor CLI ve Kimi’yi destekler. ARGVUS’un yönettiği harici ajanları listeleme ve kaldırma hakkında bilgi için [kullanım kılavuzuna](usage/) bakın.
+
+Gemini CLI, Arch `gemini-cli` bağımlılığıyla sağlanır ve `gemini` komutu varsa seçicide görünür.

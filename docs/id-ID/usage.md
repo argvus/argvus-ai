@@ -38,3 +38,5 @@ Agen terbuka di jendela Kitty mengambang di tengah berjudul `ARGVUS AI Agent`, d
 ## Menghapus instalasi agen
 
 `argvus-ai list` menampilkan agen yang terpasang. Jalankan `argvus-ai uninstall` untuk memilih instalasi Hermes, Cursor CLI, atau Kimi yang dikelola ARGVUS, lalu konfirmasi penghapusan. Anda juga dapat menjalankan `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor`, atau `argvus-ai uninstall kimi`. Instalasi dari luar ARGVUS tidak diubah, kecuali instalasi lama Cursor CLI dikenali oleh perintah khusus jika `~/.local/bin/agent` mengarah ke dalam `~/.local/share/cursor-agent/versions/`. Hermes menggunakan penghapus instalasi resminya. Biner Cursor dan Kimi dihapus, sedangkan pengaturan, sesi, dan kredensial pengguna dipertahankan.
+
+Periksa dengan `argvus-ai list`; jalankan `argvus-ai launch gemini` atau pilih dari menu. Autentikasi Google dilakukan di Gemini CLI.

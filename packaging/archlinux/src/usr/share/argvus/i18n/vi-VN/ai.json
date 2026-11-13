@@ -16,5 +16,6 @@
   "no_managed_agents": "Không có đặc vụ bị quản lý bên ngoài nào có thể gỡ bỏ cài đặt.",
   "uninstall_title": "Hủy cài đặt một đặc vụ đã quản lýARGVUS",
   "confirm_uninstall": "Xác nhận tháo cài đặt",
-  "cancel": "Thôi"
+  "cancel": "Thôi",
+  "gemini_cli_label": "Gemini CLI"
 }

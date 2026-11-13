@@ -17,3 +17,5 @@ The dedicated `ai-agents` Kitty profile hides tabs and disables inherited tab, s
 Google Antigravity CLI (`agy`) is installed separately using the [official instructions](https://antigravity.google/docs/getting-started?tab=cli). The selector detects it in PATH or `~/.local/bin/agy`.
 
 Hermes, Cursor CLI and Kimi Code install using their official installers on first launch as the current user. Select them in the menu or run `argvus-ai launch hermes`, `argvus-ai launch cursor` or `argvus-ai launch kimi`. Authentication and updates are managed by each agent.
+
+Gemini CLI is included through Arch's `gemini-cli` package dependency. Use `argvus-ai list` to check availability and `argvus-ai launch gemini` to start it; Google authentication is handled by Gemini CLI.

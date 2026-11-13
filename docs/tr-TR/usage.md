@@ -34,3 +34,5 @@ Ajanlar, `ARGVUS AI Agent` başlıklı ortalanmış bir yüzen Kitty penceresind
 ## Aracıları kaldırma
 
 `argvus-ai list` yüklü aracıları gösterir. ARGVUS tarafından yönetilen Hermes, Cursor CLI veya Kimi kurulumunu seçip kaldırmayı onaylamak için `argvus-ai uninstall` komutunu çalıştırın. `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` veya `argvus-ai uninstall kimi` komutlarını doğrudan da kullanabilirsiniz. ARGVUS dışındaki kurulumlara dokunulmaz; ancak açık Cursor komutu, `~/.local/bin/agent` yolu `~/.local/share/cursor-agent/versions/` içindeki bir yürütülebilir dosyaya çözülüyorsa eski Cursor CLI kurulumunu tanır. Hermes’in resmi kaldırma aracı kullanılır. Cursor ve Kimi ikilileri kaldırılır; kullanıcı ayarları, oturumları ve kimlik bilgileri korunur.
+
+`argvus-ai list` ile kontrol edin; `argvus-ai launch gemini` komutunu çalıştırın veya menüden seçin. Google girişi Gemini CLI içinde yapılır.

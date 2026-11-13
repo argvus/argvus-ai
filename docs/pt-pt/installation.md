@@ -34,3 +34,5 @@ sudo pacman -R argvus-ai
 O módulo Lua e as entradas de aplicações pertencentes ao pacote são removidos, e o módulo da taskbar fica oculto quando o helper está ausente. A configuração padrão do Hyprland recarrega para remover o bind. Ferramentas mise, definições e credenciais do utilizador são preservadas. Esse comando não remove automaticamente as dependências dos agentes.
 
 O pacote ARGVUS AI não instala agentes externos durante a instalação do pacote. Hermes, Cursor CLI e Kimi são instalados na primeira abertura; os dados do utilizador ficam fora do pacote. Consulte o guia de utilização para instruções de remoção.
+
+O pacote `gemini-cli` do Arch Extra é instalado como dependência do `argvus-ai`; não é necessária instalação por npm.

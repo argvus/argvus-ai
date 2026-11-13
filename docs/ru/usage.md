@@ -38,3 +38,5 @@ argvus-ai launch claude
 ## Удаление агентов
 
 Команда `argvus-ai list` показывает установленные агенты. Запустите `argvus-ai uninstall`, выберите управляемую ARGVUS установку Hermes, Cursor CLI или Kimi и подтвердите удаление. Также можно указать агента напрямую: `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` или `argvus-ai uninstall kimi`. Внешние установки не затрагиваются, кроме старой установки Cursor CLI, которую явная команда распознаёт, если `~/.local/bin/agent` указывает внутрь `~/.local/share/cursor-agent/versions/`. Hermes использует официальный деинсталлятор. Исполняемые файлы Cursor и Kimi удаляются, пользовательские настройки, сессии и учётные данные сохраняются.
+
+Проверьте через `argvus-ai list`; запустите `argvus-ai launch gemini` или выберите его в меню. Авторизуйтесь в Google внутри Gemini CLI.

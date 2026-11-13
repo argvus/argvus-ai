@@ -16,5 +16,6 @@
   "no_managed_agents": "غیر ملحقہ اشیاء کے لیے کوئی بھی ایس پی ایچ000 ایم پی.",
   "uninstall_title": "Uninstall ایک ExPH000 جیانگ ایجنٹ",
   "confirm_uninstall": "غیر متصل",
-  "cancel": "منسوخ"
+  "cancel": "منسوخ",
+  "gemini_cli_label": "Gemini CLI"
 }

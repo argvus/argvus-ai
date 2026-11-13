@@ -17,3 +17,5 @@ OpenCode와 Codex는 패키지 의존성으로 설치됩니다. Claude Code는 �
 ## 지원되는 에이전트
 
 이 통합은 패키지로 제공되는 OpenCode, Codex, Qwen Code와 mise를 통해 설치하는 Claude Code를 지원합니다. Antigravity는 별도로 설치해야 하며, Hermes, Cursor CLI, Kimi는 처음 실행할 때 공식 설치 프로그램을 통해 설치됩니다. ARGVUS가 관리하는 외부 에이전트의 목록을 확인하고 제거하는 방법은 [사용 안내서](usage/)를 참조하세요.
+
+Gemini CLI는 Arch `gemini-cli` 의존성으로 제공되며 `gemini` 명령을 사용할 수 있으면 선택기에 표시됩니다.

@@ -51,3 +51,5 @@ Instalações do Kimi em `~/.kimi-code/bin/kimi` são detectadas sem alterar o P
 ## Desinstalar agentes
 
 `argvus-ai list` lista os agentes instalados. Execute `argvus-ai uninstall` para selecionar uma instalação do Hermes, Cursor CLI ou Kimi gerenciada pelo ARGVUS e confirme a remoção. Também é possível executar `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` ou `argvus-ai uninstall kimi`. Instalações feitas fora do ARGVUS não são alteradas, exceto uma instalação antiga do Cursor CLI, reconhecida pelo comando explícito quando `~/.local/bin/agent` aponta para dentro de `~/.local/share/cursor-agent/versions/`. O Hermes usa seu desinstalador oficial. Os binários do Cursor e do Kimi são removidos, preservando configurações, sessões e credenciais do usuário.
+
+Confira com `argvus-ai list`; abra com `argvus-ai launch gemini` ou selecione Gemini CLI no menu. Autentique-se com o Google no próprio Gemini CLI.

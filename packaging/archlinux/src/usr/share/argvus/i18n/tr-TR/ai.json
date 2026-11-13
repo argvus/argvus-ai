@@ -16,5 +16,6 @@
   "no_managed_agents": "Hayır ARGVUS yönetilmeyen dış ajanlar kaldırılabilir.",
   "uninstall_title": "Bir ARGVUS-managed ajan",
   "confirm_uninstall": "Onaylanmamış",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+  "gemini_cli_label": "Gemini CLI"
 }

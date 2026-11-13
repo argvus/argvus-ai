@@ -16,5 +16,6 @@
   "no_managed_agents": "বাইরের এজেন্টগুলো আন-ইনস্টল করতে পাওয়া যাচ্ছে না।.",
   "uninstall_title": "আন-ইনস্টল করো",
   "confirm_uninstall": "আন-ইনস্টল করুন",
-  "cancel": "বাতিল"
+  "cancel": "বাতিল",
+  "gemini_cli_label": "Gemini CLI"
 }

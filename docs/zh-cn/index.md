@@ -17,3 +17,5 @@ OpenCode 和 Codex 已作为软件包依赖安装。Claude Code 仅在你首次�
 ## 支持代理
 
 此集成支持软件包提供的 OpenCode、Codex 和 Qwen Code，通过 mise 安装的 Claude Code，单独安装后使用的 Antigravity，以及首次启动时通过官方安装程序安装的 Hermes、Cursor CLI 和 Kimi。有关如何查看 ARGVUS 管理的外部代理列表并卸载它们，请参阅[使用指南](usage/)。
+
+Gemini CLI 由 Arch 依赖包 `gemini-cli` 提供，`gemini` 命令可用时会显示在选择器中。

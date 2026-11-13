@@ -36,3 +36,5 @@ Hồ sơ Kitty chuyên dụng `ai-agents` ẩn các tab và xóa các phím tắ
 ## Gỡ cài đặt tác nhân
 
 `argvus-ai list` hiển thị các tác nhân đã cài đặt. Chạy `argvus-ai uninstall`, chọn bản cài Hermes, Cursor CLI hoặc Kimi do ARGVUS quản lý rồi xác nhận gỡ bỏ. Bạn cũng có thể chạy trực tiếp `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` hoặc `argvus-ai uninstall kimi`. Các bản cài bên ngoài ARGVUS không bị thay đổi, ngoại trừ Cursor CLI cũ được lệnh Cursor chỉ định nhận diện nếu `~/.local/bin/agent` trỏ đến bên trong `~/.local/share/cursor-agent/versions/`. Hermes dùng trình gỡ chính thức. Tệp thực thi Cursor và Kimi được xóa, còn thiết lập, phiên và thông tin xác thực của người dùng được giữ lại.
+
+Kiểm tra bằng `argvus-ai list`; chạy `argvus-ai launch gemini` hoặc chọn trong menu. Xác thực Google trong Gemini CLI.

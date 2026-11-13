@@ -38,3 +38,5 @@ Il profilo dedicato Kitty `ai-agents` nasconde le schede e cancella le scorciato
 ## Disinstallare gli agenti
 
 `argvus-ai list` mostra gli agenti installati. Esegui `argvus-ai uninstall` per selezionare un’installazione di Hermes, Cursor CLI o Kimi gestita da ARGVUS e conferma la rimozione. Puoi anche eseguire `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` o `argvus-ai uninstall kimi`. Le installazioni esterne non vengono modificate, tranne una vecchia installazione di Cursor CLI riconosciuta dal comando esplicito se `~/.local/bin/agent` punta all’interno di `~/.local/share/cursor-agent/versions/`. Hermes usa il suo programma di disinstallazione ufficiale. I binari Cursor e Kimi vengono rimossi, mantenendo impostazioni, sessioni e credenziali utente.
+
+Verifica con `argvus-ai list`; avvia con `argvus-ai launch gemini` o selezionalo dal menu. Accedi a Google in Gemini CLI.

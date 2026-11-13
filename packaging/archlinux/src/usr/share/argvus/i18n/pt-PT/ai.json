@@ -16,5 +16,6 @@
   "no_managed_agents": "Nenhum agente externo gerenciado por ARGVUS está disponível para desinstalar.",
   "uninstall_title": "Desinstalar um agente gerenciado por ARGVUS",
   "confirm_uninstall": "Confirmar desinstalação",
-  "cancel": "Cancelar"
+  "cancel": "Cancelar",
+  "gemini_cli_label": "Gemini CLI"
 }

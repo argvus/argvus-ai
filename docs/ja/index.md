@@ -17,3 +17,5 @@ OpenCode および Codex はパッケージ依存関係としてインストー�
 ## サポートされているエージェント
 
 この統合は、パッケージに含まれる OpenCode、Codex、Qwen Code、mise 経由で利用する Claude Code、別途インストールした場合の Antigravity、および初回起動時に公式インストーラーで導入する Hermes、Cursor CLI、Kimi に対応しています。ARGVUS が管理する外部エージェントの一覧表示とアンインストール方法は、[使用ガイド](usage/) を参照してください。
+
+Gemini CLI は Arch の依存パッケージ `gemini-cli` として含まれ、`gemini` が利用可能になると選択メニューに表示されます。

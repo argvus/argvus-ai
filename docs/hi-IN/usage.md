@@ -50,3 +50,5 @@ The dedicated Kitty profile
 ## एजेंट अनइंस्टॉल करें
 
 `argvus-ai list` इंस्टॉल किए गए एजेंट दिखाता है। ARGVUS द्वारा प्रबंधित Hermes, Cursor CLI या Kimi इंस्टॉलेशन चुनने के लिए `argvus-ai uninstall` चलाएँ और हटाने की पुष्टि करें। सीधे `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` या `argvus-ai uninstall kimi` भी चला सकते हैं। ARGVUS के बाहर के इंस्टॉलेशन नहीं बदले जाते; हालांकि, स्पष्ट Cursor कमांड पुराने इंस्टॉलेशन को तभी पहचानता है जब `~/.local/bin/agent`, `~/.local/share/cursor-agent/versions/` के भीतर के निष्पादन योग्य को इंगित करे। Hermes का आधिकारिक अनइंस्टॉलर उपयोग होता है। Cursor और Kimi बाइनरी हटती हैं, जबकि उपयोगकर्ता सेटिंग्स, सत्र और प्रमाण-पत्र सुरक्षित रहते हैं।
+
+`argvus-ai list` से जाँचें; `argvus-ai launch gemini` चलाएँ या मेनू से चुनें। Google प्रमाणीकरण Gemini CLI में करें।

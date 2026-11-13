@@ -31,3 +31,5 @@ sudo pacman -R argvus-ai
 包管理的 Lua 模块和桌面条目已被移除，当其辅助程序不存在时任务栏模块会隐藏。标准的 Hyprland 配置会自动重载以移除绑定。用户拥有的 mise 工具、代理设置和凭证会被保留。Pacman 不会使用此命令自动移除代理依赖项。
 
 ARGVUS AI 软件包在软件包安装时不会安装外部代理。 Hermes、Cursor CLI 和 Kimi 在首次启动时安装；他们的用户数据保留在包之外。有关删除说明，请参阅使用指南。
+
+Arch Extra 的 `gemini-cli` 会作为 `argvus-ai` 依赖安装，无需单独使用 npm 安装。

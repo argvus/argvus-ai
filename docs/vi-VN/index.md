@@ -18,3 +18,5 @@ Hạt `ai` Danh mục được cung cấp trong tất cả 18 ARGVUS Ngôn ngữ
 ## Đại lý được hỗ trợ
 
 Tích hợp này hỗ trợ OpenCode, Codex và Qwen Code có trong gói; Claude Code thông qua mise; Antigravity nếu được cài riêng; cùng Hermes, Cursor CLI và Kimi được cài bằng trình cài đặt chính thức khi chạy lần đầu. Xem [hướng dẫn sử dụng](usage/) để biết cách liệt kê và gỡ cài đặt các tác nhân bên ngoài do ARGVUS quản lý.
+
+Gemini CLI được cung cấp qua phụ thuộc Arch `gemini-cli` và xuất hiện trong bộ chọn khi lệnh `gemini` khả dụng.

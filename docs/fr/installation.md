@@ -31,3 +31,5 @@ sudo pacman -R argvus-ai
 Le module Lua détenu par le paquet et les entrées de bureau sont supprimés, et le module de la barre des tâches se cache lorsque son assistant est absent. La configuration standard de Hyprland se recharge automatiquement pour supprimer le raccourci. Les outils mise, les paramètres de l'agent et les identifiants détenus par l'utilisateur sont conservés. Pacman ne supprime pas automatiquement les dépendances de l'agent avec cette commande.
 
 Le paquet ARGVUS AI n’installe pas d’agents externes lors de son installation. Hermes, Cursor CLI et Kimi sont installés au premier lancement ; les données utilisateur restent hors du paquet. Consultez le guide d’utilisation pour les instructions de suppression.
+
+Le paquet `gemini-cli` d’Arch Extra est installé comme dépendance de `argvus-ai` ; aucune installation npm séparée n’est nécessaire.
