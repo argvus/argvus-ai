@@ -1,0 +1,20 @@
+{
+  "title": "Đặc vụ",
+  "invalid": "Đặc vụAI không hợp lệ",
+  "terminal_error": "Không thể mở thiết bị cuốiARGVUS",
+  "empty": "Không có đặc vụAI sẵn sàng trong phiên chạy đồ hoạPATH",
+  "menu_error": "Không thể mở thực đơn đặc vụAI",
+  "usage": "Cách sử dụng:{PH 1000} menu BAR  trạng thái [[PH001]] [PH002] khởi động [H002] un install [hermes Gurscurkimi]",
+  "unavailable": "Đặc vụ không sẵn sàng. Mã Claude cài đặt thông qua sai khi chọn; kiểm tra xem truy cập mạng và lỗi đọc sai nếu cài đặt không thành công.",
+  "root_install": "Chạy cài đặt như một người dùng, không sudo.",
+  "mise_missing": "Cài đặt hoặc cập nhật gói sai với Pacman.",
+  "install_error": "Việc cài đặt hay giải quyết mã Claude bị lỗi. Kiểm tra lỗi mise và cập nhật lỗi.",
+  "footer.close": "Ctrl + e - Đóng",
+  "external_install_error": "Lỗi cài đặt hoặc tìm kiếm đặc vụ{agent}. Kiểm tra lại thiết bị cuối gặp lỗi.",
+  "managed_record_error": "Không thể xác minh hồ sơ cài đặt đã được quản lý.",
+  "unmanaged_agent": "Không được cài đặt bởiARGVUS và chưa được cài đặt.",
+  "no_managed_agents": "Không có đặc vụ bị quản lý bên ngoài nào có thể gỡ bỏ cài đặt.",
+  "uninstall_title": "Hủy cài đặt một đặc vụ đã quản lýARGVUS",
+  "confirm_uninstall": "Xác nhận tháo cài đặt",
+  "cancel": "Thôi"
+}

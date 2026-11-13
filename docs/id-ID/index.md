@@ -13,7 +13,7 @@ Baca [Instalasi](/docs/argvus-ai/installation/) dan [Penggunaan dan pemecahan ma
 
 ## Bahasa
 
-Katalog `ai` disediakan dalam sepuluh bahasa ARGVUS dan menggunakan pilihan `argvus i18n` bersama dan fallback bahasa Inggris. Terjemahan diinstal sebagai data tanpa menulis konfigurasi pengguna.
+The `ai` katalog disediakan dalam semua 18 ARGVUS antar bahasa dan menggunakan berbagi `argvus i18n` seleksi dan mundur Inggris. Bahasa antar muka yang dipilih disimpan sebagai `ARGVUS_LANGUAGE` di pengguna `locale.conf`; sistem lokal regional tetap terpisah. Terjemahan diinstal sebagai data tanpa konfigurasi pengguna menulis.
 
 ## Agen yang didukung
 

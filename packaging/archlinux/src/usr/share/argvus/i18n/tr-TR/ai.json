@@ -1,0 +1,20 @@
+{
+  "title": "AI ajanlar",
+  "invalid": "Invalid AI ajan",
+  "terminal_error": "ARGVUS terminali açın",
+  "empty": "AI grafik seansta mevcut ajanlar PATH",
+  "menu_error": "AI ajanlar menü açabilir",
+  "usage": "Kullanım: argvus-ai menü | liste | statü [--check] | fırlatma AGENT | yükleme [hermes|cursor|kimi]",
+  "unavailable": "Ajan kullanılamaz: {agent}. Claude Code, seçilen zaman miller aracılığıyla yükler; yükleme başarısız olursa ağ erişim ve mise hataları kontrol edin.",
+  "root_install": "Bir kullanıcı olarak yükleme, sudo olmadan.",
+  "mise_missing": "Pacman ile mise paketi yükleyin veya güncelleyin.",
+  "install_error": "Claude Code installation veya karar başarısız oldu. Mise hataları ve güncelleme mise.",
+  "footer.close": "Evet + e - Close",
+  "external_install_error": "Ajanı yüklemek veya bulmak için başarısız oldu {agent}. Hatalar için terminali kontrol edin.",
+  "managed_record_error": "ARGVUS-managed yükleme rekorunu doğrulamayabilir.",
+  "unmanaged_agent": "{agent} ARGVUS tarafından yüklenmedi ve sola bırakıldı.",
+  "no_managed_agents": "Hayır ARGVUS yönetilmeyen dış ajanlar kaldırılabilir.",
+  "uninstall_title": "Bir ARGVUS-managed ajan",
+  "confirm_uninstall": "Onaylanmamış",
+  "cancel": "Cancel"
+}

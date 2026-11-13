@@ -1,0 +1,20 @@
+{
+  "title": "[PH000] agen",
+  "invalid": "Agen AI tidak valid",
+  "terminal_error": "Tak bisa membuka terminal ARGVUS",
+  "empty": "Tidak ada agen yang tersedia dalam sesi grafis PATH",
+  "menu_error": "Tidak dapat membuka menu agen AI",
+  "usage": "Penggunaan: [Pemakaian: argvus-ai menu dsb 124; daftar 124; status [--check] £124; peluncuran AGENT 14; uninstall [hermes 124; cursor 12.4; kimi]",
+  "unavailable": "Agen tidak tersedia: [PH000]. Claude Kode diinstal melalui mise ketika dipilih; periksa akses jaringan dan mise error jika instalasi gagal.",
+  "root_install": "Jalankan instalasi sebagai pengguna, tanpa sudo.",
+  "mise_missing": "Pasang atau perbarui paket misi dengan Pacman.",
+  "install_error": "Instalasi kode Claude atau resolusi gagal. Periksa kesalahan mise dan update mise.",
+  "footer.close": "Ctrl + e - Tutup",
+  "external_install_error": "Gagal memasang atau lokasi agen {agent}. Periksa terminal kesalahan.",
+  "managed_record_error": "Tidak dapat memverifikasi ARGVUS -dikelola catatan instalasi.",
+  "unmanaged_agent": "[PH000] tidak diinstal oleh {PH001] dan dibiarkan tersentuh.",
+  "no_managed_agents": "Tidak ada ARGVUS -dikelola agen eksternal yang tersedia untuk uninstall.",
+  "uninstall_title": "Uninstall sebuah {PH000 }-dikelola agen",
+  "confirm_uninstall": "Konfirmasi uninstall",
+  "cancel": "Batal"
+}

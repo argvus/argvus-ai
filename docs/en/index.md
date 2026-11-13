@@ -13,7 +13,7 @@ Read [Installation](/docs/argvus-ai/installation/) and [Usage and troubleshootin
 
 ## Languages
 
-The `ai` catalog is provided in all ten ARGVUS languages and uses the shared `argvus i18n` selection and English fallback. Translations are installed as data without writing user configuration.
+The `ai` catalog is provided in all 18 ARGVUS interface languages and uses the shared `argvus i18n` selection and English fallback. The selected interface language is stored as `ARGVUS_LANGUAGE` in the user's `locale.conf`; the system regional locale remains separate. Translations are installed as data without writing user configuration.
 
 ## Supported agents
 

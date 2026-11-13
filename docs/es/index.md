@@ -12,7 +12,7 @@ Lea [Installation](/docs/argvus-ai/installation/) y [Usage and troubleshooting](
 
 ## Idiomas
 
-El catálogo `ai` se proporciona en los diez idiomas ARGVUS y utiliza la selección compartida `argvus i18n` y la opción de respaldo en inglés. Las traducciones se instalan como datos sin modificar la configuración del usuario.
+El `ai` catálogo se suministra en todos los 18 ARGVUS idiomas de interfaz y utiliza el `argvus i18n` selección e ingles. El idioma de interfaz seleccionado se almacena como `ARGVUS_LANGUAGE` en el usuario `locale.conf`; el sistema regional local sigue siendo separado. Las traducciones se instalan como datos sin escribir la configuración del usuario.
 
 ## Agentes disponibles
 

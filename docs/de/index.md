@@ -12,7 +12,7 @@ Lesen Sie [Installation](/docs/argvus-ai/installation/) und [Verwendung und Fehl
 
 ## Sprachen
 
-Der `ai`-Katalog wird in allen zehn ARGVUS-Sprachen bereitgestellt und verwendet die gemeinsame `argvus i18n`-Auswahl sowie die englische Rückfalloption. Übersetzungen werden als Daten installiert, ohne die Benutzerkonfiguration zu schreiben.
+Die `ai` Der Katalog ist in allen 18 ARGVUS Schnittstellensprachen und verwendet die geteilten `argvus i18n` Auswahl und englischer Fallback. Die gewählte Schnittstellensprache wird gespeichert als `ARGVUS_LANGUAGE` im Benutzer `locale.conf`; das System regional locale bleibt getrennt. Übersetzungen werden als Daten installiert, ohne die Benutzerkonfiguration zu schreiben.
 
 ## Unterstützte Agenten
 

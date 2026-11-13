@@ -11,7 +11,7 @@ Kurulum [Installation](/docs/argvus-ai/installation/) ve [Kullanım ve sorun gid
 
 ## Diller
 
-`ai` kataloğu tüm on ARGVUS dilinde sunulmakta olup ortak `argvus i18n` seçimini ve İngilizce yedeğini kullanır. Çeviriler, kullanıcı yapılandırması yazmadan veri olarak yüklenir.
+The The The The The The The The `ai` katalog tüm 18'de sağlanmaktadır. ARGVUS arayüz dilleri ve paylaşılanları kullanır `argvus i18n` Seçim ve İngilizce geri çekilme. Seçilen arayüz dili depolanır `ARGVUS_LANGUAGE` Kullanıcının içinde `locale.conf`; Sistem bölgesel yerel ayrı kalır. Çeviriler kullanıcı yapılandırması olmadan veri olarak kurulur.
 
 ## Desteklenen aracılar
 

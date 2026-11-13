@@ -97,6 +97,14 @@ class Integration(unittest.TestCase):
         pt = json.loads((root / "pt-BR/ai.json").read_text())
         self.assertEqual(en.keys(), pt.keys())
         self.assertTrue(pt["usage"].startswith("Uso:"))
+        self.assertEqual(
+            sorted(path.name for path in root.iterdir() if path.is_dir()),
+            [
+                "ar", "bn-BD", "de-DE", "en-US", "es-ES", "fr-FR", "hi-IN", "id-ID",
+                "it-IT", "ja-JP", "ko-KR", "pt-BR", "pt-PT", "ru-RU", "tr-TR",
+                "ur-PK", "vi-VN", "zh-CN",
+            ],
+        )
         for key in en:
             self.assertEqual(re.findall(r"\{[^}]+\}", en[key]), re.findall(r"\{[^}]+\}", pt[key]))
 

@@ -12,7 +12,7 @@ OpenCode 和 Codex 已作为软件包依赖安装。Claude Code 仅在你首次�
 
 ## 语言
 
-`ai` 目录提供所有十种 ARGVUS 语言，并使用共享的 `argvus i18n` 选择和英语回退。翻译作为数据安装，而不会写入用户配置。
+这个 `ai` 所有18个国家都提供了目录 ARGVUS 界面语言并使用共享 `argvus i18n` 选择和英语退后。 所选界面语言为 `ARGVUS_LANGUAGE` 在用户中 `locale.conf`;系统区域地块仍然分开。 翻译作为数据安装而无需写入用户配置.
 
 ## 支持代理
 

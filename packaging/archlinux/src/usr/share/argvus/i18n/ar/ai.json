@@ -1,0 +1,20 @@
+{
+  "title": "AIعملاء",
+  "invalid": "Invalid AI agent",
+  "terminal_error": "لا يمكن فتح محطة ARGVUS",
+  "empty": "No AI agents available in the graphical session PATH",
+  "menu_error": "لم أستطع فتح قائمة عملاء",
+  "usage": "Usage: argvus-ai menu ] list | status [PH001}] ] launch AGENT ] uninstall [hermes]cursor]kimi]",
+  "unavailable": "وكيل غير متاح: {agent}. ويثبت قانون كلود من خلال الضباب عند اختياره؛ ويتحقق من إمكانية الوصول إلى الشبكة وأخطاء خاطئة إذا فشل التركيب.",
+  "root_install": "تشغيل التركيب كمستعمل، دون سودو.",
+  "mise_missing": "اثبت أو استكمل الطرد مع باكمان.",
+  "install_error": "فُشل تركيب أو تسوية كلود. تحقق من الأخطاء الخاطئة و تُحدّث الضباب.",
+  "footer.close": "Ctrl + e",
+  "external_install_error": "فشل في تركيب أو تحديد مكان العميل {agent}. تفقد المحطة من أجل الأخطاء.",
+  "managed_record_error": "لم يستطع التحقق من سجل التركيب الذي يديره ARGVUS.",
+  "unmanaged_agent": "{agent} لم يتم تركيبه بواسطة ARGVUS وترك دون أن يمس.",
+  "no_managed_agents": "No ARGVUS-managed external agents are available to uninstall.",
+  "uninstall_title": "Uninstall an ARGVUS-managed agent",
+  "confirm_uninstall": "تأكيد عدم الاستقرار",
+  "cancel": "إلغاء"
+}

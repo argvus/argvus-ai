@@ -13,7 +13,7 @@ OpenCode và Codex được cài đặt dưới dạng gói phụ thuộc. Mã C
 
 ## Ngôn ngữ
 
-Danh mục `ai` được cung cấp bằng tất cả mười ngôn ngữ ARGVUS và sử dụng lựa chọn `argvus i18n` được chia sẻ và dự phòng bằng tiếng Anh. Bản dịch được cài đặt dưới dạng dữ liệu mà không cần ghi cấu hình người dùng.
+Hạt `ai` Danh mục được cung cấp trong tất cả 18 ARGVUS Ngôn ngữ giao diện và sử dụng các ngôn ngữ chia sẻ `argvus i18n` Chọn lọc và phản công tiếng Anh. Ngôn ngữ giao diện đã chọn được cất giữ như `ARGVUS_LANGUAGE` trong người dùng `locale.conf`; hệ thống khu vực địa phương vẫn còn tách biệt. Các bản dịch được cài đặt làm dữ liệu mà không cần ghi cấu hình người dùng.
 
 ## Đại lý được hỗ trợ
 
