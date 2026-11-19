@@ -13,7 +13,7 @@ sudo pacman -S argvus-ai
 
 Untuk build lokal yang belum dipublikasikan, jalankan `make validate` dan `make build` di repositori sumber `argvus-ai`, kemudian pasang `.pkg.tar.zst` yang dihasilkan dari `build/dist/` dengan `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman harus mampu menyelesaikan dependensinya, termasuk paket `argvus` utama.
 
-Paket ini membutuhkan `argvus`, `rofi`, `jq`, `mise`, `opencode` dan `openai-codex`; Arch menyediakan `/bin/sh` sampai `bash`. OpenCode dijalankan sebagai `opencode`, dan paket `openai-codex` menyediakan `codex`.
+Paket ini membutuhkan `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` dan `openai-codex`; Arch menyediakan `/bin/sh` sampai `bash`. OpenCode dijalankan sebagai `opencode`, dan paket `openai-codex` menyediakan `codex`.
 
 ## Integrasi Desktop
 
@@ -21,7 +21,7 @@ Gunakan paket `argvus-hyprland` dan `argvus-taskbar` yang diperbarui. Hyprland m
 
 ## Claude Code pada penggunaan pertama
 
-Pilih Claude Code dari pemilih Rofi atau peluncur aplikasi. Terminal ARGVUS terbuka dan berjalan
+Pilih Claude Code dari pemilih GTK atau peluncur aplikasi. Terminal ARGVUS terbuka dan berjalan
 
  sebagai pengguna reguler Anda jika tidak ada versi terinstal yang ditemukan. Akses jaringan diperlukan untuk instalasi pertama ini. Pembungkusnya menyelesaikan executable yang diinstal dan menambahkan direktorinya ke proses yang diluncurkan PATH; itu tidak mengedit file startup shell atau menginstal sebagai root. Peluncuran kemudian menggunakan kembali instalasi.
 

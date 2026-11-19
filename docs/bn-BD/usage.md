@@ -40,3 +40,5 @@ argvus-ai launch claude
 `argvus-ai list` ইনস্টল করা এজেন্ট দেখায়। ARGVUS-পরিচালিত Hermes, Cursor CLI বা Kimi ইনস্টলেশন বেছে নিতে `argvus-ai uninstall` চালান, তারপর অপসারণ নিশ্চিত করুন। সরাসরি `argvus-ai uninstall hermes`, `argvus-ai uninstall cursor` বা `argvus-ai uninstall kimi` চালানো যায়। ARGVUS-এর বাইরের ইনস্টলেশন অপরিবর্তিত থাকে; তবে নির্দিষ্ট Cursor কমান্ডটি পুরোনো ইনস্টলেশন চিনবে যদি `~/.local/bin/agent` `~/.local/share/cursor-agent/versions/`-এর ভেতরের ফাইলে নির্দেশ করে। Hermes-এর অফিসিয়াল আনইনস্টলার ব্যবহৃত হয়। Cursor ও Kimi-এর বাইনারি সরানো হয়, কিন্তু ব্যবহারকারীর সেটিংস, সেশন ও পরিচয়পত্র রাখা হয়।
 
 `argvus-ai list` দিয়ে যাচাই করুন; `argvus-ai launch gemini` চালান বা মেনু থেকে বেছে নিন। Gemini CLI-তে Google প্রমাণীকরণ করুন।
+
+GTK নির্বাচক এজেন্টগুলোকে গ্রিডে দেখায়। তীর চিহ্নের কী দিয়ে চলাচল করুন, `/` দিয়ে সক্রিয় ভাষায় নাম, বিবরণ বা কীওয়ার্ড খুঁজুন, `Enter` দিয়ে চালু করুন এবং `Esc` দিয়ে বন্ধ করুন।

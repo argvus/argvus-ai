@@ -184,26 +184,17 @@ case "${1:-menu}" in
   launch) [ "$#" -eq 2 ] || exit 2; launch "$2" ;;
   menu)
     [ "$#" -le 1 ] || exit 2
-    agents=$(menu_agents | while IFS= read -r agent; do
-      case "$agent" in opencode) printf 'OpenCode\n' ;; codex) printf 'OpenAI Codex\n' ;; claude) printf 'Claude Code\n' ;; agy) printf 'Google Antigravity\n' ;; qwen) printf 'Qwen Code\n' ;; gemini) printf '%s\n' "$(translate gemini_cli_label)" ;; hermes) printf 'Hermes\n' ;; cursor) printf 'Cursor CLI\n' ;; kimi) printf 'Kimi Code\n' ;; esac
-    done)
+    agents=$(menu_agents)
     if [ -z "$agents" ]; then message "$(translate empty)"; exit 1; fi
-    status=0
-    selected=$(printf '%s\n' "$agents" | rofi -config "$config" -dmenu -i -no-custom -p "$(translate title)") || status=$?
-    case "$status" in 0) ;; 1) exit 0 ;; *) message "$(translate menu_error)"; exit 1 ;; esac
-    [ -n "$selected" ] || exit 0
-    case "$selected" in
-      OpenCode) launch opencode ;;
-      "OpenAI Codex") launch codex ;;
-      "Claude Code") launch claude ;;
-      "Google Antigravity") launch agy ;;
-      "Qwen Code") launch qwen ;;
-      "$(translate gemini_cli_label)") launch gemini ;;
-      Hermes) launch hermes ;;
-      "Cursor CLI") launch cursor ;;
-      "Kimi Code") launch kimi ;;
-      *) message "$(translate invalid)"; exit 2 ;;
-    esac
+    # Each line is a fixed identifier emitted by menu_agents.
+    set -f
+    # shellcheck disable=SC2086
+    set -- $agents
+    if argvus ai-agents --selector "$@"; then
+      exit 0
+    fi
+    message "$(translate menu_error)"
+    exit 1
     ;;
   *) message "$(translate usage)"; exit 2 ;;
 esac

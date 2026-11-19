@@ -42,3 +42,5 @@ argvus-ai launch claude
 يعرض `argvus-ai list` الوكلاء المثبّتين. شغّل `argvus-ai uninstall` لاختيار تثبيت Hermes أو Cursor CLI أو Kimi الذي يديره ARGVUS، ثم أكّد الإزالة. يمكنك أيضًا تشغيل `argvus-ai uninstall hermes` أو `argvus-ai uninstall cursor` أو `argvus-ai uninstall kimi`. لا تُمسّ التثبيتات الخارجية، باستثناء تثبيت Cursor CLI قديم يتعرّف عليه الأمر الصريح إذا كان `~/.local/bin/agent` يشير إلى ملف داخل `~/.local/share/cursor-agent/versions/`. يستخدم Hermes أداة الإزالة الرسمية. تُحذف ملفات Cursor وKimi التنفيذية مع الاحتفاظ بإعدادات المستخدم والجلسات وبيانات الاعتماد.
 
 تحقق عبر `argvus-ai list`، ثم شغّل `argvus-ai launch gemini` أو اخترها من القائمة. أكمل مصادقة Google داخل Gemini CLI.
+
+يعرض محدد GTK الوكلاء في شبكة. استخدم الأسهم للتنقل، و`/` للبحث بالاسم أو الوصف أو الكلمات المفتاحية باللغة الحالية، و`Enter` للتشغيل، و`Esc` للإغلاق.

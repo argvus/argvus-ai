@@ -3,7 +3,7 @@ title: Agen AI
 description: Buka agen pemrograman dari desktop ARGVUS.
 ---
 
-`argvus-ai` adalah integrasi desktop opsional untuk **OpenCode**, **OpenAI Codex** dan **Claude Code**. Ini menyediakan pemilih Rofi bersama, entri peluncur aplikasi dan ikon robot di grup utilitas bilah tugas. Agen berjalan di jendela terminal ARGVUS baru dan mempertahankan direktori kerja pemanggil.
+`argvus-ai` adalah integrasi desktop opsional untuk **OpenCode**, **OpenAI Codex** dan **Claude Code**. Ini menyediakan pemilih GTK bersama, entri peluncur aplikasi dan ikon robot di grup utilitas bilah tugas. Agen berjalan di jendela terminal ARGVUS baru dan mempertahankan direktori kerja pemanggil.
 
 Buka pemilih dengan **SUPER + A** atau klik **nf-md-robot** di taskbar, di samping mikrofon dan kontrol audio. Anda juga dapat memilih agen individual di peluncur aplikasi.
 

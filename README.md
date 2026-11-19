@@ -1,6 +1,6 @@
 # ARGVUS AI
 
-OpenCode, Codex and Qwen Code are Pacman dependencies. Claude Code installs on first launch: select Claude Code in the Rofi agents menu or its application launcher entry. The ARGVUS terminal opens, runs `mise install claude` as the current user if necessary, resolves the installed executable, adds its directory to that process PATH and starts Claude. Later launches reuse the installed version. No agent installation runs during package installation, as root or at login. No manual command is required.
+OpenCode, Codex and Qwen Code are Pacman dependencies. Claude Code installs on first launch: select Claude Code in the GTK agents selector or its application launcher entry. The ARGVUS terminal opens, runs `mise install claude` as the current user if necessary, resolves the installed executable, adds its directory to that process PATH and starts Claude. Later launches reuse the installed version. No agent installation runs during package installation, as root or at login. No manual command is required.
 
 The menu offers Claude when mise is present, even before installation. `argvus-ai list` reports installed agents only; `status` reports whether the menu has an installed or installable agent. Queries/cancelled menus never download. Installation errors are displayed and may be retried by opening Claude again. No shell startup files or personal PATH configuration are modified; the augmented PATH belongs to the running Claude process and its children. Existing credentials and mise tools are preserved.
 
@@ -11,6 +11,8 @@ The package owns the Lua binding module usr/share/argvus/ai/hyprland.lua. Update
 Documentation: [English](docs/en/index.md) · [Português brasileiro](docs/pt-br/index.md).
 
 Agents run in a centered floating Kitty window titled `ARGVUS AI Agent`, with an ARGVUS frame and a localized **Ctrl + E** close hint. Closing the frame terminates its child agent.
+
+The GTK selector shows agents in a grid. Use the arrow keys to move, `/` to search by localized name, description or keyword, `Enter` to launch and `Esc` to close.
 
 The dedicated `ai-agents` Kitty profile hides tabs and disables inherited tab, split and fullscreen shortcuts. It keeps clipboard shortcuts and writes its own runtime configuration under the ARGVUS cache.
 

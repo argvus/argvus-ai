@@ -13,7 +13,7 @@ sudo pacman -S argvus-ai
 
 Yayımlanmamış yerel bir derleme için, `argvus-ai` kaynak deposunda `make validate` ve `make build` çalıştırın, ardından ortaya çıkan  `argvus-ai` `.pkg.tar.zst`'yu `build/dist/`'den `sudo pacman -U /path/to/package.pkg.tar.zst` ile kurun. Pacman, ana `argvus` paketi de dahil olmak üzere bağımlılıklarını çözebilmelidir.
 
-Paket, `argvus`, `rofi`, `jq`, `mise`, `opencode` ve `openai-codex`'yi gerektirir; Arch, `/bin/sh`'den `bash`'ye kadar sağlar. OpenCode, `opencode` olarak çalışır ve `openai-codex` paketi `codex`'yi sağlar.
+Paket, `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` ve `openai-codex`'yi gerektirir; Arch, `/bin/sh`'den `bash`'ye kadar sağlar. OpenCode, `opencode` olarak çalışır ve `openai-codex` paketi `codex`'yi sağlar.
 
 ## Masaüstü entegrasyonu
 
@@ -23,7 +23,7 @@ Güncellenmiş `argvus-appearance` projektör, görev çubuğu modülünü korur
 
 ## Claude Kod ilk kullanımda
 
-Rofi seçicisinden veya uygulama başlatıcısından Claude Code'u seçin. ARGVUS terminali açılır ve yüklü bir sürüm bulunamazsa `mise install claude`'yu normal kullanıcı olarak çalıştırır. Bu ilk kurulum için ağ erişimi gereklidir. Sarıcı, yüklü yürütülebilir dosyayı çözer ve başlatılan sürecin PATH'ine dizinini ekler; kabuk başlangıç dosyalarını düzenlemez veya root olarak kurulum yapmaz. Daha sonraki başlatmalar kurulumu yeniden kullanır.
+GTK seçicisinden veya uygulama başlatıcısından Claude Code'u seçin. ARGVUS terminali açılır ve yüklü bir sürüm bulunamazsa `mise install claude`'yu normal kullanıcı olarak çalıştırır. Bu ilk kurulum için ağ erişimi gereklidir. Sarıcı, yüklü yürütülebilir dosyayı çözer ve başlatılan sürecin PATH'ine dizinini ekler; kabuk başlangıç dosyalarını düzenlemez veya root olarak kurulum yapmaz. Daha sonraki başlatmalar kurulumu yeniden kullanır.
 
 ## Kaldır
 

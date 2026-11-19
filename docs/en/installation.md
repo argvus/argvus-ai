@@ -13,7 +13,7 @@ sudo pacman -S argvus-ai
 
 For an unpublished local build, run `make validate` and `make build` in the `argvus-ai` source repository, then install the resulting `.pkg.tar.zst` from `build/dist/` with `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman must be able to resolve its dependencies, including the master `argvus` package.
 
-The package requires `argvus`, `rofi`, `jq`, `mise`, `opencode` and `openai-codex`; Arch provides `/bin/sh` through `bash`. OpenCode runs as `opencode`, and the `openai-codex` package provides `codex`.
+The package requires `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` and `openai-codex`; Arch provides `/bin/sh` through `bash`. OpenCode runs as `opencode`, and the `openai-codex` package provides `codex`.
 
 ## Desktop integration
 
@@ -23,7 +23,7 @@ The updated `argvus-appearance` projector preserves the taskbar module and respe
 
 ## Claude Code on first use
 
-Select Claude Code from the Rofi selector or application launcher. The ARGVUS terminal opens and runs `mise install claude` as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
+Select Claude Code from the GTK selector or application launcher. The ARGVUS terminal opens and runs `mise install claude` as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
 
 ## Remove
 

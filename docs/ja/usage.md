@@ -40,3 +40,5 @@ argvus-ai launch claude
 `argvus-ai list` はインストール済みのエージェントを表示します。`argvus-ai uninstall` を実行し、ARGVUS が管理する Hermes、Cursor CLI、または Kimi を選択して削除を確定します。`argvus-ai uninstall hermes`、`argvus-ai uninstall cursor`、`argvus-ai uninstall kimi` のように個別指定もできます。ARGVUS 以外からのインストールは変更しません。ただし、明示的な Cursor コマンドは `~/.local/bin/agent` が `~/.local/share/cursor-agent/versions/` 内を指す場合に限り、旧 Cursor CLI を認識します。Hermes は公式アンインストーラーを使用します。Cursor と Kimi の実行ファイルを削除し、ユーザー設定、セッション、認証情報は保持します。
 
 `argvus-ai list` で確認し、`argvus-ai launch gemini` またはメニューから起動します。Google 認証は Gemini CLI 内で行います。
+
+GTK のセレクターはエージェントをグリッドに表示します。矢印キーで移動し、`/` で現在の言語の名前、説明、キーワードを検索し、`Enter` で起動、`Esc` で閉じます。

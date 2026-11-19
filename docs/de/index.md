@@ -2,7 +2,7 @@
 title: KI-Agenten
 description: Öffnen Sie Programmieragenten vom ARGVUS-Desktop.
 ---
-`argvus-ai` ist eine optionale Desktop-Integration für **OpenCode**, **OpenAI Codex** und **Claude Code**. Sie bietet einen gemeinsamen Rofi-Selektor, Einträge im Anwendungsstarter und das Roboter-Symbol in der Taskleisten-Dienstgruppe. Agenten werden in einem neuen ARGVUS-Terminalfenster ausgeführt und behalten das Arbeitsverzeichnis des Aufrufers bei.
+`argvus-ai` ist eine optionale Desktop-Integration für **OpenCode**, **OpenAI Codex** und **Claude Code**. Sie bietet einen gemeinsamen GTK-Selektor, Einträge im Anwendungsstarter und das Roboter-Symbol in der Taskleisten-Dienstgruppe. Agenten werden in einem neuen ARGVUS-Terminalfenster ausgeführt und behalten das Arbeitsverzeichnis des Aufrufers bei.
 
 Öffnen Sie den Selektor mit **SUPER + A** oder klicken Sie auf **nf-md-robot** in der Taskleiste, neben den Mikrofon- und Audiosteuerungen. Sie können auch einen einzelnen Agenten im Anwendungsstarter auswählen.
 

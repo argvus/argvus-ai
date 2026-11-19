@@ -3,7 +3,7 @@ title: Đại lý AI
 description: Mở tác nhân lập trình từ máy tính để bàn ARGVUS.
 ---
 
-`argvus-ai` là phần tích hợp máy tính để bàn tùy chọn dành cho **OpenCode**, **OpenAI Codex** và **Claude Code**. Nó cung cấp bộ chọn Rofi được chia sẻ, các mục khởi chạy ứng dụng và biểu tượng robot trong nhóm tiện ích trên thanh tác vụ. Nhân viên chạy trong cửa sổ đầu cuối ARGVUS mới và giữ lại thư mục làm việc của người gọi.
+`argvus-ai` là phần tích hợp máy tính để bàn tùy chọn dành cho **OpenCode**, **OpenAI Codex** và **Claude Code**. Nó cung cấp bộ chọn GTK được chia sẻ, các mục khởi chạy ứng dụng và biểu tượng robot trong nhóm tiện ích trên thanh tác vụ. Nhân viên chạy trong cửa sổ đầu cuối ARGVUS mới và giữ lại thư mục làm việc của người gọi.
 
 Mở bộ chọn bằng **SUPER + A** hoặc nhấp vào **nf-md-robot** trên thanh tác vụ, bên cạnh các điều khiển micrô và âm thanh. Bạn cũng có thể chọn một tác nhân riêng lẻ trong trình khởi chạy ứng dụng.
 

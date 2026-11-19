@@ -42,11 +42,10 @@ class Launcher(unittest.TestCase):
                 self.assertEqual(result.returncode, 0)
                 self.assertEqual(result.stdout.splitlines(), list(commands))
 
-    def test_menu_launches_each_agent(self):
-        for label, command in [("OpenCode", "opencode"), ("OpenAI Codex", "codex"), ("Claude Code", "claude"), ("Google Antigravity", "agy"), ("Qwen Code", "qwen"), ("gemini_cli_label", "gemini")]:
+    def test_direct_launch_for_each_agent(self):
+        for command in ("opencode", "codex", "claude", "agy", "qwen", "gemini"):
             self.stub(command)
-            self.env["SELECTION"] = label
-            self.assertEqual(self.run_helper("menu").returncode, 0)
+            self.assertEqual(self.run_helper("launch", command).returncode, 0)
             expected = ["tui-terminal", "--class", "argvus-ai", "--term", "kitty", "--profile", "ai-agents", "--title", "ARGVUS AI Agent", "--", "argvus", "tui-terminal", "--frame", "AI Agent", "footer.close"] + ([str(HELPER), "run-claude"] if command == "claude" else [str(self.root / command)])
             self.assertEqual((self.root / "log").read_text().splitlines(), expected)
 
@@ -111,12 +110,15 @@ class Launcher(unittest.TestCase):
         self.assertNotEqual(self.run_helper("menu").returncode, 0)
         self.assertFalse((self.root / "log").exists())
 
-    def test_cancel_empty_and_rofi_failure(self):
+    def test_menu_forwards_available_ids_and_selector_failure(self):
         self.stub("opencode")
-        for status, expected in [("1", 0), ("0", 0), ("2", 1)]:
-            self.env["ROFI_STATUS"] = status
-            self.assertEqual(self.run_helper("menu").returncode, expected)
-            self.assertFalse((self.root / "log").exists())
+        self.stub("gemini")
+        self.assertEqual(self.run_helper("menu").returncode, 0)
+        self.assertEqual((self.root / "log").read_text().splitlines(), [
+            "ai-agents", "--selector", "opencode", "gemini", "claude",
+        ])
+        self.env["TERMINAL_STATUS"] = "2"
+        self.assertEqual(self.run_helper("menu").returncode, 1)
 
     def test_invalid(self):
         self.assertEqual(self.run_helper("launch", "bad; touch injected").returncode, 2)
@@ -187,9 +189,8 @@ class Launcher(unittest.TestCase):
         self.assertEqual(self.run_helper("run-claude").returncode, 1)
 
     def test_uninstalled_claude_can_be_selected(self):
-        self.env["SELECTION"] = "Claude Code"
         self.assertEqual(self.run_helper("menu").returncode, 0)
-        self.assertIn("run-claude", (self.root / "log").read_text())
+        self.assertIn("--selector\nclaude\n", (self.root / "log").read_text())
         self.assertFalse((self.root / "mise-log").exists())
         self.assertEqual(self.run_helper("status", "--check").returncode, 0)
 

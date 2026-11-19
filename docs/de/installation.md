@@ -11,7 +11,7 @@ sudo pacman -S argvus-ai
 ```
 Für einen unveröffentlichten lokalen Build führen Sie `make validate` und `make build` im Quellrepository `argvus-ai` aus und installieren dann das resultierende `.pkg.tar.zst` aus `build/dist/` mit `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman muss in der Lage sein, seine Abhängigkeiten aufzulösen, einschließlich des Master-Pakets `argvus`.
 
-Das Paket erfordert `argvus`, `rofi`, `jq`, `mise`, `opencode` und `openai-codex`; Arch stellt `/bin/sh` über `bash` bereit. OpenCode läuft als `opencode`, und das Paket `openai-codex` stellt `codex` bereit.
+Das Paket erfordert `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` und `openai-codex`; Arch stellt `/bin/sh` über `bash` bereit. OpenCode läuft als `opencode`, und das Paket `openai-codex` stellt `codex` bereit.
 
 ## Desktop-Integration
 
@@ -21,7 +21,7 @@ Der aktualisierte `argvus-appearance` Projektor bewahrt das Taskleistenmodul und
 
 ## Claude Code bei der ersten Verwendung
 
-Wählen Sie Claude Code im Rofi-Auswahlmenü oder Anwendungsstarter aus. Das ARGVUS-Terminal öffnet sich und führt `mise install claude` als Ihr regulärer Benutzer aus, wenn keine installierte Version gefunden wird. Für diese Erstinstallation ist Netzwerkzugang erforderlich. Der Wrapper löst die installierte ausführbare Datei auf und fügt ihr Verzeichnis zum gestarteten Prozess-PATH hinzu; er bearbeitet keine Shell-Startdateien und installiert nicht als Root. Spätere Starts verwenden die Installation erneut.
+Wählen Sie Claude Code im GTK-Auswahlmenü oder Anwendungsstarter aus. Das ARGVUS-Terminal öffnet sich und führt `mise install claude` als Ihr regulärer Benutzer aus, wenn keine installierte Version gefunden wird. Für diese Erstinstallation ist Netzwerkzugang erforderlich. Der Wrapper löst die installierte ausführbare Datei auf und fügt ihr Verzeichnis zum gestarteten Prozess-PATH hinzu; er bearbeitet keine Shell-Startdateien und installiert nicht als Root. Spätere Starts verwenden die Installation erneut.
 
 ## Entfernen
 

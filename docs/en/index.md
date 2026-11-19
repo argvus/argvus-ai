@@ -3,7 +3,7 @@ title: AI Agents
 description: Open programming agents from the ARGVUS desktop.
 ---
 
-`argvus-ai` is an optional desktop integration for **OpenCode**, **OpenAI Codex** and **Claude Code**. It provides a shared Rofi selector, application launcher entries and the robot icon in the taskbar utility group. Agents run in a new ARGVUS terminal window and retain the caller's working directory.
+`argvus-ai` is an optional desktop integration for **OpenCode**, **OpenAI Codex** and **Claude Code**. It provides a shared GTK selector, application launcher entries and the robot icon in the taskbar utility group. Agents run in a new ARGVUS terminal window and retain the caller's working directory.
 
 Open the selector with **SUPER + A** or click **nf-md-robot** in the taskbar, next to the microphone and audio controls. You can also select an individual agent in the applications launcher.
 

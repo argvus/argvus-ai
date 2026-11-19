@@ -2,7 +2,7 @@
 title: Agenti AI
 description: Apri gli agenti di programmazione dal desktop ARGVUS.
 ---
-`argvus-ai` è un'integrazione desktop opzionale per **OpenCode**, **OpenAI Codex** e **Claude Code**. Fornisce un selettore condiviso Rofi, voci di avvio delle applicazioni e l'icona del robot nel gruppo delle utilità della barra delle applicazioni. Gli agenti vengono eseguiti in una nuova finestra del terminale ARGVUS e mantengono la directory di lavoro del chiamante.
+`argvus-ai` è un'integrazione desktop opzionale per **OpenCode**, **OpenAI Codex** e **Claude Code**. Fornisce un selettore condiviso GTK, voci di avvio delle applicazioni e l'icona del robot nel gruppo delle utilità della barra delle applicazioni. Gli agenti vengono eseguiti in una nuova finestra del terminale ARGVUS e mantengono la directory di lavoro del chiamante.
 
 Apri il selettore con **SUPER + A** o clicca su **nf-md-robot** nella barra delle applicazioni, accanto al microfono e ai controlli audio. Puoi anche selezionare un agente individuale nel launcher delle applicazioni.
 

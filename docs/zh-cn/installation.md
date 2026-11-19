@@ -11,7 +11,7 @@ sudo pacman -S argvus-ai
 ```
 对于未发布的本地构建，在 `argvus-ai` 源代码仓库中运行 `make validate` 和 `make build`，然后使用 `argvus-ai` 从 build/dist/ 安装生成的 `.pkg.tar.zst`。Pacman 必须能够解析其依赖关系，包括主  `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst` `argvus` 软件包。
 
-该软件包需要 `argvus`、`rofi`、`jq`、`mise`、`opencode` 和 `openai-codex`；Arch 通过 bash 提供 `/bin/sh`。OpenCode 以  `bash` `opencode` 运行，而 `openai-codex` 软件包提供 `codex`。
+该软件包需要 `argvus`、`rofi`、`kitty`、`jq`、`mise`、`opencode` 和 `openai-codex`；Arch 通过 bash 提供 `/bin/sh`。OpenCode 以  `bash` `opencode` 运行，而 `openai-codex` 软件包提供 `codex`。
 
 ## 桌面集成
 
@@ -21,7 +21,7 @@ sudo pacman -S argvus-ai
 
 ## 首次使用 Claude Code
 
-从 Rofi 选择器或应用启动器中选择 Claude Code。如果未找到已安装版本，ARGVUS 终端将打开并以常规用户身份运行 `mise install claude`。首次安装需要网络访问。该包装程序会解析已安装的可执行文件并将其目录添加到启动进程的 PATH 中；它不会编辑 shell 启动文件或以 root 身份安装。后续启动会重复使用该安装。
+从 GTK 选择器或应用启动器中选择 Claude Code。如果未找到已安装版本，ARGVUS 终端将打开并以常规用户身份运行 `mise install claude`。首次安装需要网络访问。该包装程序会解析已安装的可执行文件并将其目录添加到启动进程的 PATH 中；它不会编辑 shell 启动文件或以 root 身份安装。后续启动会重复使用该安装。
 
 ## 删除
 

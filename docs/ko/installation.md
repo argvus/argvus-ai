@@ -11,7 +11,7 @@ sudo pacman -S argvus-ai
 ```
 미발행 로컬 빌드를 위해, `argvus-ai` 소스 저장소에서 `make validate`와 `make build`를 실행한 후, `argvus-ai`에서 나온 `.pkg.tar.zst`를  `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst`로 설치합니다. Pacman은 마스터 `argvus` 패키지를 포함한 의존성을 해결할 수 있어야 합니다.
 
-이 패키지는 `argvus`, `rofi`, `jq`, `mise`, `opencode` 및 `openai-codex`가 필요하며, Arch는 bash를 통해 `/bin/sh`를 제공합니다. OpenCode는  `bash` `opencode`로 실행되며, `openai-codex` 패키지는 `codex`를 제공합니다.
+이 패키지는 `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` 및 `openai-codex`가 필요하며, Arch는 bash를 통해 `/bin/sh`를 제공합니다. OpenCode는  `bash` `opencode`로 실행되며, `openai-codex` 패키지는 `codex`를 제공합니다.
 
 ## 데스크톱 통합
 
@@ -21,7 +21,7 @@ sudo pacman -S argvus-ai
 
 ## 최초 사용 시 Claude Code
 
-Rofi 선택기나 애플리케이션 실행기에서 Claude Code를 선택하십시오. 설치된 버전이 없으면 ARGVUS 터미널이 열리고 일반 사용자 권한으로 `mise install claude`를 실행합니다. 초기 설치에는 네트워크 접근이 필요합니다. 래퍼는 설치된 실행 파일을 확인하고 해당 디렉터리를 실행된 프로세스 PATH에 추가합니다; 셸 시작 파일을 수정하거나 root로 설치하지는 않습니다. 이후 실행에서는 설치를 재사용합니다.
+GTK 선택기나 애플리케이션 실행기에서 Claude Code를 선택하십시오. 설치된 버전이 없으면 ARGVUS 터미널이 열리고 일반 사용자 권한으로 `mise install claude`를 실행합니다. 초기 설치에는 네트워크 접근이 필요합니다. 래퍼는 설치된 실행 파일을 확인하고 해당 디렉터리를 실행된 프로세스 PATH에 추가합니다; 셸 시작 파일을 수정하거나 root로 설치하지는 않습니다. 이후 실행에서는 설치를 재사용합니다.
 
 ## 제거
 
