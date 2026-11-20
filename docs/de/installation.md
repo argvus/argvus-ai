@@ -11,7 +11,7 @@ sudo pacman -S argvus-ai
 ```
 Für einen unveröffentlichten lokalen Build führen Sie `make validate` und `make build` im Quellrepository `argvus-ai` aus und installieren dann das resultierende `.pkg.tar.zst` aus `build/dist/` mit `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman muss in der Lage sein, seine Abhängigkeiten aufzulösen, einschließlich des Master-Pakets `argvus`.
 
-Das Paket erfordert `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` und `openai-codex`; Arch stellt `/bin/sh` über `bash` bereit. OpenCode läuft als `opencode`, und das Paket `openai-codex` stellt `codex` bereit.
+Das Paket erfordert `argvus`, `kitty`, `jq`, `mise`, `opencode` und `openai-codex`; Arch stellt `/bin/sh` über `bash` bereit. OpenCode läuft als `opencode`, und das Paket `openai-codex` stellt `codex` bereit.
 
 ## Desktop-Integration
 

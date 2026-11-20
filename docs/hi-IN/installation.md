@@ -11,7 +11,7 @@ description: argvus-ai इंस्टॉल करें और समझें
 sudo pacman -S argvus-ai
 ```
 
-अप्रकाशित स्थानीय बिल्ड के लिए, `argvus-ai` स्रोत रिपॉजिटरी में `make validate` और `make build` चलाएं, फिर `argvus-ai` से परिणामी `.pkg.tar.zst` इंस्टॉल करें  `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst`। Pacman को मास्टर `argvus` पैकेज सहित अपनी निर्भरता को हल करने में सक्षम होना चाहिए।पैकेज को `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` और `openai-codex` की आवश्यकता होती है; आर्च `/bin/sh` को `bash` के माध्यम से प्रदान करता है। OpenCode `opencode` के रूप में चलता है, और `openai-codex` पैकेज `codex` प्रदान करता है।
+अप्रकाशित स्थानीय बिल्ड के लिए, `argvus-ai` स्रोत रिपॉजिटरी में `make validate` और `make build` चलाएं, फिर `argvus-ai` से परिणामी `.pkg.tar.zst` इंस्टॉल करें  `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst`। Pacman को मास्टर `argvus` पैकेज सहित अपनी निर्भरता को हल करने में सक्षम होना चाहिए।पैकेज को `argvus`, `kitty`, `jq`, `mise`, `opencode` और `openai-codex` की आवश्यकता होती है; आर्च `/bin/sh` को `bash` के माध्यम से प्रदान करता है। OpenCode `opencode` के रूप में चलता है, और `openai-codex` पैकेज `codex` प्रदान करता है।
 
 ## डेस्कटॉप इंटीग्रेशन
 

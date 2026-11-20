@@ -13,7 +13,7 @@ sudo pacman -S argvus-ai
 
 Untuk build lokal yang belum dipublikasikan, jalankan `make validate` dan `make build` di repositori sumber `argvus-ai`, kemudian pasang `.pkg.tar.zst` yang dihasilkan dari `build/dist/` dengan `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman harus mampu menyelesaikan dependensinya, termasuk paket `argvus` utama.
 
-Paket ini membutuhkan `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` dan `openai-codex`; Arch menyediakan `/bin/sh` sampai `bash`. OpenCode dijalankan sebagai `opencode`, dan paket `openai-codex` menyediakan `codex`.
+Paket ini membutuhkan `argvus`, `kitty`, `jq`, `mise`, `opencode` dan `openai-codex`; Arch menyediakan `/bin/sh` sampai `bash`. OpenCode dijalankan sebagai `opencode`, dan paket `openai-codex` menyediakan `codex`.
 
 ## Integrasi Desktop
 

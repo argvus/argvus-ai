@@ -11,7 +11,7 @@ Trên Arch Linux với các kho ARGVUS được cấu hình, một khi `argvus-a
 sudo pacman -S argvus-ai
 ```
 
-Đối với bản dựng cục bộ chưa được xuất bản, hãy chạy `make validate` và `make build` trong kho lưu trữ nguồn `argvus-ai`, sau đó cài đặt `.pkg.tar.zst` thu được từ `build/dist/` với `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman phải có khả năng giải quyết các phần phụ thuộc của nó, bao gồm cả gói `argvus` chính.Gói phần mềm yêu cầu `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` và `openai-codex`; Arch cung cấp `/bin/sh` thông qua `bash`. OpenCode chạy dưới dạng `opencode`, và gói `openai-codex` cung cấp `codex`.
+Đối với bản dựng cục bộ chưa được xuất bản, hãy chạy `make validate` và `make build` trong kho lưu trữ nguồn `argvus-ai`, sau đó cài đặt `.pkg.tar.zst` thu được từ `build/dist/` với `sudo pacman -U /path/to/package.pkg.tar.zst`. Pacman phải có khả năng giải quyết các phần phụ thuộc của nó, bao gồm cả gói `argvus` chính.Gói phần mềm yêu cầu `argvus`, `kitty`, `jq`, `mise`, `opencode` và `openai-codex`; Arch cung cấp `/bin/sh` thông qua `bash`. OpenCode chạy dưới dạng `opencode`, và gói `openai-codex` cung cấp `codex`.
 
 ## Tích hợp máy tính để bàn
 

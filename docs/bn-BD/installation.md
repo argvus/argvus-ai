@@ -13,7 +13,7 @@ sudo pacman -S argvus-ai
 
 একটি অবপ্রকাশিত লোকাল বিল্ডের জন্য, `argvus-ai` সোর্স রেপোসিটরিতে `make validate` এবং `make build` চালান, তারপর `argvus-ai` থেকে ফলস্বরূপ `.pkg.tar.zst`  `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst` দিয়ে ইনস্টল করুন। Pacman-কে তার ডিপেন্ডেন্সিগুলি সমাধান করতে সক্ষম হতে হবে, যার মধ্যে প্রধান `argvus` প্যাকেজও রয়েছে।
 
-প্যাকেজের জন্য `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` এবং `openai-codex`; Arch `/bin/sh` `bash` এর মাধ্যমে প্রদান করে। OpenCode `opencode` হিসাবে চলে, এবং `openai-codex` প্যাকেজ `codex` প্রদান করে।
+প্যাকেজের জন্য `argvus`, `kitty`, `jq`, `mise`, `opencode` এবং `openai-codex`; Arch `/bin/sh` `bash` এর মাধ্যমে প্রদান করে। OpenCode `opencode` হিসাবে চলে, এবং `openai-codex` প্যাকেজ `codex` প্রদান করে।
 
 ## ডেস্কটপ ইন্টিগ্রেশনআপডেট করা `argvus-hyprland` এবং `argvus-taskbar` প্যাকেজগুলি ব্যবহার করুন। Hyprland `argvus-ai` দ্বারা সরবরাহিত ঐচ্ছিক Lua মডিউল লোড করে। ইন্টিগ্রেশনের Pacman হুক ইনস্টলেশন বা অপসারণের পর স্ট্যান্ডার্ড সিস্টেম কনফিগারেশন রিফ্রেশ করে। একটি কাস্টম root কনফিগারেশন বা নিষ্ক্রিয় autoreload একটি স্পষ্ট রিলোড প্রয়োজন করতে পারে। বিদ্যমান পার্সোনাল শর্টকাট ওভাররাইডগুলি প্রাধান্য বজায় রাখে।
 

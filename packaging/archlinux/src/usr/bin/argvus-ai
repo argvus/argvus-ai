@@ -1,21 +1,16 @@
 #!/bin/sh
 # Single entry point for the optional ARGVUS AI desktop integration.
 set -eu
-system=${ARGVUS_SYSTEM_CONFIG:-/usr/share/argvus}
 state_home=${XDG_STATE_HOME:-${HOME:?}/.local/state}
 managed_dir=$state_home/argvus/ai-managed
-config=$system/launcher/config/config.rasi
-if [ -r "$system/session/sh/bootstrap.sh" ]; then
-  # shellcheck disable=SC1090,SC1091
-  . "$system/session/sh/bootstrap.sh"
-  config=$(paths_config launcher/config/config.rasi)
-fi
 translate() {
   argvus i18n get ai "$@"
 }
 message() {
   printf '%s\n' "$1" >&2
-  rofi -config "$config" -e "$1" || :
+  if [ "${ARGVUS_AI_GRAPHICAL:-0}" = 1 ]; then
+    argvus ai-agents --error "$1" || :
+  fi
 }
 # Queries never install or update tools. Claude installs only after selection.
 resolve() {
@@ -172,18 +167,19 @@ case "${1:-menu}" in
   uninstall)
     [ "$#" -le 2 ] || exit 2
     if [ "$#" -eq 2 ]; then uninstall_agent "$2"; exit $?; fi
+    export ARGVUS_AI_GRAPHICAL=1
     [ -d "$managed_dir" ] || { message "$(translate no_managed_agents)"; exit 1; }
     agents=$(for agent in hermes cursor kimi; do [ ! -f "$managed_dir/$agent" ] || printf '%s\n' "$agent"; done)
     [ -n "$agents" ] || { message "$(translate no_managed_agents)"; exit 1; }
-    selected=$(printf '%s\n' "$agents" | rofi -config "$config" -dmenu -i -no-custom -p "$(translate uninstall_title)") || exit 0
-    [ -n "$selected" ] || exit 0
-    confirmation=$(printf '%s\n' "$(translate confirm_uninstall)" "$(translate cancel)" | rofi -config "$config" -dmenu -i -no-custom -p "$(translate uninstall_title)") || exit 0
-    [ "$confirmation" = "$(translate confirm_uninstall)" ] || exit 0
-    uninstall_agent "$selected"
+    set -f
+    # shellcheck disable=SC2086
+    set -- $agents
+    exec argvus ai-agents --uninstall "$@"
     ;;
   launch) [ "$#" -eq 2 ] || exit 2; launch "$2" ;;
   menu)
     [ "$#" -le 1 ] || exit 2
+    export ARGVUS_AI_GRAPHICAL=1
     agents=$(menu_agents)
     if [ -z "$agents" ]; then message "$(translate empty)"; exit 1; fi
     # Each line is a fixed identifier emitted by menu_agents.

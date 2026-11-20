@@ -13,7 +13,7 @@ sudo pacman -S argvus-ai
 
 Yayımlanmamış yerel bir derleme için, `argvus-ai` kaynak deposunda `make validate` ve `make build` çalıştırın, ardından ortaya çıkan  `argvus-ai` `.pkg.tar.zst`'yu `build/dist/`'den `sudo pacman -U /path/to/package.pkg.tar.zst` ile kurun. Pacman, ana `argvus` paketi de dahil olmak üzere bağımlılıklarını çözebilmelidir.
 
-Paket, `argvus`, `rofi`, `kitty`, `jq`, `mise`, `opencode` ve `openai-codex`'yi gerektirir; Arch, `/bin/sh`'den `bash`'ye kadar sağlar. OpenCode, `opencode` olarak çalışır ve `openai-codex` paketi `codex`'yi sağlar.
+Paket, `argvus`, `kitty`, `jq`, `mise`, `opencode` ve `openai-codex`'yi gerektirir; Arch, `/bin/sh`'den `bash`'ye kadar sağlar. OpenCode, `opencode` olarak çalışır ve `openai-codex` paketi `codex`'yi sağlar.
 
 ## Masaüstü entegrasyonu
 

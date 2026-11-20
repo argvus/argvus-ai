@@ -16,7 +16,6 @@ class Launcher(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.env = dict(os.environ, HOME=str(self.root), PATH=str(self.root), ARGVUS_SYSTEM_CONFIG=str(self.root), LOG=str(self.root / "log"), ARGVUS_AI_CLAUDE_EXECUTABLE=str(self.root / "claude"))
-        self.stub("rofi", 'if [ "$1" = "-config" ] && [ "$3" = "-e" ]; then exit 0; fi; /usr/bin/cat >/dev/null; /usr/bin/printf "%s" "${SELECTION:-}"; exit "${ROFI_STATUS:-0}"')
         self.stub("argvus", 'if [ "$1" = i18n ]; then /usr/bin/printf "%s" "${TRANSLATION:-$4}"; exit 0; fi; /usr/bin/printf "%s\\n" "$@" > "$LOG"; exit "${TERMINAL_STATUS:-0}"')
 
         (self.root / "jq").symlink_to(shutil.which("jq"))
@@ -84,6 +83,19 @@ class Launcher(unittest.TestCase):
         self.assertIn("kimi", self.run_helper("list").stdout)
         self.assertEqual(self.run_helper("run-external", "kimi").returncode, 0)
 
+    def test_interactive_uninstall_passes_only_managed_agents_to_gtk(self):
+        managed = self.root / ".local/state/argvus/ai-managed"
+        managed.mkdir(parents=True)
+        record = managed / "kimi"
+        record.write_text(str(self.root / ".local/bin/kimi"))
+        (managed / "unknown").touch()
+        result = self.run_helper("uninstall")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual((self.root / "log").read_text().splitlines(), [
+            "ai-agents", "--uninstall", "kimi",
+        ])
+        self.assertTrue(record.exists())
+
     def test_uninstall_adopts_only_legacy_cursor_vendor_layout(self):
         target = self.root / ".local/share/cursor-agent/versions/test/cursor-agent"
         target.parent.mkdir(parents=True)
@@ -108,7 +120,7 @@ class Launcher(unittest.TestCase):
     def test_empty_menu(self):
         (self.root / "mise").unlink()
         self.assertNotEqual(self.run_helper("menu").returncode, 0)
-        self.assertFalse((self.root / "log").exists())
+        self.assertEqual((self.root / "log").read_text().splitlines(), ["ai-agents", "--error", "empty"])
 
     def test_menu_forwards_available_ids_and_selector_failure(self):
         self.stub("opencode")
@@ -162,7 +174,6 @@ class Launcher(unittest.TestCase):
 
     def test_queries_never_use_mise(self):
         self.stub("claude")
-        self.env["ROFI_STATUS"] = "1"
         for args in [("list",), ("status",), ("menu",), ("launch", "claude")]:
             self.run_helper(*args)
         self.assertNotIn("install ", (self.root / "mise-log").read_text())

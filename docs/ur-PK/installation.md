@@ -21,7 +21,7 @@ Claude Code ۔ﮯﺗﻮﮨ ﮟﯿﮩﻧ
 
 ## ﺮﭘ ﻝﺎﻤﻌﺘﺳﺍ ﮧﺒﺗﺮﻣ ﯽﻠﮩﭘ
 
-Select Claude Code from the GTK selector or application launcher. The ARGVUS terminal opens and runs  `make validate` `make build`   `argvus-ai`  `.pkg.tar.zst`  `build/dist/`  `sudo pacman -U /path/to/package.pkg.tar.zst`  openai-codex  opencode  bash  /bin/sh  openai-codex  opencode  mise  jq  rofi  `argvus`  `argvus`  `rofi` `kitty`  `jq`  `mise` `opencode`  `openai-codex`  `/bin/sh`  `bash`  `opencode`  `openai-codex`  `codex`  `argvus-hyprland`  `argvus-taskbar`   `argvus-ai`  `argvus-appearance`  make validate `mise install claude` as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
+Select Claude Code from the GTK selector or application launcher. The ARGVUS terminal opens and runs  `make validate` `make build`   `argvus-ai`  `.pkg.tar.zst`  `build/dist/`  `sudo pacman -U /path/to/package.pkg.tar.zst`  openai-codex  opencode  bash  /bin/sh  openai-codex  opencode  mise  jq  `argvus`  `argvus`  `kitty`  `jq`  `mise` `opencode`  `openai-codex`  `/bin/sh`  `bash`  `opencode`  `openai-codex`  `codex`  `argvus-hyprland`  `argvus-taskbar`   `argvus-ai`  `argvus-appearance`  make validate `mise install claude` as your regular user if no installed version is found. Network access is needed for this first installation. The wrapper resolves the installed executable and adds its directory to the launched process PATH; it does not edit shell startup files or install as root. Later launches reuse the installation.
 
 ## ہٹا دیں۔
 
