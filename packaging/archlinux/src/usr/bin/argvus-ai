@@ -186,6 +186,10 @@ case "${1:-menu}" in
     set -f
     # shellcheck disable=SC2086
     set -- $agents
+    # The taskbar controls the lifetime of the selector process.
+    if [ "${ARGVUS_AI_MANAGED_MENU:-0}" = 1 ]; then
+      exec argvus ai-agents --selector "$@"
+    fi
     if argvus ai-agents --selector "$@"; then
       exit 0
     fi

@@ -40,3 +40,5 @@ Hồ sơ Kitty chuyên dụng `ai-agents` ẩn các tab và xóa các phím tắ
 Kiểm tra bằng `argvus-ai list`; chạy `argvus-ai launch gemini` hoặc chọn trong menu. Xác thực Google trong Gemini CLI.
 
 Bộ chọn GTK hiển thị các tác nhân theo dạng lưới. Dùng phím mũi tên để di chuyển, `/` để tìm theo tên, mô tả hoặc từ khóa theo ngôn ngữ hiện tại, `Enter` để mở và `Esc` để đóng.
+
+Nhấp biểu tượng bộ nhớ tạm hoặc tác nhân AI trên thanh tác vụ để mở bảng. Nhấp lại cùng biểu tượng để đóng.

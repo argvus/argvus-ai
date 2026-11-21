@@ -42,3 +42,5 @@ Il profilo dedicato Kitty `ai-agents` nasconde le schede e cancella le scorciato
 Verifica con `argvus-ai list`; avvia con `argvus-ai launch gemini` o selezionalo dal menu. Accedi a Google in Gemini CLI.
 
 Il selettore GTK mostra gli agenti in una griglia. Usa le frecce per spostarti, `/` per cercare per nome, descrizione o parola chiave nella lingua attiva, `Enter` per avviare e `Esc` per chiudere.
+
+Fai clic sull’icona degli appunti o degli agenti IA per aprire il pannello. Fai clic di nuovo sulla stessa icona per chiuderlo.

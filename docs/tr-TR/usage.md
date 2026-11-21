@@ -38,3 +38,5 @@ Ajanlar, `ARGVUS AI Agent` başlıklı ortalanmış bir yüzen Kitty penceresind
 `argvus-ai list` ile kontrol edin; `argvus-ai launch gemini` komutunu çalıştırın veya menüden seçin. Google girişi Gemini CLI içinde yapılır.
 
 GTK seçicisi ajanları bir ızgarada gösterir. Ok tuşlarıyla gezinin, `/` ile etkin dilde ada, açıklamaya veya anahtar kelimeye göre arayın, `Enter` ile başlatın ve `Esc` ile kapatın.
+
+Paneli açmak için görev çubuğundaki pano veya yapay zekâ ajanları simgesine tıklayın. Kapatmak için aynı simgeye tekrar tıklayın.

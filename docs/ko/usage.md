@@ -42,3 +42,5 @@ argvus-ai launch claude
 `argvus-ai list`로 확인하고 `argvus-ai launch gemini` 또는 메뉴에서 실행하세요. Google 인증은 Gemini CLI에서 완료합니다.
 
 GTK 선택기는 에이전트를 격자로 표시합니다. 방향키로 이동하고, `/`로 현재 언어의 이름, 설명 또는 키워드를 검색하며, `Enter`로 실행하고 `Esc`로 닫습니다.
+
+작업 표시줄의 클립보드 또는 AI 에이전트 아이콘을 클릭하면 패널이 열립니다. 같은 아이콘을 다시 클릭하면 닫힙니다.

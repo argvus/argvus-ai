@@ -42,3 +42,5 @@ Das dedizierte Kitty-Profil `ai-agents` versteckt Tabs und entfernt vererbte Sho
 Mit `argvus-ai list` prüfen; mit `argvus-ai launch gemini` starten oder im Menü auswählen. Die Google-Anmeldung erfolgt in Gemini CLI.
 
 Die GTK-Auswahl zeigt Agenten in einem Raster. Die Pfeiltasten navigieren, `/` sucht nach Name, Beschreibung oder Stichwort in der aktiven Sprache, `Enter` startet und `Esc` schließt die Auswahl.
+
+Ein Klick auf das Symbol der Zwischenablage oder der KI-Agenten öffnet das jeweilige Fenster. Ein erneuter Klick auf dasselbe Symbol schließt es.

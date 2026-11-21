@@ -44,3 +44,5 @@ O perfil Kitty dedicado `ai-agents` oculta as abas e remove os atalhos herdados 
 Verifique com `argvus-ai list`; abra com `argvus-ai launch gemini` ou selecione Gemini CLI no menu. Autentique-se com o Google no próprio Gemini CLI.
 
 O seletor no GTK apresenta os agentes numa grelha. Use as setas para navegar, `/` para pesquisar por nome, descrição ou palavra-chave no idioma ativo, `Enter` para abrir e `Esc` para fechar.
+
+Clique no ícone da Área de Transferência ou dos Agentes de IA para abrir o painel. Clique novamente no mesmo ícone para o fechar.

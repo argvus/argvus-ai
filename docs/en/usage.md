@@ -55,3 +55,5 @@ Kimi installations in `~/.kimi-code/bin/kimi` are detected without changing the 
 Check with `argvus-ai list`; launch with `argvus-ai launch gemini` or select Gemini CLI from the menu. Authenticate with Google in Gemini CLI.
 
 The GTK selector shows agents in a grid. Use the arrow keys to move, `/` to search by localized name, description or keyword, `Enter` to launch and `Esc` to close.
+
+Click Clipboard or AI Agents in the taskbar to open its panel. Click the same icon again to close it.

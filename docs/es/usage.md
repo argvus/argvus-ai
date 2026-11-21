@@ -42,3 +42,5 @@ El perfil dedicado de Kitty `ai-agents` oculta las pestañas y elimina los acces
 Comprueba con `argvus-ai list`; ejecútalo con `argvus-ai launch gemini` o selecciónalo en el menú. Autentícate con Google en Gemini CLI.
 
 El selector de GTK muestra los agentes en una cuadrícula. Usa las flechas para navegar, `/` para buscar por nombre, descripción o palabra clave en el idioma activo, `Enter` para abrir y `Esc` para cerrar.
+
+Haz clic en el icono del portapapeles o de agentes de IA para abrir su panel. Vuelve a pulsar el mismo icono para cerrarlo.

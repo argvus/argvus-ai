@@ -42,3 +42,5 @@ Le profil dédié Kitty `ai-agents` masque les onglets et supprime les raccourci
 Vérifiez avec `argvus-ai list`, puis lancez `argvus-ai launch gemini` ou sélectionnez Gemini CLI dans le menu. Connectez-vous à Google dans Gemini CLI.
 
 Le sélecteur GTK affiche les agents dans une grille. Les flèches permettent de naviguer, `/` de rechercher par nom, description ou mot-clé dans la langue active, `Enter` de lancer et `Esc` de fermer.
+
+Cliquez sur l’icône du presse-papiers ou des agents IA pour ouvrir son panneau. Cliquez de nouveau sur la même icône pour le fermer.

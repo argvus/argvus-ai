@@ -42,3 +42,5 @@ Agen terbuka di jendela Kitty mengambang di tengah berjudul `ARGVUS AI Agent`, d
 Periksa dengan `argvus-ai list`; jalankan `argvus-ai launch gemini` atau pilih dari menu. Autentikasi Google dilakukan di Gemini CLI.
 
 Pemilih GTK menampilkan agen dalam kisi. Gunakan tombol panah untuk berpindah, `/` untuk mencari nama, deskripsi, atau kata kunci dalam bahasa aktif, `Enter` untuk menjalankan, dan `Esc` untuk menutup.
+
+Klik ikon papan klip atau agen AI di bilah tugas untuk membuka panel. Klik ikon yang sama lagi untuk menutupnya.

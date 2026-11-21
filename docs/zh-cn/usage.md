@@ -42,3 +42,5 @@ Agents 会在一个居中的浮动 Kitty 窗口中打开，标题为 `ARGVUS AI 
 运行 `argvus-ai list` 检查；使用 `argvus-ai launch gemini` 或从菜单启动。在 Gemini CLI 中完成 Google 身份验证。
 
 GTK 选择器以网格显示代理。使用方向键移动，按 `/` 按当前语言的名称、描述或关键词搜索，按 `Enter` 启动，按 `Esc` 关闭。
+
+单击任务栏上的剪贴板或 AI 智能体图标可打开面板，再次单击同一图标可关闭面板。
