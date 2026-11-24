@@ -23,9 +23,9 @@ argvus-ai launch opencode
 argvus-ai launch codex
 argvus-ai launch claude
 ```
-`list` rapporte uniquement les agents installés. `status` émet du JSON Waybar, tandis que `status --check` indique s'il existe un choix de menu installé ou installable via son code de sortie. Seule la sélection/le lancement de Claude peut démarrer son installation ; `run-claude` est un point d'entrée terminal interne.
+`list` rapporte uniquement les agents installés. `status` émet du JSON Taskbar, tandis que `status --check` indique s'il existe un choix de menu installé ou installable via son code de sortie. Seule la sélection/le lancement de Claude peut démarrer son installation ; `run-claude` est un point d'entrée terminal interne.
 
-Si le raccourci utilise encore l'ancienne combinaison, vérifiez son override personnel dans la page des raccourcis clavier du Centre de contrôle ; les valeurs par défaut empaquetées ne l'écrasent pas. Si le robot disparaît après l'application des paramètres d'apparence, mettez à jour `argvus-appearance` et régénérez/appliquez les paramètres de la barre des tâches. Évitez de modifier directement les fichiers Waybar/Lua générés.
+Si le raccourci utilise encore l'ancienne combinaison, vérifiez son override personnel dans la page des raccourcis clavier du Centre de contrôle ; les valeurs par défaut empaquetées ne l'écrasent pas. Si le robot disparaît après l'application des paramètres d'apparence, mettez à jour `argvus-appearance` et régénérez/appliquez les paramètres de la barre des tâches. Évitez de modifier directement les fichiers Taskbar/Lua générés.
 
 Si l'installation de Claude échoue, vérifiez les erreurs du terminal, l'accès au réseau et la version de mise installée, puis sélectionnez à nouveau Claude. Les requêtes mise s'exécutent depuis le dossier personnel, donc une configuration spécifique à un projet ne sélectionne pas un outil différent. Le wrapper n'a pas besoin de shims mise dans le PATH graphique. La découverte OpenCode/Codex utilise le PATH graphique, sans alias shell ni scripts de démarrage interactifs.
 

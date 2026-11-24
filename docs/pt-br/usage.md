@@ -26,11 +26,11 @@ argvus-ai launch claude
 argvus-ai uninstall
 ```
 
-`list` informa somente agentes instalados. `status` emite JSON para Waybar; `status --check` informa pelo código de saída se há uma opção instalada ou instalável no menu. Somente selecionar/abrir Claude pode iniciar sua instalação; `run-claude` é uma entrada interna usada pelo terminal.
+`list` informa somente agentes instalados. `status` emite JSON para Taskbar; `status --check` informa pelo código de saída se há uma opção instalada ou instalável no menu. Somente selecionar/abrir Claude pode iniciar sua instalação; `run-claude` é uma entrada interna usada pelo terminal.
 
 `argvus-ai uninstall` oferece somente Hermes, Cursor CLI e Kimi registrados como instalados pelo ARGVUS. Confirme a remoção no seletor. O comando explícito `argvus-ai uninstall cursor` também reconhece instalações antigas do Cursor CLI somente quando `~/.local/bin/agent` aponta para dentro de `~/.local/share/cursor-agent/versions/`. Outras instalações sem registro não são alteradas. Hermes usa seu desinstalador oficial; Cursor CLI e Kimi têm seus binários removidos, preservando configurações e sessões.
 
-Se o atalho continuar usando a combinação antiga, confira o override pessoal na página de atalhos do Control Center; os padrões do pacote não o sobrescrevem. Se o robô desaparecer após aplicar a aparência, atualize `argvus-appearance` e regenere/aplique os ajustes da taskbar. Evite editar arquivos Waybar/Lua gerados diretamente.
+Se o atalho continuar usando a combinação antiga, confira o override pessoal na página de atalhos do Control Center; os padrões do pacote não o sobrescrevem. Se o robô desaparecer após aplicar a aparência, atualize `argvus-appearance` e regenere/aplique os ajustes da taskbar. Evite editar arquivos Taskbar/Lua gerados diretamente.
 
 Se a instalação do Claude falhar, confira os erros no terminal, o acesso à rede e a versão do mise; depois selecione Claude novamente. As consultas mise são feitas a partir do diretório pessoal para evitar a seleção de outra ferramenta pela configuração de um projeto. O wrapper não exige shims mise no PATH gráfico. OpenCode/Codex são descobertos pelo PATH gráfico, sem aliases ou scripts de inicialização interativos.
 

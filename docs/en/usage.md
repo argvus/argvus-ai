@@ -26,11 +26,11 @@ argvus-ai launch claude
 argvus-ai uninstall
 ```
 
-`list` reports installed agents only. `status` emits Waybar JSON, while `status --check` reports whether there is an installed or installable menu choice through its exit status. Only selecting/launching Claude can start its installation; `run-claude` is an internal terminal entry point.
+`list` reports installed agents only. `status` emits Taskbar JSON, while `status --check` reports whether there is an installed or installable menu choice through its exit status. Only selecting/launching Claude can start its installation; `run-claude` is an internal terminal entry point.
 
 `argvus-ai uninstall` offers only Hermes, Cursor CLI and Kimi installations recorded when installed by ARGVUS. Confirm the removal in the selector. An explicit `argvus-ai uninstall cursor` also recognizes a legacy Cursor CLI install only when `~/.local/bin/agent` resolves inside Cursor's `~/.local/share/cursor-agent/versions/` directory. Other unregistered installations are left untouched. Hermes uses its official uninstaller; Cursor CLI and Kimi binaries are removed while their user configuration and sessions are preserved.
 
-If the shortcut still uses the old combination, inspect its personal override in Control Center's keyboard shortcuts page; packaged defaults do not overwrite it. If the robot disappears after applying appearance settings, update `argvus-appearance` and regenerate/apply the taskbar settings. Avoid editing generated Waybar/Lua files directly.
+If the shortcut still uses the old combination, inspect its personal override in Control Center's keyboard shortcuts page; packaged defaults do not overwrite it. If the robot disappears after applying appearance settings, update `argvus-appearance` and regenerate/apply the taskbar settings. Avoid editing generated Taskbar/Lua files directly.
 
 If Claude installation fails, check terminal errors, network access and the installed mise version, then select Claude again. mise queries run from home so a project-specific configuration does not select a different tool. The wrapper does not require mise shims in the graphical PATH. OpenCode/Codex discovery uses the graphical PATH, without shell aliases or interactive startup scripts.
 

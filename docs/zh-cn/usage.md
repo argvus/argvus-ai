@@ -23,9 +23,9 @@ argvus-ai launch opencode
 argvus-ai launch codex
 argvus-ai launch claude
 ```
-`list` 仅报告已安装的代理。`status` 输出 Waybar JSON，而 `status --check` 通过其退出状态报告是否存在已安装或可安装的菜单选项。只有选择/启动 Claude 才能开始其安装；`run-claude` 是内部终端入口点。
+`list` 仅报告已安装的代理。`status` 输出 Taskbar JSON，而 `status --check` 通过其退出状态报告是否存在已安装或可安装的菜单选项。只有选择/启动 Claude 才能开始其安装；`run-claude` 是内部终端入口点。
 
-如果快捷方式仍然使用旧的组合键，请在控制中心的键盘快捷键页面检查其个人覆盖；打包的默认设置不会覆盖它。如果在应用外观设置后机器人消失，请更新 `argvus-appearance` 并重新生成/应用任务栏设置。避免直接编辑生成的 Waybar/Lua 文件。
+如果快捷方式仍然使用旧的组合键，请在控制中心的键盘快捷键页面检查其个人覆盖；打包的默认设置不会覆盖它。如果在应用外观设置后机器人消失，请更新 `argvus-appearance` 并重新生成/应用任务栏设置。避免直接编辑生成的 Taskbar/Lua 文件。
 
 如果 Claude 安装失败，请检查终端错误、网络访问情况以及已安装的 mise 版本，然后再次选择 Claude。mise 查询从主目录运行，因此特定项目的配置不会选择不同的工具。图形界面的 PATH 中不需要 mise shims。OpenCode/Codex 发现使用图形界面 PATH，而不使用 shell 别名或交互式启动脚本。
 

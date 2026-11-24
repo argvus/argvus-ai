@@ -23,9 +23,9 @@ argvus-ai launch opencode
 argvus-ai launch codex
 argvus-ai launch claude
 ```
-`list` informa solo sobre los agentes instalados. `status` emite JSON de Waybar, mientras que `status --check` informa si hay una opción de menú instalada o instalable a través de su estado de salida. Solo seleccionar/lanzar a Claude puede iniciar su instalación; `run-claude` es un punto de entrada interno del terminal.
+`list` informa solo sobre los agentes instalados. `status` emite JSON de Taskbar, mientras que `status --check` informa si hay una opción de menú instalada o instalable a través de su estado de salida. Solo seleccionar/lanzar a Claude puede iniciar su instalación; `run-claude` es un punto de entrada interno del terminal.
 
-Si el acceso directo aún usa la combinación antigua, inspecciona su anulación personal en la página de atajos de teclado del Centro de Control; los valores predeterminados empaquetados no lo sobrescriben. Si el robot desaparece después de aplicar la configuración de apariencia, actualiza `argvus-appearance` y regenera/aplica la configuración de la barra de tareas. Evita editar directamente los archivos generados de Waybar/Lua.
+Si el acceso directo aún usa la combinación antigua, inspecciona su anulación personal en la página de atajos de teclado del Centro de Control; los valores predeterminados empaquetados no lo sobrescriben. Si el robot desaparece después de aplicar la configuración de apariencia, actualiza `argvus-appearance` y regenera/aplica la configuración de la barra de tareas. Evita editar directamente los archivos generados de Taskbar/Lua.
 
 Si la instalación de Claude falla, verifique los errores en la terminal, el acceso a la red y la versión de mise instalada, luego seleccione Claude nuevamente. Las consultas de mise se ejecutan desde el directorio home, por lo que una configuración específica del proyecto no selecciona una herramienta diferente. El envoltorio no requiere shims de mise en el PATH gráfico. La detección de OpenCode/Codex utiliza el PATH gráfico, sin alias de shell ni scripts de inicio interactivos.
 

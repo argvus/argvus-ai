@@ -23,9 +23,9 @@ argvus-ai launch opencode
 argvus-ai launch codex
 argvus-ai launch claude
 ```
-`list` riporta solo gli agenti installati. `status` emette JSON per Waybar, mentre `status --check` segnala se esiste una scelta di menu installata o installabile tramite il suo stato di uscita. Solo selezionare/avviare Claude può avviare la sua installazione; `run-claude` è un punto di ingresso interno al terminale.
+`list` riporta solo gli agenti installati. `status` emette JSON per Taskbar, mentre `status --check` segnala se esiste una scelta di menu installata o installabile tramite il suo stato di uscita. Solo selezionare/avviare Claude può avviare la sua installazione; `run-claude` è un punto di ingresso interno al terminale.
 
-Se il collegamento utilizza ancora la vecchia combinazione, verifica la sua sovrascrittura personale nella pagina delle scorciatoie da tastiera del Centro di Controllo; i valori predefiniti pacchettizzati non la sovrascrivono. Se il robot scompare dopo aver applicato le impostazioni di aspetto, aggiorna `argvus-appearance` e rigenera/applica le impostazioni della barra delle applicazioni. Evita di modificare direttamente i file generati di Waybar/Lua.
+Se il collegamento utilizza ancora la vecchia combinazione, verifica la sua sovrascrittura personale nella pagina delle scorciatoie da tastiera del Centro di Controllo; i valori predefiniti pacchettizzati non la sovrascrivono. Se il robot scompare dopo aver applicato le impostazioni di aspetto, aggiorna `argvus-appearance` e rigenera/applica le impostazioni della barra delle applicazioni. Evita di modificare direttamente i file generati di Taskbar/Lua.
 
 Se l'installazione di Claude fallisce, controlla gli errori nel terminale, l'accesso alla rete e la versione di mise installata, quindi seleziona di nuovo Claude. Le query di mise vengono eseguite dalla home, quindi una configurazione specifica del progetto non seleziona uno strumento diverso. Il wrapper non richiede shim di mise nel PATH grafico. La scoperta OpenCode/Codex utilizza il PATH grafico, senza alias della shell o script di avvio interattivi.
 

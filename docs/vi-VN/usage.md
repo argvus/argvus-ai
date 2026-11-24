@@ -23,9 +23,9 @@ argvus-ai launch codex
 argvus-ai launch claude
 ```
 
-`list` chỉ báo cáo các tác nhân đã cài đặt. `status` xuất JSON của Waybar, trong khi `status --check` báo cáo liệu có tùy chọn menu đã cài đặt hoặc có thể cài đặt thông qua trạng thái thoát của nó. Chỉ việc chọn/khởi chạy Claude mới có thể bắt đầu cài đặt; `run-claude` là điểm vào terminal nội bộ.
+`list` chỉ báo cáo các tác nhân đã cài đặt. `status` xuất JSON của Taskbar, trong khi `status --check` báo cáo liệu có tùy chọn menu đã cài đặt hoặc có thể cài đặt thông qua trạng thái thoát của nó. Chỉ việc chọn/khởi chạy Claude mới có thể bắt đầu cài đặt; `run-claude` là điểm vào terminal nội bộ.
 
-Nếu phím tắt vẫn sử dụng tổ hợp cũ, hãy kiểm tra ghi đè cá nhân của phím tắt đó trong trang phím tắt của Trung tâm Kiểm soát; mặc định được đóng gói không ghi đè lên nó. Nếu rô-bốt biến mất sau khi áp dụng cài đặt giao diện, hãy cập nhật `argvus-appearance` và tạo lại/áp dụng cài đặt trên thanh tác vụ. Tránh chỉnh sửa được tạo Waybar/Luatập tin trực tiếp. Nếu cài đặt Claude thất bại, hãy kiểm tra lỗi trên thiết bị đầu cuối, truy cập mạng và phiên bản mise đã cài đặt, sau đó chọn lại Claude. Truy vấn mise chạy từ nhà nên cấu hình dự án sẽ không chọn công cụ khác. Trình bao bọc không yêu cầu miếng chêm mise trong đồ họa PATH. Phát hiện OpenCode/Codex sử dụng đồ họa PATH, không sử dụng bí danh shell hoặc script khởi động tương tác.
+Nếu phím tắt vẫn sử dụng tổ hợp cũ, hãy kiểm tra ghi đè cá nhân của phím tắt đó trong trang phím tắt của Trung tâm Kiểm soát; mặc định được đóng gói không ghi đè lên nó. Nếu rô-bốt biến mất sau khi áp dụng cài đặt giao diện, hãy cập nhật `argvus-appearance` và tạo lại/áp dụng cài đặt trên thanh tác vụ. Tránh chỉnh sửa được tạo Taskbar/Luatập tin trực tiếp. Nếu cài đặt Claude thất bại, hãy kiểm tra lỗi trên thiết bị đầu cuối, truy cập mạng và phiên bản mise đã cài đặt, sau đó chọn lại Claude. Truy vấn mise chạy từ nhà nên cấu hình dự án sẽ không chọn công cụ khác. Trình bao bọc không yêu cầu miếng chêm mise trong đồ họa PATH. Phát hiện OpenCode/Codex sử dụng đồ họa PATH, không sử dụng bí danh shell hoặc script khởi động tương tác.
 
 Quay lại [AI Agents](/docs/argvus-ai/). Các tác nhân
 

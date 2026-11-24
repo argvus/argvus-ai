@@ -23,9 +23,9 @@ argvus-ai launch opencode
 argvus-ai launch codex
 argvus-ai launch claude
 ```
-`list` meldet nur installierte Agenten. `status` gibt Waybar JSON aus, während `status --check` darüber berichtet, ob eine installierte oder installierbare Menüauswahl über seinen Exit-Status vorhanden ist. Nur das Auswählen/Starten von Claude kann dessen Installation starten; `run-claude` ist ein interner Terminal-Einstiegspunkt.
+`list` meldet nur installierte Agenten. `status` gibt Taskbar JSON aus, während `status --check` darüber berichtet, ob eine installierte oder installierbare Menüauswahl über seinen Exit-Status vorhanden ist. Nur das Auswählen/Starten von Claude kann dessen Installation starten; `run-claude` ist ein interner Terminal-Einstiegspunkt.
 
-Wenn die Verknüpfung immer noch die alte Kombination verwendet, prüfen Sie die persönliche Überschreibung auf der Seite Tastenkombinationen im Kontrollzentrum; verpackte Standardwerte überschreiben diese nicht. Wenn der Roboter nach Anwendung der Erscheinungseinstellungen verschwindet, aktualisieren Sie `argvus-appearance` und erzeugen/übernehmen Sie die Taskleisten-Einstellungen erneut. Vermeiden Sie das direkte Bearbeiten generierter Waybar/Lua-Dateien.
+Wenn die Verknüpfung immer noch die alte Kombination verwendet, prüfen Sie die persönliche Überschreibung auf der Seite Tastenkombinationen im Kontrollzentrum; verpackte Standardwerte überschreiben diese nicht. Wenn der Roboter nach Anwendung der Erscheinungseinstellungen verschwindet, aktualisieren Sie `argvus-appearance` und erzeugen/übernehmen Sie die Taskleisten-Einstellungen erneut. Vermeiden Sie das direkte Bearbeiten generierter Taskbar/Lua-Dateien.
 
 Wenn die Claude-Installation fehlschlägt, überprüfen Sie Terminalfehler, Netzwerkzugang und die installierte Mise-Version, und wählen Sie dann Claude erneut aus. Mise-Abfragen werden von Home ausgeführt, sodass eine projektspezifische Konfiguration kein anderes Tool auswählt. Der Wrapper benötigt keine Mise-Shims im grafischen PATH. Die OpenCode/Codex-Erkennung verwendet den grafischen PATH, ohne Shell-Aliase oder interaktive Startskripte.
 

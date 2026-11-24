@@ -21,9 +21,9 @@ argvus-ai launch codex
 argvus-ai launch claude
 ```
 
-`list` yalnızca yüklü aracıları bildirir. `status` Waybar JSON'u yayar, `status --check` ise çıkış durumu aracılığıyla yüklü veya kurulabilir bir menü seçeneği olup olmadığını bildirir. Yalnızca Claude seçildiğinde/başlatıldığında kurulumu başlatılabilir; `run-claude` dahili bir terminal giriş noktasıdır.
+`list` yalnızca yüklü aracıları bildirir. `status` Taskbar JSON'u yayar, `status --check` ise çıkış durumu aracılığıyla yüklü veya kurulabilir bir menü seçeneği olup olmadığını bildirir. Yalnızca Claude seçildiğinde/başlatıldığında kurulumu başlatılabilir; `run-claude` dahili bir terminal giriş noktasıdır.
 
-Kısayol hâlâ eski kombinasyonu kullanıyorsa Denetim Merkezi'nin klavye kısayolları sayfasında kişisel geçersiz kılmayı inceleyin; paketlenmiş varsayılanlar bunun üzerine yazmaz. Görünüm ayarlarını uyguladıktan sonra robot kaybolursa `argvus-appearance`'yu güncelleyin ve görev çubuğu ayarlarını yeniden oluşturun/uygulayın. Oluşturulan Waybar/Lua dosyalarını doğrudan düzenlemekten kaçının.Eğer Claude kurulumu başarısız olursa, terminal hatalarını, ağ erişimini ve kurulu mise sürümünü kontrol edin, ardından tekrar Claude'u seçin. mise sorguları ev dizininden çalıştırıldığından proje özelindeki bir yapılandırma farklı bir araç seçmez. Sarmalayıcı, grafiksel PATH içinde mise shims gerektirmez. OpenCode/Codex keşfi grafiksel PATH'i kullanır, kabuk takma adları veya etkileşimli başlangıç betikleri olmadan.
+Kısayol hâlâ eski kombinasyonu kullanıyorsa Denetim Merkezi'nin klavye kısayolları sayfasında kişisel geçersiz kılmayı inceleyin; paketlenmiş varsayılanlar bunun üzerine yazmaz. Görünüm ayarlarını uyguladıktan sonra robot kaybolursa `argvus-appearance`'yu güncelleyin ve görev çubuğu ayarlarını yeniden oluşturun/uygulayın. Oluşturulan Taskbar/Lua dosyalarını doğrudan düzenlemekten kaçının.Eğer Claude kurulumu başarısız olursa, terminal hatalarını, ağ erişimini ve kurulu mise sürümünü kontrol edin, ardından tekrar Claude'u seçin. mise sorguları ev dizininden çalıştırıldığından proje özelindeki bir yapılandırma farklı bir araç seçmez. Sarmalayıcı, grafiksel PATH içinde mise shims gerektirmez. OpenCode/Codex keşfi grafiksel PATH'i kullanır, kabuk takma adları veya etkileşimli başlangıç betikleri olmadan.
 
 [AI Agents](/docs/argvus-ai/) sayfasına dönün.
 

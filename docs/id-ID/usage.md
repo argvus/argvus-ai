@@ -25,9 +25,9 @@ argvus-ai launch codex
 argvus-ai launch claude
 ```
 
-`list` hanya melaporkan agen yang terpasang. `status` menghasilkan JSON Waybar, sementara `status --check` melaporkan apakah ada pilihan menu yang terpasang atau dapat dipasang melalui status keluarannya. Hanya memilih/meluncurkan Claude yang dapat memulai pemasangannya; `run-claude` adalah titik masuk terminal internal.
+`list` hanya melaporkan agen yang terpasang. `status` menghasilkan JSON Taskbar, sementara `status --check` melaporkan apakah ada pilihan menu yang terpasang atau dapat dipasang melalui status keluarannya. Hanya memilih/meluncurkan Claude yang dapat memulai pemasangannya; `run-claude` adalah titik masuk terminal internal.
 
-Jika pintasan masih menggunakan kombinasi lama, periksa pengaturan pribadi di halaman pintasan keyboard di Control Center; default yang dikemas tidak menimpanya. Jika robot menghilang setelah menerapkan pengaturan tampilan, perbarui `argvus-appearance` dan buat ulang/terapkan pengaturan taskbar. Hindari mengedit file Waybar/Lua yang dihasilkan secara langsung.
+Jika pintasan masih menggunakan kombinasi lama, periksa pengaturan pribadi di halaman pintasan keyboard di Control Center; default yang dikemas tidak menimpanya. Jika robot menghilang setelah menerapkan pengaturan tampilan, perbarui `argvus-appearance` dan buat ulang/terapkan pengaturan taskbar. Hindari mengedit file Taskbar/Lua yang dihasilkan secara langsung.
 
 Jika instalasi Claude gagal, periksa kesalahan terminal, akses jaringan, dan versi mise yang terpasang, lalu pilih Claude lagi. Kueri mise dijalankan dari home sehingga konfigurasi spesifik proyek tidak memilih alat yang berbeda. Pembungkus tidak memerlukan shim mise di PATH grafis. Penemuan OpenCode/Codex menggunakan PATH grafis, tanpa alias shell atau skrip startup interaktif.
 
