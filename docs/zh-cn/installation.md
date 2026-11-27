@@ -15,7 +15,7 @@ sudo pacman -S argvus-ai
 
 ## 桌面集成
 
-使用更新的 `argvus-hyprland` 和 `argvus-panels` 软件包。Hyprland 加载 `argvus-ai` 提供的可选 Lua 模块。集成的 Pacman 钩子在安装或删除后刷新标准系统配置。自定义根配置或禁用自动重载可能需要显式重新加载。现有的个人快捷方式覆盖仍然具有优先权。
+使用更新的 `argvus-hyprland` 和 `argvus-shell` 软件包。Hyprland 加载 `argvus-ai` 提供的可选 Lua 模块。集成的 Pacman 钩子在安装或删除后刷新标准系统配置。自定义根配置或禁用自动重载可能需要显式重新加载。现有的个人快捷方式覆盖仍然具有优先权。
 
 更新后的 `argvus-appearance` 投影仪保留了任务栏模块，并遵循 **控制中心 > 外观 > 任务栏 > 图标 > 可选模块 > AI 代理** 设置。该选项默认启用；更改后请点击 **应用**。启用此选项不会安装代理。
 

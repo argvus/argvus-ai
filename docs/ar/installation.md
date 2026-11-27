@@ -11,7 +11,7 @@ description:                               .ﻞﻴﻛﻭ ﻞﻛ ﺪﻳﻭﺰﺗ 
 sudo pacman -S argvus-ai
 ```
 
-تتطلب الحزمة argvus sudo pacman -U /path/to/package.pkg.tar.zst build/dist/ .pkg.tar.zst argvus-ai make build `make validate` `make build` `argvus-ai` `.pkg.tar.zst` `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst` `argvus` `argvus`، `kitty`، `jq`، `mise`، `opencode` و`openai-codex`؛ يوفر Arch `/bin/sh` من خلال `bash`. OpenCode يعمل كـ `opencode`، وتوفر الحزمة `openai-codex` `codex` mise تثبيت claude argvus-المظهر argvus-ai argvus-شريط المهام `argvus-hyprland` `argvus-panels` `argvus-ai` `argvus-appearance` `mise install claude` .
+تتطلب الحزمة argvus sudo pacman -U /path/to/package.pkg.tar.zst build/dist/ .pkg.tar.zst argvus-ai make build `make validate` `make build` `argvus-ai` `.pkg.tar.zst` `build/dist/` `sudo pacman -U /path/to/package.pkg.tar.zst` `argvus` `argvus`، `kitty`، `jq`، `mise`، `opencode` و`openai-codex`؛ يوفر Arch `/bin/sh` من خلال `bash`. OpenCode يعمل كـ `opencode`، وتوفر الحزمة `openai-codex` `codex` mise تثبيت claude argvus-المظهر argvus-ai argvus-شريط المهام `argvus-hyprland` `argvus-shell` `argvus-ai` `argvus-appearance` `mise install claude` .
 
 ##                                                               ﺐﺘﻜﻤﻟﺍ ﺢﻄﺳ ﻞﻣﺎﻜﺗ
 

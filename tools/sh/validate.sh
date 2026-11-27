@@ -49,7 +49,7 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then git diff --check; f
 luac -p packaging/archlinux/src/usr/share/argvus/ai/hyprland.lua
 stylua --check packaging/archlinux/src/usr/share/argvus/ai/hyprland.lua
 python3 tests/test_launcher.py
-if [ -d ../argvus-panels ]; then python3 tests/test_integration.py; fi
+if [ -d ../argvus-shell ]; then python3 tests/test_integration.py; fi
 for desktop in packaging/archlinux/src/usr/share/applications/*.desktop; do
   desktop-file-validate "$desktop"
 done

@@ -13,7 +13,7 @@ PAYLOAD = ROOT / "de/argvus-ai/packaging/archlinux/src"
 
 class Integration(unittest.TestCase):
     def test_taskbar(self):
-        source = (ROOT / "de/argvus-panels/src/usr/share/argvus/taskbar/config/argvus-taskbar.jsonc").read_text()
+        source = (ROOT / "de/argvus-shell/src/usr/share/argvus/taskbar/config/argvus-taskbar.jsonc").read_text()
         source = re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/', lambda match: match[0] if match[0].startswith('"') else '', source)
         config = json.loads(source)
         self.assertEqual(config["group/right-2"]["modules"].count("custom/ai"), 1)
