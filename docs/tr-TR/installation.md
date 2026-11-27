@@ -17,7 +17,7 @@ Paket, `argvus`, `kitty`, `jq`, `mise`, `opencode` ve `openai-codex`'yi gerektir
 
 ## Masaüstü entegrasyonu
 
-Güncellenmiş `argvus-hyprland` ve `argvus-taskbar` paketlerini kullanın. Hyprland, `argvus-ai` tarafından sağlanan isteğe bağlı Lua modülünü yükler. Entegrasyonun Pacman kancası, kurulum veya kaldırma sonrasında standart sistem yapılandırmasını yeniler. Özelleştirilmiş bir kök yapılandırması veya devre dışı bırakılmış otomatik yeniden yükleme, açık bir yeniden yükleme gerektirebilir. Mevcut kişisel kısayol geçersiz kılmaları yetkili olmaya devam eder.
+Güncellenmiş `argvus-hyprland` ve `argvus-panels` paketlerini kullanın. Hyprland, `argvus-ai` tarafından sağlanan isteğe bağlı Lua modülünü yükler. Entegrasyonun Pacman kancası, kurulum veya kaldırma sonrasında standart sistem yapılandırmasını yeniler. Özelleştirilmiş bir kök yapılandırması veya devre dışı bırakılmış otomatik yeniden yükleme, açık bir yeniden yükleme gerektirebilir. Mevcut kişisel kısayol geçersiz kılmaları yetkili olmaya devam eder.
 
 Güncellenmiş `argvus-appearance` projektör, görev çubuğu modülünü korur ve **Kontrol Merkezi > Görünüm > Görev Çubuğu > Simgelemeler > Opsiyonel Modüller > Yapay Zeka Ajanları** ayarına saygı gösterir. Seçenek varsayılan olarak etkindir; değiştirdikten sonra **Uygula**ya tıklayın. Etkinleştirmek, ajanları yüklemez.
 

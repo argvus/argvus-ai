@@ -15,7 +15,7 @@ Das Paket erfordert `argvus`, `kitty`, `jq`, `mise`, `opencode` und `openai-code
 
 ## Desktop-Integration
 
-Verwenden Sie die aktualisierten Pakete `argvus-hyprland` und `argvus-taskbar`. Hyprland lädt das optionale Lua-Modul, das von `argvus-ai` bereitgestellt wird. Der Pacman-Hook der Integration aktualisiert die Standard-Systemkonfiguration nach der Installation oder Entfernung. Eine benutzerdefinierte Root-Konfiguration oder deaktiviertes Autoreload kann ein explizites Neuladen erfordern. Bestehende persönliche Shortcut-Überschreibungen bleiben maßgeblich.
+Verwenden Sie die aktualisierten Pakete `argvus-hyprland` und `argvus-panels`. Hyprland lädt das optionale Lua-Modul, das von `argvus-ai` bereitgestellt wird. Der Pacman-Hook der Integration aktualisiert die Standard-Systemkonfiguration nach der Installation oder Entfernung. Eine benutzerdefinierte Root-Konfiguration oder deaktiviertes Autoreload kann ein explizites Neuladen erfordern. Bestehende persönliche Shortcut-Überschreibungen bleiben maßgeblich.
 
 Der aktualisierte `argvus-appearance` Projektor bewahrt das Taskleistenmodul und berücksichtigt **Kontrollzentrum > Darstellung > Taskleiste > Symbole > Optionale Module > KI-Agenten**. Die Option ist standardmäßig aktiviert; klicken Sie auf **Übernehmen**, nachdem Sie sie geändert haben. Das Aktivieren installiert keine Agenten.
 

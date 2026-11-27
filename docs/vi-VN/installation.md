@@ -15,7 +15,7 @@ sudo pacman -S argvus-ai
 
 ## Tích hợp máy tính để bàn
 
-Sử dụng các gói `argvus-hyprland` và `argvus-taskbar` đã được cập nhật. Hyprland tải mô-đun Lua tùy chọn được cung cấp bởi `argvus-ai`. Hook Pacman của tích hợp này làm mới cấu hình hệ thống tiêu chuẩn sau khi cài đặt hoặc gỡ bỏ. Một cấu hình root tùy chỉnh hoặc việc tự động tải lại bị vô hiệu hóa có thể yêu cầu việc tải lại rõ ràng. Các ghi đè phím tắt cá nhân hiện có vẫn giữ quyền ưu tiên.
+Sử dụng các gói `argvus-hyprland` và `argvus-panels` đã được cập nhật. Hyprland tải mô-đun Lua tùy chọn được cung cấp bởi `argvus-ai`. Hook Pacman của tích hợp này làm mới cấu hình hệ thống tiêu chuẩn sau khi cài đặt hoặc gỡ bỏ. Một cấu hình root tùy chỉnh hoặc việc tự động tải lại bị vô hiệu hóa có thể yêu cầu việc tải lại rõ ràng. Các ghi đè phím tắt cá nhân hiện có vẫn giữ quyền ưu tiên.
 
 Máy chiếu `argvus-appearance` được cập nhật giữ lại mô-đun thanh tác vụ và tuân thủ **Trung tâm điều khiển > Giao diện > Thanh tác vụ > Biểu tượng > Mô-đun tùy chọn > Tác nhân AI**. Tùy chọn này được bật theo mặc định; nhấp **Áp dụng** sau khi thay đổi. Bật nó không cài đặt các tác nhân.
 

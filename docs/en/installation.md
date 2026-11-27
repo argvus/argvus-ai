@@ -17,7 +17,7 @@ The package requires `argvus`, `kitty`, `jq`, `mise`, `opencode` and `openai-cod
 
 ## Desktop integration
 
-Use the updated `argvus-hyprland` and `argvus-taskbar` packages. Hyprland loads the optional Lua module supplied by `argvus-ai`. The integration's Pacman hook refreshes the standard system configuration after installation or removal. A custom root configuration or disabled autoreload may require an explicit reload. Existing personal shortcut overrides remain authoritative.
+Use the updated `argvus-hyprland` and `argvus-panels` packages. Hyprland loads the optional Lua module supplied by `argvus-ai`. The integration's Pacman hook refreshes the standard system configuration after installation or removal. A custom root configuration or disabled autoreload may require an explicit reload. Existing personal shortcut overrides remain authoritative.
 
 The updated `argvus-appearance` projector preserves the taskbar module and respects **Control Center > Appearance > Taskbar > Icons > Optional modules > AI Agents**. The option is enabled by default; click **Apply** after changing it. Enabling it does not install agents.
 

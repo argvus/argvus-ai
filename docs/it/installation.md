@@ -15,7 +15,7 @@ Il pacchetto richiede `argvus`, `kitty`, `jq`, `mise`, `opencode` e `openai-code
 
 ## Integrazione desktop
 
-Usare i pacchetti aggiornati `argvus-hyprland` e `argvus-taskbar`. Hyprland carica il modulo Lua opzionale fornito da `argvus-ai`. Il hook di integrazione di Pacman aggiorna la configurazione di sistema standard dopo l'installazione o la rimozione. Una configurazione root personalizzata o l'autoreload disabilitato può richiedere un reload esplicito. Le sovrascritture esistenti dei collegamenti personali rimangono vincolanti.
+Usare i pacchetti aggiornati `argvus-hyprland` e `argvus-panels`. Hyprland carica il modulo Lua opzionale fornito da `argvus-ai`. Il hook di integrazione di Pacman aggiorna la configurazione di sistema standard dopo l'installazione o la rimozione. Una configurazione root personalizzata o l'autoreload disabilitato può richiedere un reload esplicito. Le sovrascritture esistenti dei collegamenti personali rimangono vincolanti.
 
 Il proiettore aggiornato `argvus-appearance` preserva il modulo della barra delle applicazioni e rispetta **Centro di Controllo > Aspetto > Barra delle applicazioni > Icone > Moduli opzionali > Agenti AI**. L'opzione è abilitata di default; clicca su **Applica** dopo averla modificata. Abilitandola non vengono installati agenti.
 

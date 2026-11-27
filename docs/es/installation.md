@@ -15,7 +15,7 @@ El paquete requiere `argvus`, `kitty`, `jq`, `mise`, `opencode` y `openai-codex`
 
 ## Integración de escritorio
 
-Utilice los paquetes actualizados `argvus-hyprland` y `argvus-taskbar`. Hyprland carga el módulo opcional de Lua proporcionado por `argvus-ai`. El hook de Pacman de la integración actualiza la configuración estándar del sistema después de la instalación o eliminación. Una configuración raíz personalizada o la recarga automática deshabilitada pueden requerir una recarga explícita. Las anulaciones existentes de accesos directos personales siguen siendo autorizadas.
+Utilice los paquetes actualizados `argvus-hyprland` y `argvus-panels`. Hyprland carga el módulo opcional de Lua proporcionado por `argvus-ai`. El hook de Pacman de la integración actualiza la configuración estándar del sistema después de la instalación o eliminación. Una configuración raíz personalizada o la recarga automática deshabilitada pueden requerir una recarga explícita. Las anulaciones existentes de accesos directos personales siguen siendo autorizadas.
 
 El proyector actualizado `argvus-appearance` conserva el módulo de la barra de tareas y respeta **Centro de Control > Apariencia > Barra de tareas > Iconos > Módulos opcionales > Agentes de IA**. La opción está habilitada por defecto; haga clic en **Aplicar** después de cambiarla. Activarla no instala agentes.
 

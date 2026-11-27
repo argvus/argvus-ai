@@ -17,7 +17,7 @@ Paket ini membutuhkan `argvus`, `kitty`, `jq`, `mise`, `opencode` dan `openai-co
 
 ## Integrasi Desktop
 
-Gunakan paket `argvus-hyprland` dan `argvus-taskbar` yang diperbarui. Hyprland memuat modul Lua opsional yang disediakan oleh `argvus-ai`. Kait Pacman integrasi menyegarkan konfigurasi sistem standar setelah instalasi atau penghapusan. Konfigurasi root khusus atau muat ulang otomatis yang dinonaktifkan mungkin memerlukan muat ulang secara eksplisit. Penggantian pintasan pribadi yang ada tetap bersifat otoritatif.Proyektor `argvus-appearance` `mise install claude`  yang diperbarui mempertahankan modul taskbar dan menghormati **Control Center > Appearance > Taskbar > Icons > Optional modules > AI Agents**. Opsi ini diaktifkan secara default; klik **Apply** setelah mengubahnya. Mengaktifkannya tidak menginstal agen.
+Gunakan paket `argvus-hyprland` dan `argvus-panels` yang diperbarui. Hyprland memuat modul Lua opsional yang disediakan oleh `argvus-ai`. Kait Pacman integrasi menyegarkan konfigurasi sistem standar setelah instalasi atau penghapusan. Konfigurasi root khusus atau muat ulang otomatis yang dinonaktifkan mungkin memerlukan muat ulang secara eksplisit. Penggantian pintasan pribadi yang ada tetap bersifat otoritatif.Proyektor `argvus-appearance` `mise install claude`  yang diperbarui mempertahankan modul taskbar dan menghormati **Control Center > Appearance > Taskbar > Icons > Optional modules > AI Agents**. Opsi ini diaktifkan secara default; klik **Apply** setelah mengubahnya. Mengaktifkannya tidak menginstal agen.
 
 ## Claude Code pada penggunaan pertama
 
